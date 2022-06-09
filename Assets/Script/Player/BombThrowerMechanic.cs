@@ -21,7 +21,7 @@ public class BombThrowerMechanic : MonoBehaviour
 	private Transform _hitTransform;
 	private Vector3 _lastHitOffset;
 	private const float Gravity = -9.81f;
-	private static readonly int Aim = Animator.StringToHash("aim");
+	
 	
 	private List<Vector3> linePoints= new List<Vector3>();
 	private void Start()
@@ -37,7 +37,7 @@ public class BombThrowerMechanic : MonoBehaviour
 	{
 		_hitTransform = hitTransform;
 		_lastHitOffset = hitPoint - hitTransform.position;
-		_my.Anim.SetTrigger(Aim);
+		_my.PlayerAnimation.Anim.SetTrigger(PlayerAnimations.Aim);
 		HideTrajectory();
 	}
 	

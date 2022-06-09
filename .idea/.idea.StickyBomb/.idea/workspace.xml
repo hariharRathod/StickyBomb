@@ -1,41 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c4fe96e-f45c-4672-b895-16116b91b9bc" name="Default Changelist" comment="" />
+    <list default="true" id="6c4fe96e-f45c-4672-b895-16116b91b9bc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AxeGod/Animation/handAnim/ArrowAim.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AxeGod/Animation/handAnim/ArrowAim.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AxeGod/Animation/handAnim/ArrowShoot.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AxeGod/Animation/handAnim/ArrowShoot.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AxeGod/Animator/Player Hands.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AxeGod/Animator/Player Hands.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 0.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Extensions/InputExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Extensions/InputExtension.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/BombThrowerMechanic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/BombThrowerMechanic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/HandAnimationHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/HandAnimationHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/PlayerRefBank.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/PlayerRefBank.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Statemachine/DragToAimState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Statemachine/DragToAimState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Weapon/WeaponSelectManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Weapon/WeaponSelectManager.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Statemachine/DragToAimState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/LevelFlowController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/HandAnimationHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Extensions/InputExtension.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/BombStickCollison.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Statemachine/InputStateBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/BombThrowerMechanic.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Player/PlayerAnimations.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Player/PlayerRefBank.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Statemachine/DragToAimState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Packages/manifest.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Player/ArrowShootMechanic.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/LevelFlowController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Events/WeaponEvents.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/UIController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Statemachine/InputHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/WeaponSelectManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Player/PlayerRefBank.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Script/Extensions/InputExtension.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Weapon/WeaponSelectManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Player/PlayerRefBank.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Statemachine/InputStateBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/LevelFlowController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Player/HandAnimationHelper.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Statemachine/InputHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Player/BombThrowerMechanic.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Statemachine/DragToAimState.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/BombStickCollison.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/BombThrowerMechanic.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/PlayerRefBank.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Events/WeaponEvents.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/PlayerAnimations.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/UIController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Statemachine/DragToAimState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Extensions/InputExtension.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Weapon/WeaponSelectManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/ArrowShootMechanic.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/HandAnimationHelper.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="2AF3E9B7Hj6nvF3QVMGtR62cvMu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -61,7 +110,26 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Arrow Aim and Idle Animation Done." />
+    <option name="LAST_COMMIT_MESSAGE" value="Arrow Aim and Idle Animation Done." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="452" y="172" key="Vcs.Push.Dialog.v2" timestamp="1654769232010">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="452" y="172" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1654769232010" />
   </component>
 </project>

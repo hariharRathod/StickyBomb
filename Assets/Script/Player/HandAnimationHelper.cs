@@ -12,5 +12,10 @@ public class HandAnimationHelper : MonoBehaviour
 		
 	}
 
-	
+	public void ArrowShootAnimation()
+	{
+		_my.ArrowShoot.OnShootAnimation();
+	}
+
+
 }

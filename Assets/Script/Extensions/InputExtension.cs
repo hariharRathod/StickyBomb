@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public static class InputExtensions
 {
@@ -72,6 +73,7 @@ public static class InputExtensions
 	/// <returns></returns>
 	public static bool GetFingerDown ()
 	{
+		
 		if (!IsUsingTouch)
 		{
 			InputDownPos = Input.mousePosition;

@@ -14,12 +14,30 @@ public class DragToAimState : InputStateBase
 		var ray = Player.Camera.ScreenPointToRay(InputExtensions.GetInputPosition());
 
 		if (!Physics.Raycast(ray, out var hit, MaxRayDistance)) return;
+
+
+		if (Player.WeaponSelect.CurrentWeapon == WeaponSelectManager.Weapon.Bomb)
+		{
+			Player.BombThrower.DrawTrajectory(hit);
+		}
+		else if(Player.WeaponSelect.CurrentWeapon == WeaponSelectManager.Weapon.Arrow)
+		{
+			Player.ArrowShoot.ArrowAim();
+		}
+
 		
-		Player.BombThrower.DrawTrajectory(hit);
 		//Player.BombThrower.updateTrajetory(hit);
 		if (InputExtensions.GetFingerUp())
 		{
-			Player.BombThrower.Shoot(hit.transform, hit.point);
+			if (Player.WeaponSelect.CurrentWeapon == WeaponSelectManager.Weapon.Bomb)
+			{
+				Player.BombThrower.Shoot(hit.transform, hit.point);
+			}
+			else if(Player.WeaponSelect.CurrentWeapon == WeaponSelectManager.Weapon.Arrow)
+			{
+				Player.ArrowShoot.shootArrow();
+			}
+			
 			InputHandler.AssignNewState(InputState.Idle);
 		}
 

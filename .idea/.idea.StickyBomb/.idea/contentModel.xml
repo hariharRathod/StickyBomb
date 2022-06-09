@@ -145,13 +145,18 @@
           <e p="readme_DOTweenPro.txt" t="Include" />
         </e>
         <e p="Script" t="Include">
+          <e p="Events" t="Include">
+            <e p="WeaponEvents.cs" t="Include" />
+          </e>
           <e p="Extensions" t="Include">
             <e p="InputExtension.cs" t="Include" />
           </e>
           <e p="LevelFlowController.cs" t="Include" />
           <e p="Player" t="Include">
+            <e p="ArrowShootMechanic.cs" t="Include" />
             <e p="BombThrowerMechanic.cs" t="Include" />
             <e p="HandAnimationHelper.cs" t="Include" />
+            <e p="PlayerAnimations.cs" t="Include" />
             <e p="PlayerRefBank.cs" t="Include" />
           </e>
           <e p="Statemachine" t="Include">
@@ -159,6 +164,7 @@
             <e p="InputHandler.cs" t="Include" />
             <e p="InputStateBase.cs" t="Include" />
           </e>
+          <e p="UIController.cs" t="Include" />
           <e p="Weapon" t="Include">
             <e p="BombStickCollison.cs" t="Include" />
             <e p="WeaponSelectManager.cs" t="Include" />
