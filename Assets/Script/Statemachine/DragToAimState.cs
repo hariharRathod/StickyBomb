@@ -22,7 +22,8 @@ public class DragToAimState : InputStateBase
 		}
 		else if(Player.WeaponSelect.CurrentWeapon == WeaponSelectManager.Weapon.Arrow)
 		{
-			Player.ArrowShoot.ArrowAim();
+			Player.ArrowShoot.ArrowAim(hit,hit.point);
+			Player.ArrowShoot.Aim(InputExtensions.GetInputDelta());
 		}
 
 		
@@ -35,7 +36,7 @@ public class DragToAimState : InputStateBase
 			}
 			else if(Player.WeaponSelect.CurrentWeapon == WeaponSelectManager.Weapon.Arrow)
 			{
-				Player.ArrowShoot.shootArrow();
+				Player.ArrowShoot.Shoot(hit.point);
 			}
 			
 			InputHandler.AssignNewState(InputState.Idle);

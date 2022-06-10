@@ -20,18 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c4fe96e-f45c-4672-b895-16116b91b9bc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AxeGod/Animation/handAnim/ArrowAim.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AxeGod/Animation/handAnim/ArrowAim.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AxeGod/Animation/handAnim/ArrowShoot.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AxeGod/Animation/handAnim/ArrowShoot.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AxeGod/Animator/Player Hands.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AxeGod/Animator/Player Hands.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Meshes/Arrows/Materials/Arrow 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/Arrows/Materials/Arrow 1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapons/Arrow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapons/Arrow.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapons/BowInHand.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapons/BowInHand.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 0.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Extensions/InputExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Extensions/InputExtension.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/BombThrowerMechanic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/BombThrowerMechanic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/HandAnimationHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/HandAnimationHelper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/PlayerRefBank.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/PlayerRefBank.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/ArrowShootMechanic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/ArrowShootMechanic.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Statemachine/DragToAimState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Statemachine/DragToAimState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Weapon/WeaponSelectManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Weapon/WeaponSelectManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Statemachine/InputStateBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Statemachine/InputStateBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +64,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Script/Statemachine/InputStateBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/LevelFlowController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Statemachine/InputHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/BombStickCollison.cs" />
@@ -75,11 +72,12 @@
         <option value="$PROJECT_DIR$/Assets/Script/Events/WeaponEvents.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/PlayerAnimations.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/UIController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Statemachine/DragToAimState.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Extensions/InputExtension.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/WeaponSelectManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Player/ArrowShootMechanic.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/HandAnimationHelper.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Statemachine/InputStateBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Statemachine/DragToAimState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/ArrowShootMechanic.cs" />
       </list>
     </option>
   </component>
@@ -120,16 +118,18 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Arrow Aim and Idle Animation Done." />
-    <option name="LAST_COMMIT_MESSAGE" value="Arrow Aim and Idle Animation Done." />
+    <MESSAGE value="Arrow animation done." />
+    <option name="LAST_COMMIT_MESSAGE" value="Arrow animation done." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="452" y="172" key="Vcs.Push.Dialog.v2" timestamp="1654769232010">
+    <state x="452" y="172" key="Vcs.Push.Dialog.v2" timestamp="1654781814130">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="172" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1654769232010" />
+    <state x="452" y="172" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1654781814130" />
   </component>
 </project>

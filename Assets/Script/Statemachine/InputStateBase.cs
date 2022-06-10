@@ -6,11 +6,13 @@ public class InputStateBase
 	protected static PlayerRefBank Player;
 	
 	
+	
 	protected InputStateBase() { }
 	
 	public InputStateBase(PlayerRefBank player)
 	{
 		Player = player;
+		
 		MaxRayDistance = LevelFlowController.only.maxRayDistance;
 	}
 	
