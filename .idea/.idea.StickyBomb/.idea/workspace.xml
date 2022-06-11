@@ -20,15 +20,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c4fe96e-f45c-4672-b895-16116b91b9bc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/AxeGod/Animation/handAnim/ArrowShoot.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AxeGod/Animation/handAnim/ArrowShoot.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Meshes/Arrows/Materials/Arrow 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/Arrows/Materials/Arrow 1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Meshes/WhipMasterAssets/PlatformMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/WhipMasterAssets/PlatformMat.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapons/Arrow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapons/Arrow.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapons/BowInHand.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapons/BowInHand.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapons/Bomb.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapons/Bomb.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapons/Bomb.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapons/Bomb.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 0.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/New Lighting Settings.lighting" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/New Lighting Settings.lighting" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Events/WeaponEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Events/WeaponEvents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Extensions/InputExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Extensions/InputExtension.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Player/ArrowShootMechanic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/ArrowShootMechanic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/BombThrowerMechanic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/BombThrowerMechanic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/PlayerAnimations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/PlayerAnimations.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/PlayerRefBank.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/PlayerRefBank.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Statemachine/DragToAimState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Statemachine/DragToAimState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Statemachine/InputStateBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Statemachine/InputStateBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/UIController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/UIController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/URP Stuff.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/URP Stuff/Presets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/URP Stuff/Presets/AudioCompressedInMemory.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/URP Stuff/Presets/AudioCompressedInMemory.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/URP Stuff/Presets/AudioStreaming.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/URP Stuff/Presets/AudioStreaming.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/URP Stuff/Presets/Defaults.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/URP Stuff/Presets/Defaults/AlbedoTexture_Default.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/URP Stuff/Presets/Defaults/AlbedoTexture_Default.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/URP Stuff/Presets/Defaults/AudioDecompressOnLoad.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/URP Stuff/Presets/Defaults/AudioDecompressOnLoad.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/URP Stuff/Presets/Defaults/DirectionalLight_Default.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/URP Stuff/Presets/Defaults/DirectionalLight_Default.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/URP Stuff/Presets/NormalTexture.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/URP Stuff/Presets/NormalTexture.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/URP Stuff/Presets/UtilityTexture.preset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/URP Stuff/Presets/UtilityTexture.preset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/URP Stuff/Settings.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/URP Stuff/Settings/ForwardRenderer.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/URP Stuff/Settings/ForwardRenderer.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/URP Stuff/Settings/SampleSceneProfile.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/URP Stuff/Settings/SampleSceneProfile.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/URP Stuff/Settings/UniversalRP-HighQuality.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/URP Stuff/Settings/UniversalRP-HighQuality.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/URP Stuff/Settings/UniversalRP-LowQuality.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/URP Stuff/Settings/UniversalRP-LowQuality.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/URP Stuff/Settings/UniversalRP-MediumQuality.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/URP Stuff/Settings/UniversalRP-MediumQuality.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Weapon/WeaponSelectManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Weapon/WeaponSelectManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +85,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Player/WeaponSelectCanvas.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/HandAnimationHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Extensions/InputExtension.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/BombStickCollison.cs" root0="FORCE_HIGHLIGHTING" />
@@ -52,12 +93,13 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/BombThrowerMechanic.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/PlayerAnimations.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/PlayerRefBank.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/ArrowCollisonDetection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Events/GameEvents.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Statemachine/DragToAimState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Packages/manifest.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/ArrowShootMechanic.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/LevelFlowController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Events/WeaponEvents.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/UIController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Statemachine/InputHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/WeaponSelectManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -67,17 +109,20 @@
         <option value="$PROJECT_DIR$/Assets/Script/LevelFlowController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Statemachine/InputHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/BombStickCollison.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Player/BombThrowerMechanic.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Player/PlayerRefBank.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Events/WeaponEvents.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Player/PlayerAnimations.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/UIController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Extensions/InputExtension.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Weapon/WeaponSelectManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/HandAnimationHelper.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Statemachine/InputStateBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Statemachine/DragToAimState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Extensions/InputExtension.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Events/WeaponEvents.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/ArrowShootMechanic.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/BombThrowerMechanic.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/UIController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/WeaponSelectCanvas.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Events/GameEvents.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/PlayerRefBank.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Weapon/WeaponSelectManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/PlayerAnimations.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/WeaponSelectCanvas.cs" />
       </list>
     </option>
   </component>
@@ -124,12 +169,13 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Arrow Aim and Idle Animation Done." />
     <MESSAGE value="Arrow animation done." />
-    <option name="LAST_COMMIT_MESSAGE" value="Arrow animation done." />
+    <MESSAGE value="Arrow Animation and Arrow shoot functinality done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arrow Animation and Arrow shoot functinality done" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="452" y="172" key="Vcs.Push.Dialog.v2" timestamp="1654781814130">
+    <state x="452" y="172" key="Vcs.Push.Dialog.v2" timestamp="1654868001949">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="172" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1654781814130" />
+    <state x="452" y="172" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1654868001949" />
   </component>
 </project>

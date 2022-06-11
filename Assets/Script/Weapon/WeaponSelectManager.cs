@@ -1,13 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 
 public class WeaponSelectManager : MonoBehaviour
 {
 
-	[SerializeField] private GameObject bowHolder, bombHolder,arrow;
-	
 	private PlayerRefBank _my;
 	public enum Weapon
 	{ 
@@ -15,60 +14,54 @@ public class WeaponSelectManager : MonoBehaviour
 		Arrow
 	}
 
-	public GameObject Arrow
-	{
-		get => arrow;
-		
-	}
-	
-
-	public Weapon CurrentWeapon;
+	public Weapon currentWeapon;
 
 	//ye yaha mat do.........
 	private void OnEnable()
 	{
-		WeaponEvents.WeaponActivateEvent += weaponActivate;
+		WeaponEvents.WeaponChangeEvent += WeaponChange;
 	}
 
 	private void OnDisable()
 	{
-		WeaponEvents.WeaponActivateEvent -= weaponActivate;
+		WeaponEvents.WeaponChangeEvent -= WeaponChange;
 	}
 
 	private void Start()
 	{
 		_my = GetComponent<PlayerRefBank>();
-		CurrentWeapon = Weapon.Bomb;
+		currentWeapon = Weapon.Bomb;
+		OnWeaponChange();
 	
 	}
 	
 	//isko refactor ka socho imp..............
-	public void weaponActivate()
+	public void WeaponChange()
 	{
-		if (CurrentWeapon == Weapon.Bomb)
+		if (currentWeapon == Weapon.Bomb)
 		{
-			CurrentWeapon = Weapon.Arrow;
-		}else if (CurrentWeapon == Weapon.Arrow)
+			currentWeapon = Weapon.Arrow;
+			
+		}else if (currentWeapon == Weapon.Arrow)
 		{
-			CurrentWeapon = Weapon.Bomb;
+			currentWeapon = Weapon.Bomb;
+			
 		}
+		OnWeaponChange();
 
-		switch (CurrentWeapon)
+	}
+
+	public void OnWeaponChange()
+	{
+		switch (currentWeapon)
 		{
 			case Weapon.Bomb:
 			{
-				bombHolder.SetActive(true);
-				_my.PlayerAnimation.Anim.SetBool(PlayerAnimations.BombSelected,true);
-				_my.PlayerAnimation.Anim.SetBool(PlayerAnimations.ArrowSelected,false);
-				
-				
+				WeaponEvents.InvokeOnBombSelectEvent();
 			} break;
 			case Weapon.Arrow:
 			{
-				print("In arrow");
-				bowHolder.SetActive(true);
-				_my.PlayerAnimation.Anim.SetBool(PlayerAnimations.ArrowSelected,true);
-				_my.PlayerAnimation.Anim.SetBool(PlayerAnimations.BombSelected,false);
+				WeaponEvents.InvokeOnArrowSelectEvent();
 			} break;
 			
 		}

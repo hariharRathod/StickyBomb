@@ -73,7 +73,7 @@ public static class InputExtensions
 	/// <returns></returns>
 	public static bool GetFingerDown ()
 	{
-		
+		if (EventSystem.current.IsPointerOverGameObject(-1)) return false;
 		if (!IsUsingTouch)
 		{
 			InputDownPos = Input.mousePosition;

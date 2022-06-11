@@ -146,6 +146,7 @@
         </e>
         <e p="Script" t="Include">
           <e p="Events" t="Include">
+            <e p="GameEvents.cs" t="Include" />
             <e p="WeaponEvents.cs" t="Include" />
           </e>
           <e p="Extensions" t="Include">
@@ -158,14 +159,16 @@
             <e p="HandAnimationHelper.cs" t="Include" />
             <e p="PlayerAnimations.cs" t="Include" />
             <e p="PlayerRefBank.cs" t="Include" />
+            <e p="WeaponSelectCanvas.cs" t="Include" />
           </e>
           <e p="Statemachine" t="Include">
             <e p="DragToAimState.cs" t="Include" />
             <e p="InputHandler.cs" t="Include" />
             <e p="InputStateBase.cs" t="Include" />
           </e>
-          <e p="UIController.cs" t="Include" />
           <e p="Weapon" t="Include">
+            <e p="ArrowCollisonDetection.cs" t="Include" />
+            <e p="BombArrowCollison.cs" t="Include" />
             <e p="BombStickCollison.cs" t="Include" />
             <e p="WeaponSelectManager.cs" t="Include" />
           </e>

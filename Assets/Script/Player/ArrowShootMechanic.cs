@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ArrowShootMechanic : MonoBehaviour
 {
-	[SerializeField] private GameObject arrowPrefab;
+	[SerializeField] private GameObject arrowPrefab,arrow,bowHolder;
 	[SerializeField] private Transform startPoint,hitMarker;
 	[SerializeField] private float aimSpeedHorizontal;
 	[SerializeField] private float aimSpeedVertical;
@@ -18,13 +18,43 @@ public class ArrowShootMechanic : MonoBehaviour
 	private Vector3 _targetPos;
 	private Transform _player;
 	private Quaternion _playerDefaultRotation;
-	
+
+	public Transform HitMarker
+	{
+		get => hitMarker;
+		
+	}
+
+	private void OnEnable()
+	{
+		WeaponEvents.OnArrowSelectEvent += OnArrowWeaponSelected;
+		WeaponEvents.OnBombSelectEvent += OnBombWeaponSelected;
+	}
+
+	private void OnDisable()
+	{
+		WeaponEvents.OnArrowSelectEvent -= OnArrowWeaponSelected;
+		WeaponEvents.OnBombSelectEvent -= OnBombWeaponSelected;
+	}
+
 
 	private void Start()
 	{
 		_my = GetComponent<PlayerRefBank>();
 		_player = GameObject.FindGameObjectWithTag("PlayerRoot").transform;
 		_playerDefaultRotation = _player.rotation;
+	}
+	
+	private void OnArrowWeaponSelected()
+	{
+		bowHolder.SetActive(true);
+		hitMarker.gameObject.SetActive(true);
+	}
+	
+	private void OnBombWeaponSelected()
+	{
+		bowHolder.SetActive(false);
+		hitMarker.gameObject.SetActive(false);
 	}
 
 	public void ArrowAim(RaycastHit hitInfo,Vector3 hitPoint)
@@ -61,7 +91,7 @@ public class ArrowShootMechanic : MonoBehaviour
 	{
 		_targetPos = hitPoint;
 		_my.PlayerAnimation.Anim.SetBool(PlayerAnimations.ArrowShoot,true);
-		DOVirtual.DelayedCall(0.5f, () => _my.WeaponSelect.Arrow.SetActive(true)).OnComplete(
+		DOVirtual.DelayedCall(0.5f, () => arrow.SetActive(true)).OnComplete(
 			() =>
 			{
 				//_player.rotation = _playerDefaultRotation;
@@ -72,7 +102,7 @@ public class ArrowShootMechanic : MonoBehaviour
 
 	public void OnShootAnimation()
 	{
-		_my.WeaponSelect.Arrow.SetActive(false);
+		arrow.SetActive(false);
 		LaunchArrow();
 	}
 

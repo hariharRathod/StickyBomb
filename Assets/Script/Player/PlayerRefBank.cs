@@ -11,6 +11,8 @@ public class PlayerRefBank : MonoBehaviour
 
 	public ArrowShootMechanic ArrowShoot { get; private set; }
 
+	public WeaponSelectCanvas WeaponCanvas { get; private set; }
+
 
 	private void Start()
 	{
@@ -19,5 +21,6 @@ public class PlayerRefBank : MonoBehaviour
 		BombThrower = GetComponent<BombThrowerMechanic>();
 		ArrowShoot = GetComponent<ArrowShootMechanic>();
 		WeaponSelect = GetComponent<WeaponSelectManager>();
+		WeaponCanvas = GameObject.FindGameObjectWithTag("WeaponSelectCanvas").GetComponent<WeaponSelectCanvas>();
 	}
 }

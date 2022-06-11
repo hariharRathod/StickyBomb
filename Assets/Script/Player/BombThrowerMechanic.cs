@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BombThrowerMechanic : MonoBehaviour
 {
-	[SerializeField] private GameObject bombPrefab;
+	[SerializeField] private GameObject bombPrefab,bombHolder;
 	[SerializeField] private Transform startPoint;
 	
 	
@@ -21,9 +21,21 @@ public class BombThrowerMechanic : MonoBehaviour
 	private Transform _hitTransform;
 	private Vector3 _lastHitOffset;
 	private const float Gravity = -9.81f;
-	
-	
+
 	private List<Vector3> linePoints= new List<Vector3>();
+
+	private void OnEnable()
+	{
+		WeaponEvents.OnArrowSelectEvent += OnArrowWeaponSelected;
+		WeaponEvents.OnBombSelectEvent += OnBombWeaponSelected;
+	}
+
+	private void OnDisable()
+	{
+		WeaponEvents.OnArrowSelectEvent -= OnArrowWeaponSelected;
+		WeaponEvents.OnBombSelectEvent -= OnBombWeaponSelected;
+	}
+
 	private void Start()
 	{
 		_my = GetComponent<PlayerRefBank>();
@@ -31,6 +43,18 @@ public class BombThrowerMechanic : MonoBehaviour
 			
 		_trajectoryPath = new Vector3[trajectoryResolution];
 		_line.positionCount = trajectoryResolution - 1;
+	}
+	
+	private void OnArrowWeaponSelected()
+	{
+		bombHolder.SetActive(false);
+		hitMarker.gameObject.SetActive(false);
+	}
+	
+	private void OnBombWeaponSelected()
+	{
+		bombHolder.SetActive(true);
+		hitMarker.gameObject.SetActive(true);
 	}
 
 	public void Shoot(Transform hitTransform, Vector3 hitPoint)
@@ -111,33 +135,5 @@ public class BombThrowerMechanic : MonoBehaviour
 		hitMarker.rotation = Quaternion.LookRotation(hitInfo.normal);
 	}
 	
-	public void updateTrajetory(RaycastHit hit)
-	{
-		const int resolution = 20;
-		var startPosition = startPoint.position;
-		CalculateInitialVelocity(startPosition, hit.point, out var initialVelocity);
-		float flightDuration = (2 * initialVelocity.y) / Physics.gravity.y;
-		float stepTime = flightDuration / resolution;
-		
-		linePoints.Clear();
-
-		for (int i = 0; i < resolution; i++)
-		{
-			float stepTimePassed = stepTime * i;
-			Vector3 movementvector=new Vector3(
-				initialVelocity.x * stepTimePassed,
-				initialVelocity.y * stepTimePassed - 0.5f * Physics.gravity.y * stepTimePassed * stepTimePassed,
-				initialVelocity.z * stepTimePassed
-				);
-			
-			linePoints.Add( - movementvector + startPosition);
-			
-		}
-
-		_line.positionCount = linePoints.Count;
-		_line.SetPositions(linePoints.ToArray());
-		
-		hitMarker.position = hit.point + hit.normal * 0.05f;
-		hitMarker.rotation = Quaternion.LookRotation(hit.normal);
-	}
+	
 }

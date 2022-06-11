@@ -16,11 +16,12 @@ public class DragToAimState : InputStateBase
 		if (!Physics.Raycast(ray, out var hit, MaxRayDistance)) return;
 
 
-		if (Player.WeaponSelect.CurrentWeapon == WeaponSelectManager.Weapon.Bomb)
+		if (Player.WeaponSelect.currentWeapon == WeaponSelectManager.Weapon.Bomb)
 		{
 			Player.BombThrower.DrawTrajectory(hit);
+			print("Draw trajectory");
 		}
-		else if(Player.WeaponSelect.CurrentWeapon == WeaponSelectManager.Weapon.Arrow)
+		else if(Player.WeaponSelect.currentWeapon == WeaponSelectManager.Weapon.Arrow)
 		{
 			Player.ArrowShoot.ArrowAim(hit,hit.point);
 			Player.ArrowShoot.Aim(InputExtensions.GetInputDelta());
@@ -30,11 +31,11 @@ public class DragToAimState : InputStateBase
 		//Player.BombThrower.updateTrajetory(hit);
 		if (InputExtensions.GetFingerUp())
 		{
-			if (Player.WeaponSelect.CurrentWeapon == WeaponSelectManager.Weapon.Bomb)
+			if (Player.WeaponSelect.currentWeapon == WeaponSelectManager.Weapon.Bomb)
 			{
 				Player.BombThrower.Shoot(hit.transform, hit.point);
 			}
-			else if(Player.WeaponSelect.CurrentWeapon == WeaponSelectManager.Weapon.Arrow)
+			else if(Player.WeaponSelect.currentWeapon == WeaponSelectManager.Weapon.Arrow)
 			{
 				Player.ArrowShoot.Shoot(hit.point);
 			}
