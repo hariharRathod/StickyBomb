@@ -144,8 +144,21 @@
           </e>
           <e p="readme_DOTweenPro.txt" t="Include" />
         </e>
+        <e p="Epic Toon FX" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="ETFXPitchRandomizer.cs" t="Include" />
+          </e>
+        </e>
         <e p="Script" t="Include">
+          <e p="Enemy" t="Include">
+            <e p="EnemyAnimations.cs" t="Include" />
+            <e p="EnemyController.cs" t="Include" />
+            <e p="EnemyMovement.cs" t="Include" />
+            <e p="EnemyRagdollController.cs" t="Include" />
+            <e p="EnemyRefbank.cs" t="Include" />
+          </e>
           <e p="Events" t="Include">
+            <e p="EnemyEvents.cs" t="Include" />
             <e p="GameEvents.cs" t="Include" />
             <e p="WeaponEvents.cs" t="Include" />
           </e>
@@ -169,6 +182,7 @@
           <e p="Weapon" t="Include">
             <e p="ArrowCollisonDetection.cs" t="Include" />
             <e p="BombArrowCollison.cs" t="Include" />
+            <e p="BombRefBank.cs" t="Include" />
             <e p="BombStickCollison.cs" t="Include" />
             <e p="WeaponSelectManager.cs" t="Include" />
           </e>

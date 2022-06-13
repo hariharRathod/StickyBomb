@@ -9,6 +9,7 @@ TagManager:
   - TargetEnemy
   - WeaponSelectCanvas
   - Arrow
+  - Bomb
   layers:
   - Default
   - TransparentFX

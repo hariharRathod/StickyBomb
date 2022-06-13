@@ -1,18 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ArrowCollisonDetection : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	private Rigidbody rb;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	private void Start()
+	{
+		rb = GetComponent<Rigidbody>();
+	}
+	private void OnCollisionEnter(Collision other)
+	{
+		if (other.collider.CompareTag("TargetEnemy") || other.collider.CompareTag("Bomb"))
+		{
+			print("ArrowCollision: " + other.collider.gameObject.name);
+			rb.isKinematic = true;
+			transform.parent = other.collider.transform;
+		}
+
+		if (other.collider.CompareTag("Ground"))
+		{
+			rb.isKinematic = true;
+		}
+	}
 }

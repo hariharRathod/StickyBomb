@@ -32,10 +32,18 @@ public class InputStateBase
 	
 }
 
+public sealed class DisabledState : InputStateBase
+{
+	public override void OnEnter()
+	{
+		print("In disabled state");
+	}
+}
+
 public sealed class IdleState : InputStateBase
 {
 	public override void OnEnter()
 	{
-		print("In idle");
+		//print("In idle");
 	}
 }
