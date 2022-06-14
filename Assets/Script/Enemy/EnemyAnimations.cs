@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class EnemyAnimations : MonoBehaviour
@@ -25,6 +24,7 @@ public class EnemyAnimations : MonoBehaviour
 	public void StartWalking()
 	{
 		_anim.SetBool(IsWalking,true);
+		print("anim set true: ");
 	}
 
 	public void StopWalking()

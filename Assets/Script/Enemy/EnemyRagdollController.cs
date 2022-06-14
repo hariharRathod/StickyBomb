@@ -41,4 +41,9 @@ public class EnemyRagdollController : MonoBehaviour
 			_material.DOColor(deadColor, 1f);
 				
 	}
+	
+	public void UnKinematicise()
+	{
+		foreach (var rb in rigidbodies) rb.isKinematic = false;
+	}
 }

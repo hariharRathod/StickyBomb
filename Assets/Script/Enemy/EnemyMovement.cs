@@ -51,6 +51,7 @@ public class EnemyMovement : MonoBehaviour
 		_agent.SetDestination(target.position);
 			
 		_my.Animations.StartWalking();
+		print("Start walking" );
 		_currentTarget = target;
 		_chasing = true;
 	}

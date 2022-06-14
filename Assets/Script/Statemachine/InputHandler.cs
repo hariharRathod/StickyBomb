@@ -34,13 +34,14 @@ public class InputHandler : MonoBehaviour
 		var player = GameObject.FindGameObjectWithTag("PlayerRoot");
 		var refbank = player.GetComponent<PlayerRefBank>();
 		_ = new InputStateBase(refbank);
-		OnTapToPlay();
+		//OnTapToPlay();//yaha ye kya karra hai saleeeeeeee
+		
 	}
 
 
 	private void Update()
 	{
-		//if (!_hasTappedToPlay) return;
+		if (!_hasTappedToPlay) return;
 
 		if (_currentInputState is IdleState)
 		{
@@ -58,7 +59,8 @@ public class InputHandler : MonoBehaviour
 		if (InputExtensions.GetFingerDown())
 		{
 			//abhi ke liye taptoplay yaha invoke karra hu hat dena isseee..........
-			GameEvents.InvokeOnTapToPlay();
+			// abhi ke liye comment kiya hai sirf puri taraf hata saleeeeeeee
+			//GameEvents.InvokeOnTapToPlay();
 			return DragToAimState;
 		}
 

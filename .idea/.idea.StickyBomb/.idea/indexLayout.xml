@@ -4,6 +4,7 @@
     <attachedFolders />
     <explicitIncludes>
       <Path>Library/PackageCache/com.autodesk.fbx@4.1.1</Path>
+      <Path>Library/PackageCache/com.unity.2d.sprite@1.0.0</Path>
       <Path>Library/PackageCache/com.unity.animation.rigging@1.1.1</Path>
       <Path>Library/PackageCache/com.unity.burst@1.6.4</Path>
       <Path>Library/PackageCache/com.unity.collab-proxy@1.15.12</Path>
@@ -47,6 +48,7 @@
       <Path>Library/PackageCache/com.unity.modules.vr@1.0.0</Path>
       <Path>Library/PackageCache/com.unity.modules.wind@1.0.0</Path>
       <Path>Library/PackageCache/com.unity.modules.xr@1.0.0</Path>
+      <Path>Library/PackageCache/com.unity.recorder@3.0.3</Path>
       <Path>Library/PackageCache/com.unity.render-pipelines.core@12.1.5</Path>
       <Path>Library/PackageCache/com.unity.render-pipelines.universal@12.1.5</Path>
       <Path>Library/PackageCache/com.unity.searcher@4.9.1</Path>
@@ -65,7 +67,7 @@
       <Path>.idea</Path>
       <Path>Library</Path>
       <Path>Logs</Path>
-      <Path>Temp</Path>
+      <Path>Recordings</Path>
       <Path>UserSettings</Path>
       <Path>obj</Path>
     </explicitExcludes>

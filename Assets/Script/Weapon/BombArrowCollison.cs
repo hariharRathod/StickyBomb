@@ -27,7 +27,7 @@ public class BombArrowCollison : MonoBehaviour
 				{
 					explosionParticleSystem.transform.parent = null;
 					//iska kuch socho bhut he zyada dependancys hai...
-					_my.BombStickCollison.Enemy.Controller.EnemyDie(true);
+					_my.BombStickCollison.Enemy.Controller.DieFromBomb(true);
 					gameObject.SetActive(false);
 					
 				});
