@@ -1,5 +1,6 @@
 using DG.Tweening;
 using UnityEngine;
+using Input = UnityEngine.Windows.Input;
 
 public class ArrowShootMechanic : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class ArrowShootMechanic : MonoBehaviour
 	private PlayerRefBank _my;
 	private bool _shooted;
 	private Vector3 _targetPos;
-	private Transform _player;
+	private Transform _player,_targetTransform;
 	private Quaternion _playerDefaultRotation;
 
 	public Transform HitMarker
@@ -30,6 +31,7 @@ public class ArrowShootMechanic : MonoBehaviour
 		WeaponEvents.OnArrowSelectEvent += OnArrowWeaponSelected;
 		WeaponEvents.OnBombSelectEvent += OnBombWeaponSelected;
 		GameEvents.GameWin += OnGameWin;
+		GameEvents.CameraFollowArrowStart += OnCameraFollowArrowStart;
 	}
 
 	private void OnDisable()
@@ -37,7 +39,10 @@ public class ArrowShootMechanic : MonoBehaviour
 		WeaponEvents.OnArrowSelectEvent -= OnArrowWeaponSelected;
 		WeaponEvents.OnBombSelectEvent -= OnBombWeaponSelected;
 		GameEvents.GameWin -= OnGameWin;
+		GameEvents.CameraFollowArrowStart -= OnCameraFollowArrowStart;
 	}
+
+	
 
 
 	private void Start()
@@ -61,20 +66,19 @@ public class ArrowShootMechanic : MonoBehaviour
 
 	public void ArrowAim(RaycastHit hitInfo,Vector3 hitPoint)
 	{
-
 		_my.PlayerAnimation.Anim.SetBool(PlayerAnimations.ArrowAim,true);
 		_my.PlayerAnimation.Anim.SetBool(PlayerAnimations.ArrowShoot,false);
-
-		print(hitPoint);
-		var position = _player.position;
+		
+		var position = _my.Camera.transform.position;
 		Debug.DrawLine(position, hitPoint, Color.red, 5f, false);
 		
-	
+		if(hitInfo.collider.CompareTag("Ground"))
+			hitMarker.position = hitInfo.point + hitInfo.normal * 0.01f;
 		
-		hitMarker.position = hitInfo.point + hitInfo.normal * 0.12f;
+		if(hitInfo.collider.CompareTag("TargetEnemy"))
+			hitMarker.position = hitInfo.point + hitInfo.normal * 0.1f;
+			
 		hitMarker.rotation = Quaternion.LookRotation(hitInfo.normal);
-		
-		
 	}
 	
 	public void Aim(Vector2 inputDelta)
@@ -89,9 +93,10 @@ public class ArrowShootMechanic : MonoBehaviour
 		_player.rotation = newRot;
 	}
 
-	public void Shoot(Vector3 hitPoint)
+	public void Shoot(Transform hitTransform,Vector3 hitPoint)
 	{
 		_targetPos = hitPoint;
+		_targetTransform = hitTransform;
 		_my.PlayerAnimation.Anim.SetBool(PlayerAnimations.ArrowShoot,true);
 		DOVirtual.DelayedCall(0.5f, () => arrow.SetActive(true)).OnComplete(
 			() =>
@@ -115,7 +120,8 @@ public class ArrowShootMechanic : MonoBehaviour
 		var rb = arrow.GetComponent<Rigidbody>();
 		var dirToTarget = _targetPos - arrow.transform.position;
 		//arrow.transform.rotation = Quaternion.LookRotation(dirToTarget,Vector3.up);
-
+		InputHandler.PutInCoolDown();
+		WeaponEvents.InvokeOnArrowRealeaseEvent(_targetTransform,arrow);
 		arrow.transform.DORotateQuaternion(Quaternion.LookRotation(dirToTarget, Vector3.up), 0.1f);
 		arrow.transform.DOMove(_targetPos, 0.25f).SetEase(Ease.Linear).OnComplete(
 			() =>
@@ -124,10 +130,18 @@ public class ArrowShootMechanic : MonoBehaviour
 				//rb.isKinematic = true;
 			});
 		
+		
+		//socaho kya me sahi karra hu ye
+		
 
 	}
 	
 	private void OnGameWin()
+	{
+		hitMarker.gameObject.SetActive(false);
+	}
+	
+	private void OnCameraFollowArrowStart()
 	{
 		hitMarker.gameObject.SetActive(false);
 	}

@@ -12,6 +12,13 @@ public class EnemyController : MonoBehaviour
 	[SerializeField] private HealthCanvas healthCanvas;
 	private float _health=1f;
 
+	//socaho kya me sahi karra hu ye
+	public float Health
+	{
+		get => _health;
+		private set => _health = value;
+	}
+
 	private void OnEnable()
 	{
 		GameEvents.TapToPlay += OnTapToPlay;

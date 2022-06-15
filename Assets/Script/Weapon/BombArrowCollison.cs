@@ -1,3 +1,4 @@
+
 using DG.Tweening;
 using UnityEngine;
 
@@ -22,7 +23,7 @@ public class BombArrowCollison : MonoBehaviour
 			if (_my.BombStickCollison.OnEnemy)
 			{
 				explosionParticleSystem.SetActive(true);
-				
+				WeaponEvents.InvokeArrowCollisonWithTargetDone();
 				DOVirtual.DelayedCall(0.15f, () =>
 				{
 					explosionParticleSystem.transform.parent = null;

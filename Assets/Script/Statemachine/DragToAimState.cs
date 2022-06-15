@@ -12,10 +12,8 @@ public class DragToAimState : InputStateBase
 
 	public override void Execute()
 	{
-
-		
-		
 		var ray = Player.Camera.ScreenPointToRay(InputExtensions.GetInputPosition());
+		Debug.Log("player camera raycast: " + Player.Camera.tag, Player.Camera);
 
 		if (!Physics.Raycast(ray, out var hit, MaxRayDistance)) return;
         //isko refactor kar bhai...............
@@ -50,7 +48,7 @@ public class DragToAimState : InputStateBase
 			else if(Player.WeaponSelect.currentWeapon == WeaponSelectManager.Weapon.Arrow)
 			{
 				//need to think of some cooldown mechanism that will make game smooth.//soachna par iske bare me pakka..
-				Player.ArrowShoot.Shoot(hit.point);
+				Player.ArrowShoot.Shoot(hit.transform,hit.point);
 				
 			}
 			

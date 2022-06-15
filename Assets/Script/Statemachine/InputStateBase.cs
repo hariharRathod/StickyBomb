@@ -5,8 +5,6 @@ public class InputStateBase
     protected static float MaxRayDistance;
 	protected static PlayerRefBank Player;
 	
-	
-	
 	protected InputStateBase() { }
 	
 	public InputStateBase(PlayerRefBank player)
@@ -28,8 +26,6 @@ public class InputStateBase
 	public virtual void OnExit() { }
 
 	public static void print(object message) => Debug.Log(message);
-	
-	
 }
 
 public sealed class DisabledState : InputStateBase

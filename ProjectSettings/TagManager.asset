@@ -10,6 +10,8 @@ TagManager:
   - WeaponSelectCanvas
   - Arrow
   - Bomb
+  - MainCanvas
+  - ArrowFollowCamera
   layers:
   - Default
   - TransparentFX

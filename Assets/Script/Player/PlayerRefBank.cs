@@ -2,12 +2,10 @@ using UnityEngine;
 
 public class PlayerRefBank : MonoBehaviour
 {
-	public bool CanShoot { get; set; }
-
-
+	 
 	public PlayerAnimations PlayerAnimation {get; private set;}
 	public Camera Camera { get; private set; }
-	
+
 	public BombThrowerMechanic BombThrower { get; private set; }
 
 	public WeaponSelectManager WeaponSelect { get; private set; }
@@ -16,26 +14,17 @@ public class PlayerRefBank : MonoBehaviour
 
 	public WeaponSelectCanvas WeaponCanvas { get; private set; }
 
+	public PlayerController Controller { get; private set; }
 
-	private void OnEnable()
-	{
-		PlayerEvents.CanShoot += OnCanShoot;
-	}
-	
-	private void OnDisable()
-	{
-		PlayerEvents.CanShoot -= OnCanShoot;
-	}
 
-	private void OnCanShoot(bool value)
-	{
-		CanShoot = value;
-	}
+
 
 	private void Start()
 	{
 		Camera = Camera.main;
+		Debug.Log("player camera raycast: " + Camera.tag, Camera);
 		PlayerAnimation = GetComponent<PlayerAnimations>();
+		Controller = GetComponent<PlayerController>();
 		BombThrower = GetComponent<BombThrowerMechanic>();
 		ArrowShoot = GetComponent<ArrowShootMechanic>();
 		WeaponSelect = GetComponent<WeaponSelectManager>();

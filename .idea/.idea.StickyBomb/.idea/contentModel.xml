@@ -346,6 +346,7 @@
           </e>
         </e>
         <e p="Script" t="Include">
+          <e p="ArrowFollowCamera.cs" t="Include" />
           <e p="Canvas" t="Include">
             <e p="CanvasLookAtCam.cs" t="Include" />
             <e p="HealthCanvas.cs" t="Include" />
@@ -368,6 +369,7 @@
           <e p="Extensions" t="Include">
             <e p="InputExtension.cs" t="Include" />
           </e>
+          <e p="GameLoopManager.cs" t="Include" />
           <e p="GroundAreaDetection.cs" t="Include" />
           <e p="LevelFlowController.cs" t="Include" />
           <e p="Player" t="Include">
@@ -375,6 +377,7 @@
             <e p="BombThrowerMechanic.cs" t="Include" />
             <e p="HandAnimationHelper.cs" t="Include" />
             <e p="PlayerAnimations.cs" t="Include" />
+            <e p="PlayerController.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
             <e p="PlayerRefBank.cs" t="Include" />
             <e p="SplineTriggerController.cs" t="Include" />

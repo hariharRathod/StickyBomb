@@ -13,7 +13,8 @@ public class LevelFlowController : MonoBehaviour
 	public int enemiesInCurrentArea, enemiesKilledInCurrentArea;
 	
 	private readonly List<Transform> _deadBodies = new List<Transform>();
-	
+	[SerializeField] private int _totalEnemiesRemaining;
+
 	private void Awake()
 	{
 		if (!only) only = this;
@@ -43,7 +44,15 @@ public class LevelFlowController : MonoBehaviour
 		enemiesInCurrentArea = enemiesInArea[currentArea];
 		enemiesKilledInCurrentArea = 0;
 		
-		
+		foreach (var area in enemiesInArea)
+			_totalEnemiesRemaining += area;
+
+	}
+	
+	
+	public bool IsThisLastEnemy()
+	{
+		return _totalEnemiesRemaining == 1;
 	}
 	
 	public bool IsThisLastEnemyOfArea()
@@ -61,6 +70,7 @@ public class LevelFlowController : MonoBehaviour
 	private void OnEnemyKilled()
 	{
 		enemiesKilledInCurrentArea++;
+		_totalEnemiesRemaining--;
 		if (enemiesKilledInCurrentArea >= enemiesInCurrentArea)
 			StartCoroutine(WaitBeforeMovingToNextArea());
 	}

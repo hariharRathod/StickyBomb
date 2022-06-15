@@ -1,4 +1,5 @@
 using System;
+using DG.Tweening;
 using UnityEngine;
 
 
@@ -14,12 +15,14 @@ public class InputHandler : MonoBehaviour
 	
 	
 	private bool _hasTappedToPlay;
+	private static bool _inCoolDown;
 
 	private void OnEnable()
 	{
 		GameEvents.TapToPlay += OnTapToPlay;
 		GameEvents.GameLose += OnGameEnd;
 		GameEvents.GameWin += OnGameWin;
+		GameEvents.CameraFollowArrowStart += OnCameraFollowArrowStart;
 	}
 
 	
@@ -28,8 +31,10 @@ public class InputHandler : MonoBehaviour
 		GameEvents.TapToPlay -= OnTapToPlay;
 		GameEvents.GameLose -= OnGameEnd;
 		GameEvents.GameWin -= OnGameWin;
+		GameEvents.CameraFollowArrowStart -= OnCameraFollowArrowStart;
 	}
 
+	
 	private void Start()
 	{
 		_currentInputState = IdleState;
@@ -45,6 +50,8 @@ public class InputHandler : MonoBehaviour
 	private void Update()
 	{
 		if (!_hasTappedToPlay) return;
+
+		if (_inCoolDown) return;
 
 		if (_currentInputState is IdleState)
 		{
@@ -90,6 +97,25 @@ public class InputHandler : MonoBehaviour
 	private void OnTapToPlay() => _hasTappedToPlay = true;
 	
 	private static void OnGameEnd() => AssignNewState(InputState.Disabled);
+
+	public static void PutInCoolDown()
+	{
+		AssignNewState(InputState.Disabled);
+		DOVirtual.DelayedCall(0.25f, TapCoolDown);
+
+	}
+
+	private static void TapCoolDown()
+	{
+		AssignNewState(InputState.Idle);
+		_inCoolDown = false;
+	}
+
+	private void OnCameraFollowArrowStart()
+	{
+		AssignNewState(InputState.Disabled);
+	}
+
 	
 	private void OnGameWin()
 	{

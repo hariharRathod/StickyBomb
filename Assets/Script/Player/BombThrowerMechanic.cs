@@ -69,7 +69,7 @@ public class BombThrowerMechanic : MonoBehaviour
 	public void ThrowOnAnimation()
 	{
 		var idealDest = _hitTransform.position + _lastHitOffset;
-		LaunchBanana(idealDest);
+		LaunchBomb(idealDest);
 
 	}
 	
@@ -92,13 +92,14 @@ public class BombThrowerMechanic : MonoBehaviour
 		return time;
 	}
 	
-	private float LaunchBanana(Vector3 hitPoint)
+	private float LaunchBomb(Vector3 hitPoint)
 	{
 		var bomb = Instantiate(bombPrefab, startPoint.position, startPoint.rotation);
 		var rb = bomb.GetComponent<Rigidbody>();
 		var time = CalculateInitialVelocity(startPoint.position, hitPoint, out var initialVelocity);
 		rb.AddForce(initialVelocity, ForceMode.VelocityChange);
 		rb.AddTorque(Vector3.right * bananaTorque, ForceMode.VelocityChange);
+		InputHandler.PutInCoolDown();
 		return time;
 	}
 	
@@ -131,7 +132,11 @@ public class BombThrowerMechanic : MonoBehaviour
 		_line.positionCount = trajectoryResolution - 1;
 		_line.SetPositions(_trajectoryPath);
 
-		hitMarker.position = hitInfo.point + hitInfo.normal * 0.12f;
+		if(hitInfo.collider.CompareTag("Ground"))
+			hitMarker.position = hitInfo.point + hitInfo.normal * 0.01f;
+		
+		if(hitInfo.collider.CompareTag("TargetEnemy"))
+			hitMarker.position = hitInfo.point + hitInfo.normal * 0.1f;
 		hitMarker.rotation = Quaternion.LookRotation(hitInfo.normal);
 	}
 	
