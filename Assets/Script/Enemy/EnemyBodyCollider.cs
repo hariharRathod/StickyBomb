@@ -16,6 +16,10 @@ public class EnemyBodyCollider : MonoBehaviour
 	{
 		if (other.collider.CompareTag("Arrow"))
 		{
+			print("Give damage");
+			other.collider.GetComponent<Rigidbody>().isKinematic = true;
+			other.collider.transform.parent = transform;
+			other.collider.enabled = false;
 			_my.Controller.GetHit(damage);
 		}
 	}

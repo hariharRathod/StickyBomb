@@ -1,5 +1,6 @@
 
 using UnityEngine;
+using DG.Tweening;
 
 public class EnemyAnimations : MonoBehaviour
 {
@@ -36,6 +37,8 @@ public class EnemyAnimations : MonoBehaviour
 	public void GetHit()
 	{
 		_anim.SetTrigger(Hit);
+		
+		//DOVirtual.DelayedCall(0.15f, () => _anim.ResetTrigger(Hit));
 	}
 	
 	

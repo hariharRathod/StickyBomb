@@ -63,7 +63,7 @@ public class EnemyController : MonoBehaviour
 		print("Reach next area enemy");
 		StartChasingPlayer();
 		
-		_my.RagdollController.UnKinematicise();
+		
 		
 		
 	}

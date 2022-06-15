@@ -362,11 +362,13 @@
           <e p="Events" t="Include">
             <e p="EnemyEvents.cs" t="Include" />
             <e p="GameEvents.cs" t="Include" />
+            <e p="PlayerEvents.cs" t="Include" />
             <e p="WeaponEvents.cs" t="Include" />
           </e>
           <e p="Extensions" t="Include">
             <e p="InputExtension.cs" t="Include" />
           </e>
+          <e p="GroundAreaDetection.cs" t="Include" />
           <e p="LevelFlowController.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="ArrowShootMechanic.cs" t="Include" />

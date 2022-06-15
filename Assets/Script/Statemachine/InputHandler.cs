@@ -19,12 +19,15 @@ public class InputHandler : MonoBehaviour
 	{
 		GameEvents.TapToPlay += OnTapToPlay;
 		GameEvents.GameLose += OnGameEnd;
+		GameEvents.GameWin += OnGameWin;
 	}
 
+	
 	private void OnDisable()
 	{
 		GameEvents.TapToPlay -= OnTapToPlay;
 		GameEvents.GameLose -= OnGameEnd;
+		GameEvents.GameWin -= OnGameWin;
 	}
 
 	private void Start()
@@ -87,4 +90,9 @@ public class InputHandler : MonoBehaviour
 	private void OnTapToPlay() => _hasTappedToPlay = true;
 	
 	private static void OnGameEnd() => AssignNewState(InputState.Disabled);
+	
+	private void OnGameWin()
+	{
+		AssignNewState(InputState.Disabled);
+	}
 }

@@ -131,7 +131,7 @@ public class BombThrowerMechanic : MonoBehaviour
 		_line.positionCount = trajectoryResolution - 1;
 		_line.SetPositions(_trajectoryPath);
 
-		hitMarker.position = hitInfo.point + hitInfo.normal * 0.05f;
+		hitMarker.position = hitInfo.point + hitInfo.normal * 0.12f;
 		hitMarker.rotation = Quaternion.LookRotation(hitInfo.normal);
 	}
 	

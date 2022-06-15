@@ -1,9 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class DragToAimState : InputStateBase
 {
+	
+
 	public override void OnEnter()
 	{
 		print("In drag to aim state");
@@ -11,10 +12,19 @@ public class DragToAimState : InputStateBase
 
 	public override void Execute()
 	{
+
+		
+		
 		var ray = Player.Camera.ScreenPointToRay(InputExtensions.GetInputPosition());
 
 		if (!Physics.Raycast(ray, out var hit, MaxRayDistance)) return;
-
+        //isko refactor kar bhai...............
+		if(hit.transform.CompareTag("TargetEnemy"))
+			if (hit.transform.root.GetComponent<EnemyRefbank>().area != LevelFlowController.only.currentArea) return;
+		//iska kuch socho ke har ground ka area define na karna pade
+		if(hit.transform.CompareTag("Ground"))
+			if (hit.transform.GetComponent<GroundAreaDetection>().area != LevelFlowController.only.currentArea) return;
+		
 
 		if (Player.WeaponSelect.currentWeapon == WeaponSelectManager.Weapon.Bomb)
 		{
@@ -33,11 +43,15 @@ public class DragToAimState : InputStateBase
 		{
 			if (Player.WeaponSelect.currentWeapon == WeaponSelectManager.Weapon.Bomb)
 			{
+				//need to think of some cooldown mechanism that will make game smooth.//soachna par iske bare me pakka..
 				Player.BombThrower.Shoot(hit.transform, hit.point);
+				
 			}
 			else if(Player.WeaponSelect.currentWeapon == WeaponSelectManager.Weapon.Arrow)
 			{
+				//need to think of some cooldown mechanism that will make game smooth.//soachna par iske bare me pakka..
 				Player.ArrowShoot.Shoot(hit.point);
+				
 			}
 			
 			InputHandler.AssignNewState(InputState.Idle);

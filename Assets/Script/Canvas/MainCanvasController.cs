@@ -8,10 +8,9 @@ using UnityEngine.UI;
 
 public class MainCanvasController : MonoBehaviour
 {
-	[SerializeField] private GameObject holdToAim, victory, defeat, nextLevel, retry, constantRetryButton, skipLevel;
+	[SerializeField] private GameObject holdToAim, victory, defeat, nextLevel, retry, constantRetryButton;
 	[SerializeField] private TextMeshProUGUI levelText, instructionText;
 	[SerializeField] private Image red;
-	[SerializeField] private Toggle abToggle;
 	[SerializeField] private string tapInstruction, swipeInstruction;
 	
 	[SerializeField] private Button nextLevelButton;
@@ -21,13 +20,13 @@ public class MainCanvasController : MonoBehaviour
 	private void OnEnable()
 	{
 		GameEvents.GameLose += OnEnemyReachPlayer;
-		GameEvents.GameWin += OnGameEnd;
+		GameEvents.GameWin += OnGameWin;
 	}
 
 	private void OnDisable()
 	{
 		GameEvents.GameLose -= OnEnemyReachPlayer;
-		GameEvents.GameWin -= OnGameEnd;
+		GameEvents.GameWin -= OnGameWin;
 	}
 	
 	private void Update()
@@ -99,7 +98,7 @@ public class MainCanvasController : MonoBehaviour
 		
 	}
 
-	private void OnGameEnd()
+	private void OnGameWin()
 	{
 		Invoke(nameof(EnableVictoryObjects), 1f);
 		

@@ -29,12 +29,14 @@ public class ArrowShootMechanic : MonoBehaviour
 	{
 		WeaponEvents.OnArrowSelectEvent += OnArrowWeaponSelected;
 		WeaponEvents.OnBombSelectEvent += OnBombWeaponSelected;
+		GameEvents.GameWin += OnGameWin;
 	}
 
 	private void OnDisable()
 	{
 		WeaponEvents.OnArrowSelectEvent -= OnArrowWeaponSelected;
 		WeaponEvents.OnBombSelectEvent -= OnBombWeaponSelected;
+		GameEvents.GameWin -= OnGameWin;
 	}
 
 
@@ -69,7 +71,7 @@ public class ArrowShootMechanic : MonoBehaviour
 		
 	
 		
-		hitMarker.position = hitInfo.point + hitInfo.normal * 0.05f;
+		hitMarker.position = hitInfo.point + hitInfo.normal * 0.12f;
 		hitMarker.rotation = Quaternion.LookRotation(hitInfo.normal);
 		
 		
@@ -123,5 +125,10 @@ public class ArrowShootMechanic : MonoBehaviour
 			});
 		
 
+	}
+	
+	private void OnGameWin()
+	{
+		hitMarker.gameObject.SetActive(false);
 	}
 }

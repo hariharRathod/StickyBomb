@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class PlayerRefBank : MonoBehaviour
 {
+	public bool CanShoot { get; set; }
+
+
 	public PlayerAnimations PlayerAnimation {get; private set;}
 	public Camera Camera { get; private set; }
 	
@@ -13,6 +16,21 @@ public class PlayerRefBank : MonoBehaviour
 
 	public WeaponSelectCanvas WeaponCanvas { get; private set; }
 
+
+	private void OnEnable()
+	{
+		PlayerEvents.CanShoot += OnCanShoot;
+	}
+	
+	private void OnDisable()
+	{
+		PlayerEvents.CanShoot -= OnCanShoot;
+	}
+
+	private void OnCanShoot(bool value)
+	{
+		CanShoot = value;
+	}
 
 	private void Start()
 	{

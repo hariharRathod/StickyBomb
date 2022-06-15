@@ -10,7 +10,7 @@ public class ArrowCollisonDetection : MonoBehaviour
 	}
 	private void OnCollisionEnter(Collision other)
 	{
-		if (other.collider.CompareTag("TargetEnemy") || other.collider.CompareTag("Bomb"))
+		if (other.collider.CompareTag("Bomb"))
 		{
 			print("ArrowCollision: " + other.collider.gameObject.name);
 			rb.isKinematic = true;
