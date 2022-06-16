@@ -14,12 +14,18 @@ public class WeaponSelectCanvas : MonoBehaviour
 	{
 		WeaponEvents.OnArrowSelectEvent += OnArrowWeaponSelected;
 		WeaponEvents.OnBombSelectEvent += OnBombWeaponSelected;
+		GameEvents.GameLose += DisableWeaponSelectButton;
+		GameEvents.GameWin += DisableWeaponSelectButton;
+		GameEvents.CameraFollowArrowStart += DisableWeaponSelectButton;
 	}
 
 	private void OnDisable()
 	{
 		WeaponEvents.OnArrowSelectEvent -= OnArrowWeaponSelected;
 		WeaponEvents.OnBombSelectEvent -= OnBombWeaponSelected;
+		GameEvents.GameLose -= DisableWeaponSelectButton;
+		GameEvents.GameWin -= DisableWeaponSelectButton;
+		GameEvents.CameraFollowArrowStart -= DisableWeaponSelectButton;
 	}
 
 	private void Start()

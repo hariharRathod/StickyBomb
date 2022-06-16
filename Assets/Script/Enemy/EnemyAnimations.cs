@@ -12,15 +12,21 @@ public class EnemyAnimations : MonoBehaviour
 	
 	private EnemyRefbank _my;
 
-	
+	private void OnEnable()
+	{
+		GameEvents.CameraFollowArrowStart += OnCameraFollowArrowStart;
+	}
+
+	private void OnDisable()
+	{
+		GameEvents.CameraFollowArrowStart -= OnCameraFollowArrowStart;
+	}
+
 	private void Start()
 	{
 		_anim=GetComponent<Animator>();
 		_my = GetComponent<EnemyRefbank>();
 	}
-	
-	
-	
 
 	public void StartWalking()
 	{
@@ -50,4 +56,9 @@ public class EnemyAnimations : MonoBehaviour
 		GameEvents.InvokeOnGameLose();
 	}
 	public void SetAnimatorStatus(bool status) => _anim.enabled = status;
+	
+	private void OnCameraFollowArrowStart()
+	{
+		SetAnimatorStatus(false);
+	}
 }

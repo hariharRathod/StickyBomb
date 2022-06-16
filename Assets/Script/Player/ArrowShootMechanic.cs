@@ -77,6 +77,9 @@ public class ArrowShootMechanic : MonoBehaviour
 		
 		if(hitInfo.collider.CompareTag("TargetEnemy"))
 			hitMarker.position = hitInfo.point + hitInfo.normal * 0.1f;
+		
+		if(hitInfo.collider.CompareTag("ExplosiveBarrel"))
+			hitMarker.position = hitInfo.point + hitInfo.normal * 0.1f;
 			
 		hitMarker.rotation = Quaternion.LookRotation(hitInfo.normal);
 	}
@@ -98,7 +101,14 @@ public class ArrowShootMechanic : MonoBehaviour
 		_targetPos = hitPoint;
 		_targetTransform = hitTransform;
 		_my.PlayerAnimation.Anim.SetBool(PlayerAnimations.ArrowShoot,true);
-		DOVirtual.DelayedCall(0.5f, () => arrow.SetActive(true)).OnComplete(
+		
+		//ye yaha karra hu taki slow motion me arrow activate hota na dikhe camera me
+
+		DOVirtual.DelayedCall(0.5f, () =>
+		{
+			if (GameLoopManager.InSlowMotion) return;
+			arrow.SetActive(true);
+		}).OnComplete(
 			() =>
 			{
 				//_player.rotation = _playerDefaultRotation;

@@ -12,6 +12,7 @@ TagManager:
   - Bomb
   - MainCanvas
   - ArrowFollowCamera
+  - ExplosiveBarrel
   layers:
   - Default
   - TransparentFX

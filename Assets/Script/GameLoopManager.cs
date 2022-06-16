@@ -1,14 +1,19 @@
 
+using DG.Tweening;
 using UnityEngine;
 
 public class GameLoopManager : MonoBehaviour
 {
+
 	[SerializeField] private float slowMotionTimeScale;
 	[SerializeField] private bool shouldCameraFollow;
 	private float _startTimeScale, _startFixedDeltaTime;
 
-	private bool _inSlowMotion;
-	
+	private static bool _inSlowMotion;
+
+
+	public static bool InSlowMotion => _inSlowMotion;
+
 
 	private void OnEnable()
 	{
@@ -93,7 +98,7 @@ public class GameLoopManager : MonoBehaviour
 	{
 		if (!_inSlowMotion) return;
 		
-		StopSlowMotion();
+		DOVirtual.DelayedCall(0.5f,StopSlowMotion);
 	}
 
 

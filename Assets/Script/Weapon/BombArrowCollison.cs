@@ -8,6 +8,7 @@ public class BombArrowCollison : MonoBehaviour
 
 	private BombRefBank _my;
 	
+	
 	private void Start()
 	{
 		explosionParticleSystem.SetActive(false);
@@ -20,9 +21,9 @@ public class BombArrowCollison : MonoBehaviour
 		if (other.collider.CompareTag("Arrow"))
 		{
 			
-			if (_my.BombStickCollison.OnEnemy)
+			/*if (_my.BombStickCollison.OnEnemy)
 			{
-				explosionParticleSystem.SetActive(true);
+				
 				WeaponEvents.InvokeArrowCollisonWithTargetDone();
 				DOVirtual.DelayedCall(0.15f, () =>
 				{
@@ -33,7 +34,26 @@ public class BombArrowCollison : MonoBehaviour
 					
 				});
 				
-			}
+			}*/
+
+			if (_my.BombController.myParent==null) return;
+
+			if (!_my.BombController.myParent.TryGetComponent(out IExplodDamageable explodDamageable)) return;
+			
+			
+			if(!explodDamageable.OnExplodeDamage()) return;
+			explosionParticleSystem.SetActive(true);
+			WeaponEvents.InvokeArrowCollisonWithTargetDone();
+			
+			DOVirtual.DelayedCall(0.15f, () =>
+			{
+				explosionParticleSystem.transform.parent = null;
+				gameObject.SetActive(false);
+					
+			});
+			
+			
+			
 		}
 	}
 }

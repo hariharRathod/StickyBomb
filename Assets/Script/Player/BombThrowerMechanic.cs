@@ -49,6 +49,7 @@ public class BombThrowerMechanic : MonoBehaviour
 	{
 		bombHolder.SetActive(false);
 		hitMarker.gameObject.SetActive(false);
+		HideTrajectory();
 	}
 	
 	private void OnBombWeaponSelected()
@@ -64,7 +65,6 @@ public class BombThrowerMechanic : MonoBehaviour
 		_my.PlayerAnimation.Anim.SetTrigger(PlayerAnimations.Aim);
 		HideTrajectory();
 	}
-	
 	
 	public void ThrowOnAnimation()
 	{
@@ -137,6 +137,10 @@ public class BombThrowerMechanic : MonoBehaviour
 		
 		if(hitInfo.collider.CompareTag("TargetEnemy"))
 			hitMarker.position = hitInfo.point + hitInfo.normal * 0.1f;
+		
+		if(hitInfo.collider.CompareTag("ExplosiveBarrel"))
+			hitMarker.position = hitInfo.point + hitInfo.normal * 0.1f;
+		
 		hitMarker.rotation = Quaternion.LookRotation(hitInfo.normal);
 	}
 	

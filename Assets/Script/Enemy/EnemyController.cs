@@ -1,17 +1,23 @@
+using System;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 
-public class EnemyController : MonoBehaviour
+public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 {
 	private EnemyRefbank _my;
 	private Transform _player;
-
 
 	private List<GameObject> _bombsList;
 	[SerializeField] private HealthCanvas healthCanvas;
 	private float _health=1f;
 
+	//bro zyada complicated nahi hogaya ye?,pucho apne aap se ye........................
+	[SerializeField] private IStickable.StickableBehaviour stickingBehaviour;
+	[SerializeField] private IExplodDamageable.ExplodableBehaviour explodBehaviour;
+	
+	
 	//socaho kya me sahi karra hu ye
 	public float Health
 	{
@@ -69,9 +75,6 @@ public class EnemyController : MonoBehaviour
 		if(_my.area != LevelFlowController.only.currentArea) return;
 		print("Reach next area enemy");
 		StartChasingPlayer();
-		
-		
-		
 		
 	}
 
@@ -133,6 +136,26 @@ public class EnemyController : MonoBehaviour
 	}
 
 
+	public bool OnStick(GameObject bomb,Transform target)
+	{
+		
+		if (stickingBehaviour != IStickable.StickableBehaviour.Stickable) return false;
+		
+		var bombController = bomb.GetComponent<BombController>();
+		if(bombController==null) return false;
+		bombController.myParent = gameObject;
+		_my.Animations.GetHit();			
+		AddBomb(bomb);
+		bomb.transform.parent = target;
+		
+		return true;
+	}
 
+	public bool OnExplodeDamage()
+	{
+		if (explodBehaviour != IExplodDamageable.ExplodableBehaviour.Explodable) return false;
+		DOVirtual.DelayedCall(0.15f, ()=>DieFromBomb(true));
+		return true;
 
+	}
 }

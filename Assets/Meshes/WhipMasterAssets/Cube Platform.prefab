@@ -305,6 +305,7 @@ GameObject:
   - component: {fileID: 1342158142551221179}
   - component: {fileID: 1580186678}
   - component: {fileID: 1580186679}
+  - component: {fileID: 1946219399379395792}
   m_Layer: 0
   m_Name: Cube Platform
   m_TagString: Ground
@@ -406,7 +407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b783a6c2f3e1d84c93e4fee9178b6b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  area: 0
+  area: 1
 --- !u!54 &1580186679
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -423,6 +424,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1946219399379395792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4262955938679395590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e922fc7fceb29544ae24dc75bf0f00a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stickingBehaviour: 0
+  explodBehaviour: 0
 --- !u!1 &5072768464897925781
 GameObject:
   m_ObjectHideFlags: 0
