@@ -19,6 +19,7 @@ public class ArrowShootMechanic : MonoBehaviour
 	private Vector3 _targetPos;
 	private Transform _player,_targetTransform;
 	private Quaternion _playerDefaultRotation;
+	private Tween arrowRotation;
 
 	public Transform HitMarker
 	{
@@ -32,6 +33,7 @@ public class ArrowShootMechanic : MonoBehaviour
 		WeaponEvents.OnBombSelectEvent += OnBombWeaponSelected;
 		GameEvents.GameWin += OnGameWin;
 		GameEvents.CameraFollowArrowStart += OnCameraFollowArrowStart;
+		
 	}
 
 	private void OnDisable()
@@ -40,10 +42,8 @@ public class ArrowShootMechanic : MonoBehaviour
 		WeaponEvents.OnBombSelectEvent -= OnBombWeaponSelected;
 		GameEvents.GameWin -= OnGameWin;
 		GameEvents.CameraFollowArrowStart -= OnCameraFollowArrowStart;
+		
 	}
-
-	
-
 
 	private void Start()
 	{
@@ -98,13 +98,14 @@ public class ArrowShootMechanic : MonoBehaviour
 
 	public void Shoot(Transform hitTransform,Vector3 hitPoint)
 	{
+		InputHandler.PutInCoolDown();
 		_targetPos = hitPoint;
 		_targetTransform = hitTransform;
 		_my.PlayerAnimation.Anim.SetBool(PlayerAnimations.ArrowShoot,true);
 		
 		//ye yaha karra hu taki slow motion me arrow activate hota na dikhe camera me
 
-		DOVirtual.DelayedCall(0.5f, () =>
+		DOVirtual.DelayedCall(0.3f, () =>
 		{
 			if (GameLoopManager.InSlowMotion) return;
 			arrow.SetActive(true);
@@ -130,20 +131,15 @@ public class ArrowShootMechanic : MonoBehaviour
 		var rb = arrow.GetComponent<Rigidbody>();
 		var dirToTarget = _targetPos - arrow.transform.position;
 		//arrow.transform.rotation = Quaternion.LookRotation(dirToTarget,Vector3.up);
-		InputHandler.PutInCoolDown();
 		WeaponEvents.InvokeOnArrowRealeaseEvent(_targetTransform,arrow);
 		arrow.transform.DORotateQuaternion(Quaternion.LookRotation(dirToTarget, Vector3.up), 0.1f);
-		arrow.transform.DOMove(_targetPos, 0.25f).SetEase(Ease.Linear).OnComplete(
+		arrow.transform.DOMove(_targetPos, 0.2f).SetEase(Ease.Linear).OnComplete(
 			() =>
 			{
-				
+				//arrow.transform.DOMoveZ(arrow.transform.position.z + 0.05f, 0.01f);
 				//rb.isKinematic = true;
 			});
-		
-		
-		//socaho kya me sahi karra hu ye
-		
-
+	
 	}
 	
 	private void OnGameWin()
@@ -155,4 +151,6 @@ public class ArrowShootMechanic : MonoBehaviour
 	{
 		hitMarker.gameObject.SetActive(false);
 	}
+	
+	
 }

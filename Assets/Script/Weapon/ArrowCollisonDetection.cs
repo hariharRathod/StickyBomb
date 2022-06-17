@@ -3,10 +3,12 @@ using UnityEngine;
 public class ArrowCollisonDetection : MonoBehaviour
 {
 	private Rigidbody rb;
+	private TrailRenderer _trailRenderer;
 
 	private void Start()
 	{
 		rb = GetComponent<Rigidbody>();
+		_trailRenderer = GetComponent<TrailRenderer>();
 	}
 	private void OnCollisionEnter(Collision other)
 	{
@@ -21,5 +23,9 @@ public class ArrowCollisonDetection : MonoBehaviour
 		{
 			rb.isKinematic = true;
 		}
+		
+		WeaponEvents.InvokeArrowCollisionWithObjects();
+		_trailRenderer.enabled = false;
+
 	}
 }

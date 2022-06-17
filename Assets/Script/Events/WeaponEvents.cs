@@ -6,7 +6,7 @@ public static class WeaponEvents
 {
 	public static event Action WeaponChangeEvent;
 	public static event Action OnBombSelectEvent;
-	public static event Action OnArrowSelectEvent;
+	public static event Action OnArrowSelectEvent,ArrowCollisionWithObjects;
 
 	public static event Action ArrowCollisonWithTargetDone;
 	
@@ -27,5 +27,10 @@ public static class WeaponEvents
 	public static void InvokeArrowCollisonWithTargetDone()
 	{
 		ArrowCollisonWithTargetDone?.Invoke();
+	}
+
+	public static void InvokeArrowCollisionWithObjects()
+	{
+		ArrowCollisionWithObjects?.Invoke();
 	}
 }

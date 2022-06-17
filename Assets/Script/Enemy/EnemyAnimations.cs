@@ -15,11 +15,15 @@ public class EnemyAnimations : MonoBehaviour
 	private void OnEnable()
 	{
 		GameEvents.CameraFollowArrowStart += OnCameraFollowArrowStart;
+		
 	}
+
+	
 
 	private void OnDisable()
 	{
 		GameEvents.CameraFollowArrowStart -= OnCameraFollowArrowStart;
+		
 	}
 
 	private void Start()
@@ -61,4 +65,6 @@ public class EnemyAnimations : MonoBehaviour
 	{
 		SetAnimatorStatus(false);
 	}
+	
+	
 }

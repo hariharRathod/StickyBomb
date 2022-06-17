@@ -387,6 +387,7 @@
           </e>
           <e p="Props" t="Include">
             <e p="ExplosiveBarrelController.cs" t="Include" />
+            <e p="PropExplosion.cs" t="Include" />
           </e>
           <e p="Statemachine" t="Include">
             <e p="DragToAimState.cs" t="Include" />

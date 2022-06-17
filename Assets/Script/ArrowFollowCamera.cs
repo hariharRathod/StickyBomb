@@ -1,4 +1,5 @@
 
+using DG.Tweening;
 using UnityEngine;
 
 public class ArrowFollowCamera : MonoBehaviour
@@ -25,8 +26,12 @@ public class ArrowFollowCamera : MonoBehaviour
 		}
 
 		transform.parent = _arrowToFollow.transform;
-		transform.localPosition =new Vector3(-2f, 0, -2f);
+
+		
+		transform.localPosition =new Vector3(-2.3f, 0, -2.1f);
 		transform.localEulerAngles = new Vector3(0,50f,0);
+		//
+		//transform.GetComponent<Camera>().fieldOfView.To(60, 0.2f);
 	}
 	
 	private void OnArrowCollisionWithTarget()

@@ -23,6 +23,8 @@ public class InputHandler : MonoBehaviour
 		GameEvents.GameLose += OnGameEnd;
 		GameEvents.GameWin += OnGameWin;
 		GameEvents.CameraFollowArrowStart += OnCameraFollowArrowStart;
+		GameEvents.MoveToNextArea += OnMoveNextArea;
+		GameEvents.ReactNextArea += OnReachNextArea;
 	}
 
 	
@@ -32,9 +34,10 @@ public class InputHandler : MonoBehaviour
 		GameEvents.GameLose -= OnGameEnd;
 		GameEvents.GameWin -= OnGameWin;
 		GameEvents.CameraFollowArrowStart -= OnCameraFollowArrowStart;
+		GameEvents.MoveToNextArea -= OnMoveNextArea;
+		GameEvents.ReactNextArea -= OnReachNextArea;
 	}
 
-	
 	private void Start()
 	{
 		_currentInputState = IdleState;
@@ -101,7 +104,7 @@ public class InputHandler : MonoBehaviour
 	public static void PutInCoolDown()
 	{
 		AssignNewState(InputState.Disabled);
-		DOVirtual.DelayedCall(0.25f, TapCoolDown);
+		DOVirtual.DelayedCall(0.3f, TapCoolDown);
 
 	}
 
@@ -121,4 +124,16 @@ public class InputHandler : MonoBehaviour
 	{
 		AssignNewState(InputState.Disabled);
 	}
+	
+	private void OnMoveNextArea()
+	{
+		AssignNewState(InputState.Disabled);
+	}
+	
+	private void OnReachNextArea()
+	{
+		AssignNewState(InputState.Idle);
+	}
+	
+	
 }
