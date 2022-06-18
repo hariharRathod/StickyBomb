@@ -359,6 +359,7 @@
             <e p="EnemyMovement.cs" t="Include" />
             <e p="EnemyRagdollController.cs" t="Include" />
             <e p="EnemyRefbank.cs" t="Include" />
+            <e p="EnemySheildController.cs" t="Include" />
           </e>
           <e p="Events" t="Include">
             <e p="EnemyEvents.cs" t="Include" />
@@ -368,6 +369,7 @@
           </e>
           <e p="Extensions" t="Include">
             <e p="InputExtension.cs" t="Include" />
+            <e p="MyHelpers.cs" t="Include" />
           </e>
           <e p="GameInterfaces.cs" t="Include" />
           <e p="GameLoopManager.cs" t="Include" />

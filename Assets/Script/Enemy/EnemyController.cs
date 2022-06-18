@@ -18,6 +18,9 @@ public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 	[SerializeField] private IExplodDamageable.ExplodableBehaviour explodBehaviour;
 	
 	
+	
+	
+	
 	//socaho kya me sahi karra hu ye
 	public float Health
 	{
@@ -48,7 +51,7 @@ public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 
 	private void OnTapToPlay() => OnReachNextArea();
 	
-	public void DieFromBomb(bool getThrownBack)
+	public void DieFromBombExplosion(bool getThrownBack)
 	{
 		if(_my.isDead) return;
 
@@ -96,7 +99,12 @@ public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 	public bool GetHit(float damage)
 	{
 		if (_my.isDead) return false;
-			
+		
+		if(_my.TryGetComponent(out EnemySheildController enemySheildController))
+			if (!enemySheildController.IsSheildBroken) 
+				return false;
+		
+		
 		_health -= damage;
 		healthCanvas.SetHealth(_health);
 		_my.Animations.GetHit();
@@ -154,7 +162,7 @@ public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 	public bool OnExplodeDamage()
 	{
 		if (explodBehaviour != IExplodDamageable.ExplodableBehaviour.Explodable) return false;
-		DOVirtual.DelayedCall(0.15f, ()=>DieFromBomb(true));
+		DOVirtual.DelayedCall(0.15f, ()=>DieFromBombExplosion(true));
 		return true;
 
 	}

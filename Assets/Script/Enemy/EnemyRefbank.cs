@@ -13,6 +13,7 @@ public class EnemyRefbank : MonoBehaviour
 	public EnemyAnimations Animations { get; private set; }
 
 	public EnemyMovement Movement { get; private set; }
+	
 
 	private void Start()
 	{

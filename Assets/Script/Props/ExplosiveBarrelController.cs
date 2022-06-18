@@ -22,6 +22,8 @@ public class ExplosiveBarrelController : MonoBehaviour,IStickable,IExplodDamagea
 	{
 		if (explodBehaviour != IExplodDamageable.ExplodableBehaviour.Explodable) return false;
 		DOVirtual.DelayedCall(0.15f, ()=>gameObject.SetActive(false));
+		if (!TryGetComponent(out PropExplosion propExplosion)) return false;
+		DOVirtual.DelayedCall(0.06f,()=>propExplosion.Explode());
 		return true;
 	}
 }

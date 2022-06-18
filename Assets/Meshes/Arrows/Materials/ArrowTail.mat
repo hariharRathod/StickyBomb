@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: ArrowTail
   m_Shader: {fileID: 4800000, guid: 5abf659307ba5a849b7dc53ab126f322, type: 3}
-  m_ShaderKeywords: TCP2_MOBILE TCP2_REFLECTIONS_FRESNEL TCP2_RIM_LIGHTING TCP2_RIM_LIGHTING_LIGHTMASK
+  m_ShaderKeywords: TCP2_MOBILE TCP2_REFLECTIONS_FRESNEL TCP2_RIM_LIGHTING_LIGHTMASK
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -146,7 +146,7 @@ Material:
     - _ReflectionSmoothness: 0.5
     - _RenderingMode: 0
     - _RimMax: 1
-    - _RimMin: 0.61
+    - _RimMin: 0.82
     - _SingleIndirectColor: 0
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
@@ -168,7 +168,7 @@ Material:
     - _UseOcclusion: 0
     - _UseOutline: 0
     - _UseReflections: 0
-    - _UseRim: 1
+    - _UseRim: 0
     - _UseRimLightMask: 1
     - _UseShadowTexture: 0
     - _UseSpecular: 0

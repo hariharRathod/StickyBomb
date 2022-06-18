@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: ArrowBody
   m_Shader: {fileID: 4800000, guid: 5abf659307ba5a849b7dc53ab126f322, type: 3}
-  m_ShaderKeywords: TCP2_MOBILE TCP2_REFLECTIONS_FRESNEL TCP2_RIM_LIGHTING TCP2_RIM_LIGHTING_LIGHTMASK
+  m_ShaderKeywords: TCP2_MOBILE TCP2_REFLECTIONS_FRESNEL TCP2_RIM_LIGHTING_LIGHTMASK
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -137,8 +137,8 @@ Material:
     - _RampBandsSmoothing: 0.1
     - _RampOffset: 0
     - _RampScale: 1
-    - _RampSmoothing: 0.802
-    - _RampThreshold: 0.538
+    - _RampSmoothing: 0.731
+    - _RampThreshold: 0.821
     - _RampType: 0
     - _ReceiveShadows: 1
     - _ReceiveShadowsOff: 1
@@ -168,14 +168,14 @@ Material:
     - _UseOcclusion: 0
     - _UseOutline: 0
     - _UseReflections: 0
-    - _UseRim: 1
+    - _UseRim: 0
     - _UseRimLightMask: 1
     - _UseShadowTexture: 0
     - _UseSpecular: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.990566, g: 0.2756764, b: 0.28289908, a: 1}
+    - _BaseColor: {r: 0.11320752, g: 0.11267352, b: 0.112679355, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HColor: {r: 1, g: 1, b: 1, a: 1}

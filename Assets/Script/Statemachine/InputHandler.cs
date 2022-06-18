@@ -41,7 +41,10 @@ public class InputHandler : MonoBehaviour
 	private void Start()
 	{
 		_currentInputState = IdleState;
-		InputExtensions.IsUsingTouch = false;
+		InputExtensions.IsUsingTouch = Application.platform != RuntimePlatform.WindowsEditor &&
+									   (Application.platform == RuntimePlatform.Android ||
+										Application.platform == RuntimePlatform.IPhonePlayer);
+		InputExtensions.TouchInputDivisor = MyHelpers.RemapClamped(1920, 2400, 30, 20, Screen.height);
 		var player = GameObject.FindGameObjectWithTag("PlayerRoot");
 		var refbank = player.GetComponent<PlayerRefBank>();
 		_ = new InputStateBase(refbank);

@@ -458,7 +458,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: {x: 0.00201, y: 0.00361, z: 0.01326}
+        value: {x: 0.00212, y: 0.00429, z: 0.01344}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -483,7 +483,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: {x: 0, y: 0.131, z: -0.467}
+        value: {x: 0, y: -0, z: -0.251}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -493,7 +493,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Camera/Player Hands/hands_rig/arm.L/forearm.L/hand.L/BowHolder/BowInHand/BowLine/ArrowHolder/Arrow
+    path: Camera/Player Hands/hands_rig/arm.L/forearm.L/hand.L/BowHolder/BowInHand/BowLine/ArrowHolder
   m_ScaleCurves: []
   m_FloatCurves:
   - curve:
@@ -607,7 +607,7 @@ AnimationClip:
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 267330447
+      path: 252685302
       attribute: 1
       script: {fileID: 0}
       typeID: 4
@@ -1588,7 +1588,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.00201
+        value: 0.00212
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1616,7 +1616,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.00361
+        value: 0.00429
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1644,7 +1644,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.01326
+        value: 0.01344
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -2212,63 +2212,6 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalPosition.x
-    path: Camera/Player Hands/hands_rig/arm.L/forearm.L/hand.L/BowHolder/BowInHand/BowLine/ArrowHolder/Arrow
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0.131
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalPosition.y
-    path: Camera/Player Hands/hands_rig/arm.L/forearm.L/hand.L/BowHolder/BowInHand/BowLine/ArrowHolder/Arrow
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: -0.467
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalPosition.z
-    path: Camera/Player Hands/hands_rig/arm.L/forearm.L/hand.L/BowHolder/BowInHand/BowLine/ArrowHolder/Arrow
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
         value: 88
         inSlope: 0
         outSlope: 0
@@ -2476,6 +2419,63 @@ AnimationClip:
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
     path: Camera/Player Hands/hands_rig/arm.R/forearm.R/hand.R/finger21.R/finger22.R/finger22.R.001
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.x
+    path: Camera/Player Hands/hands_rig/arm.L/forearm.L/hand.L/BowHolder/BowInHand/BowLine/ArrowHolder
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.y
+    path: Camera/Player Hands/hands_rig/arm.L/forearm.L/hand.L/BowHolder/BowInHand/BowLine/ArrowHolder
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -0.251
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalPosition.z
+    path: Camera/Player Hands/hands_rig/arm.L/forearm.L/hand.L/BowHolder/BowInHand/BowLine/ArrowHolder
     classID: 4
     script: {fileID: 0}
   m_EulerEditorCurves:

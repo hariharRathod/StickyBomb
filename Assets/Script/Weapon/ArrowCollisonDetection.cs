@@ -8,7 +8,7 @@ public class ArrowCollisonDetection : MonoBehaviour
 	private void Start()
 	{
 		rb = GetComponent<Rigidbody>();
-		_trailRenderer = GetComponent<TrailRenderer>();
+		_trailRenderer = transform.GetComponentInChildren<TrailRenderer>();
 	}
 	private void OnCollisionEnter(Collision other)
 	{
@@ -23,7 +23,8 @@ public class ArrowCollisonDetection : MonoBehaviour
 		{
 			rb.isKinematic = true;
 		}
-		
+
+		if (other.collider.CompareTag("Player")) return;
 		WeaponEvents.InvokeArrowCollisionWithObjects();
 		_trailRenderer.enabled = false;
 

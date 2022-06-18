@@ -88,6 +88,7 @@ public class ArrowShootMechanic : MonoBehaviour
 	{
 		_rotY += inputDelta.x * aimSpeedHorizontal * Time.deltaTime;
 		_rotX -= inputDelta.y * aimSpeedVertical * Time.deltaTime;
+		
  
 		_rotY = Mathf.Clamp(_rotY, _initRotAxisY - clampAngleHorizontal, _initRotAxisY + clampAngleHorizontal);
 		_rotX = Mathf.Clamp(_rotX, _initRotAxisX - clampAngleVertical, _initRotAxisX + clampAngleVertical);
