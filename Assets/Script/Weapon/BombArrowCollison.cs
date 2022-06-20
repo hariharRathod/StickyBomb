@@ -21,27 +21,12 @@ public class BombArrowCollison : MonoBehaviour
 		if (other.collider.CompareTag("Arrow"))
 		{
 			
-			/*if (_my.BombStickCollison.OnEnemy)
-			{
-				
-				WeaponEvents.InvokeArrowCollisonWithTargetDone();
-				DOVirtual.DelayedCall(0.15f, () =>
-				{
-					explosionParticleSystem.transform.parent = null;
-					//iska kuch socho bhut he zyada dependancys hai...
-					_my.BombStickCollison.Enemy.Controller.DieFromBomb(true);
-					gameObject.SetActive(false);
-					
-				});
-				
-			}*/
-
 			if (_my.BombController.myParent==null) return;
 
 			if (!_my.BombController.myParent.TryGetComponent(out IExplodDamageable explodDamageable)) return;
 			
 			
-			if(!explodDamageable.OnExplodeDamage()) return;
+			if(!explodDamageable.OnExplodeDamage(this.gameObject)) return;
 			explosionParticleSystem.SetActive(true);
 			WeaponEvents.InvokeArrowCollisonWithTargetDone();
 			
@@ -51,9 +36,7 @@ public class BombArrowCollison : MonoBehaviour
 				gameObject.SetActive(false);
 					
 			});
-			
-			
-			
+	
 		}
 	}
 }

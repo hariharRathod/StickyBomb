@@ -16,7 +16,7 @@ public class GroundController : MonoBehaviour,IStickable,IExplodDamageable
 		return true;
 	}
 
-	public bool OnExplodeDamage()
+	public bool OnExplodeDamage(GameObject bomb)
 	{
 		if (explodBehaviour != IExplodDamageable.ExplodableBehaviour.Explodable) return false;
 		return true;

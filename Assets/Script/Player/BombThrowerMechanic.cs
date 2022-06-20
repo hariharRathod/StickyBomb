@@ -141,6 +141,9 @@ public class BombThrowerMechanic : MonoBehaviour
 		if(hitInfo.collider.CompareTag("ExplosiveBarrel"))
 			hitMarker.position = hitInfo.point + hitInfo.normal * 0.1f;
 		
+		if(hitInfo.collider.CompareTag("ShieldSurface"))
+			hitMarker.position = hitInfo.point + hitInfo.normal * 0.1f;
+		
 		hitMarker.rotation = Quaternion.LookRotation(hitInfo.normal);
 	}
 	

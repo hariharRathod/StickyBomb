@@ -20,6 +20,10 @@ public class EnemyBodyCollider : MonoBehaviour
 	{
 		if (other.collider.CompareTag("Arrow"))
 		{
+			if(_my.TryGetComponent(out EnemySheildController enemySheildController))
+				if (!enemySheildController.IsSheildBroken)
+					return;
+			
 			print("Give damage");
 			WeaponEvents.InvokeArrowCollisonWithTargetDone();
 			other.collider.GetComponent<Rigidbody>().isKinematic = true;

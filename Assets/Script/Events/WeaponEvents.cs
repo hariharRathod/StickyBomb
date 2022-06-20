@@ -11,6 +11,8 @@ public static class WeaponEvents
 	public static event Action ArrowCollisonWithTargetDone;
 	
 	public static event Action<Transform,GameObject> ArrowRealeaseEvent;
+	
+	
 
 
 	public static void InvokeWeaponActivate() => WeaponChangeEvent?.Invoke();

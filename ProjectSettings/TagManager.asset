@@ -13,6 +13,8 @@ TagManager:
   - MainCanvas
   - ArrowFollowCamera
   - ExplosiveBarrel
+  - ShieldSurface
+  - IncrementGate
   layers:
   - Default
   - TransparentFX

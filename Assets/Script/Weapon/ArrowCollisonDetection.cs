@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class ArrowCollisonDetection : MonoBehaviour
 {
-	private Rigidbody rb;
+	private Rigidbody _rb;
 	private TrailRenderer _trailRenderer;
 
 	private void Start()
 	{
-		rb = GetComponent<Rigidbody>();
+		_rb = GetComponent<Rigidbody>();
 		_trailRenderer = transform.GetComponentInChildren<TrailRenderer>();
 	}
 	private void OnCollisionEnter(Collision other)
@@ -15,14 +15,32 @@ public class ArrowCollisonDetection : MonoBehaviour
 		if (other.collider.CompareTag("Bomb"))
 		{
 			print("ArrowCollision: " + other.collider.gameObject.name);
-			rb.isKinematic = true;
+			_rb.isKinematic = true;
 			transform.parent = other.collider.transform;
 		}
 
 		if (other.collider.CompareTag("Ground"))
 		{
-			rb.isKinematic = true;
+			_rb.isKinematic = true;
 		}
+
+		if (other.transform.parent)
+		{
+			if (other.transform.parent.TryGetComponent(out ShieldController parentShieldController))
+			{
+				transform.parent = other.transform;
+				_rb.isKinematic = true;
+			}
+
+			
+		}
+
+		if (other.transform.TryGetComponent(out ShieldController shieldController))
+		{
+			transform.parent = other.transform;
+			_rb.isKinematic = true;
+		}
+
 
 		if (other.collider.CompareTag("Player")) return;
 		WeaponEvents.InvokeArrowCollisionWithObjects();

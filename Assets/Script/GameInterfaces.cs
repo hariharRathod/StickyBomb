@@ -24,5 +24,5 @@ public interface IExplodDamageable
 		NotExplodable
 		
 	}
-	bool OnExplodeDamage();
+	bool OnExplodeDamage(GameObject bomb);
 }

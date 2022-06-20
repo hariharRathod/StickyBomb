@@ -375,6 +375,10 @@
           <e p="GameLoopManager.cs" t="Include" />
           <e p="GroundAreaDetection.cs" t="Include" />
           <e p="GroundController.cs" t="Include" />
+          <e p="IncrementGate" t="Include">
+            <e p="IncrementGateController.cs" t="Include" />
+            <e p="IncrementGateMovement.cs" t="Include" />
+          </e>
           <e p="LevelFlowController.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="ArrowShootMechanic.cs" t="Include" />
@@ -390,6 +394,7 @@
           <e p="Props" t="Include">
             <e p="ExplosiveBarrelController.cs" t="Include" />
             <e p="PropExplosion.cs" t="Include" />
+            <e p="ShieldController.cs" t="Include" />
           </e>
           <e p="Statemachine" t="Include">
             <e p="DragToAimState.cs" t="Include" />

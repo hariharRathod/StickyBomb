@@ -28,7 +28,9 @@ public class EnemyMovement : MonoBehaviour
 		if(!_chasing) return;
 		if(Vector3.Distance(_currentTarget.position, _transform.position) >
 		   (_chasingPlayer ? playerAttackDistance : enemyAttackDistance)) return;
-			
+
+		if (_my.isDead) return;
+		
 		StopMovement();
 		DoAttack();
 	}

@@ -1,4 +1,5 @@
 using DG.Tweening;
+using Unity.Mathematics;
 using UnityEngine;
 using Input = UnityEngine.Windows.Input;
 
@@ -10,6 +11,7 @@ public class ArrowShootMechanic : MonoBehaviour
 	[SerializeField] private float aimSpeedVertical;
 	[SerializeField] private float clampAngleHorizontal;
 	[SerializeField] private float clampAngleVertical;
+	[SerializeField] private float MultipleArrowRadius;
 	
 	
 	private float _rotX, _rotY, _initRotAxisX, _initRotAxisY;
@@ -20,6 +22,14 @@ public class ArrowShootMechanic : MonoBehaviour
 	private Transform _player,_targetTransform;
 	private Quaternion _playerDefaultRotation;
 	private Tween arrowRotation;
+
+	private int arrowsCount = 0;
+
+	public int ArrowsCount
+	{
+		get => arrowsCount;
+		set => arrowsCount = value;
+	}
 
 	public Transform HitMarker
 	{
@@ -79,7 +89,13 @@ public class ArrowShootMechanic : MonoBehaviour
 			hitMarker.position = hitInfo.point + hitInfo.normal * 0.1f;
 		
 		if(hitInfo.collider.CompareTag("ExplosiveBarrel"))
-			hitMarker.position = hitInfo.point + hitInfo.normal * 0.1f;
+			hitMarker.position = hitInfo.point + hitInfo.normal * 0.08f;
+		
+		if(hitInfo.collider.CompareTag("ShieldSurface"))
+			hitMarker.position = hitInfo.point + hitInfo.normal * 0.08f;
+		
+		if(hitInfo.collider.CompareTag("IncrementGate"))
+			hitMarker.position = hitInfo.point + hitInfo.normal * 0.05f;
 			
 		hitMarker.rotation = Quaternion.LookRotation(hitInfo.normal);
 	}
@@ -128,7 +144,6 @@ public class ArrowShootMechanic : MonoBehaviour
 	public void LaunchArrow()
 	{
 		var arrow = Instantiate(arrowPrefab, startPoint.position, startPoint.rotation);
-
 		var rb = arrow.GetComponent<Rigidbody>();
 		var dirToTarget = _targetPos - arrow.transform.position;
 		//arrow.transform.rotation = Quaternion.LookRotation(dirToTarget,Vector3.up);
@@ -152,6 +167,59 @@ public class ArrowShootMechanic : MonoBehaviour
 	{
 		hitMarker.gameObject.SetActive(false);
 	}
-	
-	
+
+	public void ShootMutipleArrows(int number,GateType gateType,Transform initialArrow,Transform spwanPoint)
+	{
+		switch (gateType)
+		{
+			case GateType.Add:
+			{
+				arrowsCount += number;
+			}
+				break;
+			case GateType.Multiply:
+			{
+				arrowsCount *= number;
+			}
+				break;
+		}
+
+
+		if (arrowsCount <= 0) return;
+
+		var initialRot = initialArrow.rotation;
+
+		for (int i = 0; i < arrowsCount; i++)
+		{
+			var step = 90 / arrowsCount;
+			var arrow = Instantiate(arrowPrefab, spwanPoint.position, Quaternion.identity) as GameObject;
+			arrow.GetComponent<MeshCollider>().enabled = false;
+			arrow.transform.rotation = initialRot * quaternion.LookRotation(Vector3.up * (step * i),Vector3.up);
+			
+		}
+
+
+		/*for (int i = 0; i < arrowsCount; i++)
+		{
+			var radians = 2 * Mathf.PI / arrowsCount * i;
+
+			var vertical = Mathf.Sin(radians);
+			var horizontal = Mathf.Cos(radians);
+			
+			var spwanDir= new Vector3(horizontal,vertical,0);
+
+			var spwanpos = spwanPoint.position + spwanDir * MultipleArrowRadius;
+
+			var arrow = Instantiate(arrowPrefab, spwanpos, Quaternion.identity) as GameObject;
+			
+			arrow.transform.Translate(0,arrow.transform.localScale.y /2,0);
+
+			var initRot = arrow.transform.rotation;
+
+			var firstArrowRot = initRot * Quaternion.LookRotation(Vector3.up * 45f);
+		}*/
+
+	}
+
+
 }
