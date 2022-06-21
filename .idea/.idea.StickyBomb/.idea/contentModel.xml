@@ -403,6 +403,9 @@
           </e>
           <e p="Weapon" t="Include">
             <e p="ArrowCollisonDetection.cs" t="Include" />
+            <e p="ArrowController.cs" t="Include" />
+            <e p="ArrowRefBank.cs" t="Include" />
+            <e p="ArrowShootProjectileController.cs" t="Include" />
             <e p="BombArrowCollison.cs" t="Include" />
             <e p="BombController.cs" t="Include" />
             <e p="BombRefBank.cs" t="Include" />

@@ -40,7 +40,11 @@ public class IncrementGateController : MonoBehaviour
 
 	private void OnTriggerEnter(Collider other)
 	{
-		if(other.CompareTag("Arrow"))
+		if (other.CompareTag("Arrow"))
+		{
 			_playerRefBank.ArrowShoot.ShootMutipleArrows(number,gateType,other.transform,transform);
+			other.gameObject.SetActive(false);
+		}
+			
 	}
 }

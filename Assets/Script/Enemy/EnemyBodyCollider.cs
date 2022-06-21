@@ -26,6 +26,7 @@ public class EnemyBodyCollider : MonoBehaviour
 			
 			print("Give damage");
 			WeaponEvents.InvokeArrowCollisonWithTargetDone();
+			other.collider.GetComponent<ArrowShootProjectileController>().ICameFromIncrementGate = false;
 			other.collider.GetComponent<Rigidbody>().isKinematic = true;
 			other.collider.transform.parent = transform;
 			other.collider.enabled = false;
