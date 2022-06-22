@@ -26,8 +26,12 @@ public class ArrowCollisonDetection : MonoBehaviour
 
 		if (other.collider.CompareTag("Ground"))
 		{
-			_projectileController.ICameFromIncrementGate = false;
 			_rb.isKinematic = true;
+			if (!_projectileController.ICameFromIncrementGate) return;
+			//ye singlecast ke tarah use hora hai abhi bhi, so change it,koi dusra tareka dekhna iska .................
+			WeaponEvents.InvokeOnMultipleArrowCollison();	
+			_projectileController.ICameFromIncrementGate = false;
+			
 		}
 
 		if (other.transform.parent)
@@ -35,8 +39,15 @@ public class ArrowCollisonDetection : MonoBehaviour
 			if (other.transform.parent.TryGetComponent(out ShieldController parentShieldController))
 			{
 				transform.parent = other.transform;
-				_projectileController.ICameFromIncrementGate = false;
 				_rb.isKinematic = true;
+				
+				
+				if (!_projectileController.ICameFromIncrementGate) return;
+				//ye singlecast ke tarah use hora hai abhi bhi, so change it,koi dusra tareka dekhna iska .................
+				WeaponEvents.InvokeOnMultipleArrowCollison();	
+				_projectileController.ICameFromIncrementGate = false;
+				
+				
 			}
 
 			
@@ -45,8 +56,15 @@ public class ArrowCollisonDetection : MonoBehaviour
 		if (other.transform.TryGetComponent(out ShieldController shieldController))
 		{
 			transform.parent = other.transform;
-			_projectileController.ICameFromIncrementGate = false;
+			
 			_rb.isKinematic = true;
+			
+			if (!_projectileController.ICameFromIncrementGate) return;
+			//ye singlecast ke tarah use hora hai abhi bhi, so change it,koi dusra tareka dekhna iska .................
+			WeaponEvents.InvokeOnMultipleArrowCollison();	
+			_projectileController.ICameFromIncrementGate = false;
+			
+			
 		}
 
 

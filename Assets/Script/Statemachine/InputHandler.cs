@@ -72,15 +72,12 @@ public class InputHandler : MonoBehaviour
 
 	private InputStateBase HandleInput()
 	{
-		if (InputExtensions.GetFingerDown())
+		
+		if (InputExtensions.GetFingerHeld()) //InputExtensions.GetFingerDown()
 		{
-			//abhi ke liye taptoplay yaha invoke karra hu hat dena isseee..........
-			// abhi ke liye comment kiya hai sirf puri taraf hata saleeeeeeee
-			//GameEvents.InvokeOnTapToPlay();
+			
 			return DragToAimState;
 		}
-
-		
 
 		return _currentInputState;
 	}

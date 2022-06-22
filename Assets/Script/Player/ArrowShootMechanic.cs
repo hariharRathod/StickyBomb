@@ -88,6 +88,7 @@ public class ArrowShootMechanic : MonoBehaviour
 
 	public void ArrowAim(RaycastHit hitInfo,Vector3 hitPoint)
 	{
+		hitMarker.gameObject.SetActive(true);
 		_my.PlayerAnimation.Anim.SetBool(PlayerAnimations.ArrowAim,true);
 		_my.PlayerAnimation.Anim.SetBool(PlayerAnimations.ArrowShoot,false);
 		
@@ -164,6 +165,7 @@ public class ArrowShootMechanic : MonoBehaviour
 		arrow.transform.DOMove(_targetPos, 0.2f).SetEase(Ease.Linear).OnComplete(
 			() =>
 			{
+				HideHitMarker();
 				//arrow.transform.DOMoveZ(arrow.transform.position.z + 0.05f, 0.01f);
 				//rb.isKinematic = true;
 			});
@@ -172,10 +174,15 @@ public class ArrowShootMechanic : MonoBehaviour
 	
 	private void OnGameWin()
 	{
-		hitMarker.gameObject.SetActive(false);
+		HideHitMarker();
 	}
 	
 	private void OnCameraFollowArrowStart()
+	{
+		HideHitMarker();
+	}
+
+	public void HideHitMarker()
 	{
 		hitMarker.gameObject.SetActive(false);
 	}
@@ -186,12 +193,12 @@ public class ArrowShootMechanic : MonoBehaviour
 		{
 			case GateType.Add:
 			{
-				_arrowsCount += number;
+				_arrowsCount = number;
 			}
 				break;
 			case GateType.Multiply:
 			{
-				_arrowsCount *= number;
+				_arrowsCount = number;
 			}
 				break;
 		}
@@ -214,7 +221,7 @@ public class ArrowShootMechanic : MonoBehaviour
 			var position = initialArrow.position;
 			var spwanpos = position + spwanDir * multipleArrowRadius;
 			var random = Random.Range(-1f, 2f);
-			random *= 0.15f;
+			random *= 0.4f;
 			spwanpos.y = position.y + random;
 			
 
@@ -227,8 +234,6 @@ public class ArrowShootMechanic : MonoBehaviour
 
 			_arrowsFromIncrementGateList.Add(arrow);
 
-			arrow.TryGetComponent(out ArrowController arrowController);
-			if(arrowController){arrowController.DestroyArrows(_arrowsFromIncrementGateList);}
 
 			if (!arrow.TryGetComponent(out ArrowShootProjectileController arrowShootProjectileController))
 			{
@@ -239,8 +244,20 @@ public class ArrowShootMechanic : MonoBehaviour
 			arrowShootProjectileController.ShootArrowInProjectile(shootSpeedMin,shootSpeedMax);
 
 		}
+		
+		
+		DOVirtual.DelayedCall(6f, () =>
+		{
+			if (_arrowsFromIncrementGateList.Count < 15) return;
+
+			for (int i = 0; i < 10; i++)
+			{
+				_arrowsFromIncrementGateList[i].SetActive(false);
+			}
+			
+			
+		});
 
 	}
-
 
 }

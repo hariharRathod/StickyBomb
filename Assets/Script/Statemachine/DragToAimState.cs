@@ -3,8 +3,6 @@ using UnityEngine;
 
 public class DragToAimState : InputStateBase
 {
-	
-
 	public override void OnEnter()
 	{
 		print("In drag to aim state");
@@ -12,10 +10,16 @@ public class DragToAimState : InputStateBase
 
 	public override void Execute()
 	{
+
 		var ray = Player.Camera.ScreenPointToRay(InputExtensions.GetInputPosition());
 		Debug.Log("player camera raycast: " + Player.Camera.tag, Player.Camera);
 
-		if (!Physics.Raycast(ray, out var hit, MaxRayDistance)) return;
+		if (!Physics.Raycast(ray, out var hit, MaxRayDistance))
+		{
+			
+			return;
+		}
+		
         //isko refactor kar bhai...............
 		if(hit.transform.CompareTag("TargetEnemy"))
 			if (hit.transform.root.GetComponent<EnemyRefbank>().area != LevelFlowController.only.currentArea) return;
@@ -31,6 +35,7 @@ public class DragToAimState : InputStateBase
 		}
 		else if(Player.WeaponSelect.currentWeapon == WeaponSelectManager.Weapon.Arrow)
 		{
+			print("Arrow aim");
 			Player.ArrowShoot.ArrowAim(hit,hit.point);
 			Player.ArrowShoot.Aim(InputExtensions.GetInputDelta());
 		}
@@ -59,6 +64,7 @@ public class DragToAimState : InputStateBase
 
 	public override void OnExit()
 	{
-		
+		Player.BombThrower.HideTrajectory();
+		Player.ArrowShoot.HideHitMarker();
 	}
 }

@@ -28,6 +28,7 @@ public class BombArrowCollison : MonoBehaviour
 			
 			if(!explodDamageable.OnExplodeDamage(this.gameObject)) return;
 			explosionParticleSystem.SetActive(true);
+			WeaponEvents.InvokeOnBombExplosion();
 			WeaponEvents.InvokeArrowCollisonWithTargetDone();
 			
 			DOVirtual.DelayedCall(0.15f, () =>

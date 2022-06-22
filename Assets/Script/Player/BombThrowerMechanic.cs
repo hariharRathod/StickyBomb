@@ -94,9 +94,10 @@ public class BombThrowerMechanic : MonoBehaviour
 	
 	private float LaunchBomb(Vector3 hitPoint)
 	{
-		var bomb = Instantiate(bombPrefab, startPoint.position, startPoint.rotation);
+		var position = startPoint.position;
+		var bomb = Instantiate(bombPrefab, position, startPoint.rotation);
 		var rb = bomb.GetComponent<Rigidbody>();
-		var time = CalculateInitialVelocity(startPoint.position, hitPoint, out var initialVelocity);
+		var time = CalculateInitialVelocity(position, hitPoint, out var initialVelocity);
 		rb.AddForce(initialVelocity, ForceMode.VelocityChange);
 		rb.AddTorque(Vector3.right * bananaTorque, ForceMode.VelocityChange);
 		InputHandler.PutInCoolDown();
@@ -131,6 +132,7 @@ public class BombThrowerMechanic : MonoBehaviour
 			
 		_line.positionCount = trajectoryResolution - 1;
 		_line.SetPositions(_trajectoryPath);
+		
 
 		if(hitInfo.collider.CompareTag("Ground"))
 			hitMarker.position = hitInfo.point + hitInfo.normal * 0.01f;

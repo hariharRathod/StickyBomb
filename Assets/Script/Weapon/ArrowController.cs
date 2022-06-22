@@ -4,10 +4,29 @@ using DG.Tweening;
 
 public class ArrowController : MonoBehaviour
 {
-	public void DestroyArrows(List<GameObject> arrowList)
+	[SerializeField] private ParticleSystem targetHitEffect;
+
+	
+
+	private void Start()
 	{
-		if (!arrowList.Contains(this.gameObject)) return;
-		//DOVirtual.DelayedCall(3f, () => Destroy(this.gameObject));
+		
 	}
+
+	public void OnArrowCollisonWithEnemy(Transform enemy)
+	{
+		EnableParticleHitEffect();
+		GetComponent<ArrowShootProjectileController>().ICameFromIncrementGate = false;
+		GetComponent<Rigidbody>().isKinematic = true;
+		transform.parent = enemy;
+		GetComponent<MeshCollider>().enabled = false;
+	}
+
+	public void EnableParticleHitEffect()
+	{
+		targetHitEffect.gameObject.SetActive(true);
+	}
+
+	
 
 }

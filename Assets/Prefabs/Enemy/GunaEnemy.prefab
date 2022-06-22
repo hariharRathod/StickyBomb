@@ -388,15 +388,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 528bc01bb633a434a8daae463b329f93, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.11
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 528bc01bb633a434a8daae463b329f93, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.196
+      value: 1.215
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 528bc01bb633a434a8daae463b329f93, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.53
+      value: 8.47
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 528bc01bb633a434a8daae463b329f93, type: 3}
       propertyPath: m_LocalRotation.w
@@ -676,7 +676,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.25
-  m_Speed: 0.4
+  m_Speed: 0.25
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -755,7 +755,7 @@ MonoBehaviour:
   - {fileID: 8629002588531171394}
   - {fileID: 4884993722411547868}
   regularForce: 15
-  throwBackForce: 40
+  throwBackForce: 35
   upForce: 15
   skin: {fileID: 6487922617319788836}
   shouldTurnToGrey: 1

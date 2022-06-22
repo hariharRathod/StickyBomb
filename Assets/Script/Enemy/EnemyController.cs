@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using DG.Tweening;
 using UnityEngine;
 
@@ -83,6 +82,7 @@ public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 	{
 		if(_my.area != LevelFlowController.only.currentArea) return;
 		print("Reach next area enemy");
+
 		StartChasingPlayer();
 		
 	}

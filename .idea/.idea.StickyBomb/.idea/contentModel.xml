@@ -347,6 +347,7 @@
         </e>
         <e p="Script" t="Include">
           <e p="ArrowFollowCamera.cs" t="Include" />
+          <e p="CameraController.cs" t="Include" />
           <e p="Canvas" t="Include">
             <e p="CanvasLookAtCam.cs" t="Include" />
             <e p="HealthCanvas.cs" t="Include" />
@@ -360,6 +361,11 @@
             <e p="EnemyRagdollController.cs" t="Include" />
             <e p="EnemyRefbank.cs" t="Include" />
             <e p="EnemySheildController.cs" t="Include" />
+            <e p="Gaint" t="Include">
+              <e p="EnemyGaintController.cs" t="Include" />
+              <e p="EnemyGaintRagdollController.cs" t="Include" />
+              <e p="EnemyGaintRefBank.cs" t="Include" />
+            </e>
           </e>
           <e p="Events" t="Include">
             <e p="EnemyEvents.cs" t="Include" />
