@@ -362,6 +362,7 @@
             <e p="EnemyRefbank.cs" t="Include" />
             <e p="EnemySheildController.cs" t="Include" />
             <e p="Gaint" t="Include">
+              <e p="EnemyGaintBodyCollider.cs" t="Include" />
               <e p="EnemyGaintController.cs" t="Include" />
               <e p="EnemyGaintRagdollController.cs" t="Include" />
               <e p="EnemyGaintRefBank.cs" t="Include" />

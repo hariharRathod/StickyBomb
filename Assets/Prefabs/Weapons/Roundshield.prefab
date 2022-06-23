@@ -123,8 +123,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stickingBehaviour: 0
   explodBehaviour: 0
-  explosionForce: 15
-  explosionRadius: 5
+  explosionForce: 20
+  explosionRadius: 10
   upwardsModifier: 1
 --- !u!1 &5051789709391850612 stripped
 GameObject:

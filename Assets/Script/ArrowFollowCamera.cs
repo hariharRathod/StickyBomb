@@ -26,9 +26,11 @@ public class ArrowFollowCamera : MonoBehaviour
 		}
 
 		transform.parent = _arrowToFollow.transform;
+		print("_arrowToFollow: " + _arrowToFollow.name);
 
 		
-		transform.localPosition =new Vector3(-1.6f, 0, -1.5f);
+		transform.localPosition =new Vector3(-2f, 0, -2f);
+		
 		transform.localEulerAngles = new Vector3(0,50f,0);
 		//
 		//transform.GetComponent<Camera>().fieldOfView.To(60, 0.2f);

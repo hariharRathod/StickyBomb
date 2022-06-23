@@ -48,6 +48,7 @@ public class ArrowShootMechanic : MonoBehaviour
 		WeaponEvents.OnBombSelectEvent += OnBombWeaponSelected;
 		GameEvents.GameWin += OnGameWin;
 		GameEvents.CameraFollowArrowStart += OnCameraFollowArrowStart;
+		GameEvents.ReactNextArea += OnReachNextArea;
 	}
 
 	private void OnDisable()
@@ -56,15 +57,18 @@ public class ArrowShootMechanic : MonoBehaviour
 		WeaponEvents.OnBombSelectEvent -= OnBombWeaponSelected;
 		GameEvents.GameWin -= OnGameWin;
 		GameEvents.CameraFollowArrowStart -= OnCameraFollowArrowStart;
+		GameEvents.ReactNextArea -= OnReachNextArea;
 	}
 
+	
 	private void Start()
 	{
 		_my = GetComponent<PlayerRefBank>();
 		_player = GameObject.FindGameObjectWithTag("PlayerRoot").transform;
-		_areaInitRotation = _player.rotation;
+		
 		_arrowsFromIncrementGateList=new List<GameObject>();
 		
+		_areaInitRotation = _player.rotation;
 		var rot = _areaInitRotation.eulerAngles;
 
 		_initRotAxisX = rot.x;
@@ -258,6 +262,18 @@ public class ArrowShootMechanic : MonoBehaviour
 			
 		});
 
+	}
+	
+	private void OnReachNextArea()
+	{
+		_areaInitRotation = _player.rotation;
+		var rot = _areaInitRotation.eulerAngles;
+
+		_initRotAxisX = rot.x;
+		_initRotAxisY = rot.y;
+		
+		_rotY = rot.y;
+		_rotX = rot.x;
 	}
 
 }

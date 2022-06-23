@@ -2,5 +2,9 @@ using UnityEngine;
 
 public class SplineTriggerController : MonoBehaviour
 {
-	public void StopFollowing() => GameEvents.InvokeOnReactNextArea();
+	public void StopFollowing()
+	{
+		print("Invoke reach next area");
+		GameEvents.InvokeOnReactNextArea();
+	}
 }

@@ -14,6 +14,7 @@ public class GameLoopManager : MonoBehaviour
 	private bool _follow,_enterCheckForCameraFollow;
 
 	private Transform _target;
+	private PlayerRefBank _playerRefBank;
 
 	public static bool InSlowMotion => _inSlowMotion;
 	
@@ -37,7 +38,8 @@ public class GameLoopManager : MonoBehaviour
 	{
 		_startTimeScale = Time.timeScale;
 		_startFixedDeltaTime = Time.fixedDeltaTime;
-		
+		_playerRefBank = GameObject.FindGameObjectWithTag("PlayerRoot").GetComponent<PlayerRefBank>();
+
 	}
 
 	private void Update()
@@ -64,11 +66,14 @@ public class GameLoopManager : MonoBehaviour
 	{
 		Time.timeScale = _startTimeScale;
 		Time.fixedDeltaTime = _startFixedDeltaTime;
+		
 	}
 
 	private void CheckForCameraFollow(Transform target, GameObject arrow)
 	{
 		_target = target;
+		_playerRefBank.Controller.SetArrowToFollow(arrow);
+		
 		_enterCheckForCameraFollow = true;
 		SwitchOffAnimatorOfTarget(target);
 		//print("Inside checkfor camera follow");
@@ -82,15 +87,20 @@ public class GameLoopManager : MonoBehaviour
 		
 		if (!LevelFlowController.only.IsThisLastEnemy())
 		{
-			_follow = false; return;}
+			_follow = false; return;
+		}
 		//print("is this last enemy");
 		if (target.CompareTag("Bomb"))
 		{
+
+			if (!target.TryGetComponent(out BombController bombController)) return;
+
+			if (!bombController.IAmOnEnemy) return;
+			
 			print("bomb");
 			Debug.DrawLine(Camera.main.transform.position, target.position, Color.yellow, 5f, false);
 			_follow = true;
 			OnFollowArrowIsTrue();
-			
 			
 			return;
 		}
@@ -116,6 +126,13 @@ public class GameLoopManager : MonoBehaviour
 
 	private void OnFollowArrowIsTrue()
 	{
+		if (!LevelFlowController.only.IsThisLastEnemy())
+		{
+			_follow = false; 
+			return;
+			
+		}
+		
 		GameEvents.InvokeOnCameraFollowArrowStart();
 		StartSlowMotion();
 		_inSlowMotion = true;

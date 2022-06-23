@@ -17,13 +17,13 @@ public class PlayerController : MonoBehaviour
 
 	private void OnEnable()
 	{
-		WeaponEvents.ArrowRealeaseEvent += GetArrowFromArrowReleaseEvent;
+		//WeaponEvents.ArrowRealeaseEvent += GetArrowFromArrowReleaseEvent;
 		GameEvents.CameraFollowArrowStart += OnCameraFollowArrowStart;
 	}
 
 	private void OnDisable()
 	{
-		WeaponEvents.ArrowRealeaseEvent -= GetArrowFromArrowReleaseEvent;
+		//WeaponEvents.ArrowRealeaseEvent -= GetArrowFromArrowReleaseEvent;
 		GameEvents.CameraFollowArrowStart -= OnCameraFollowArrowStart;
 	}
 
@@ -31,6 +31,13 @@ public class PlayerController : MonoBehaviour
 	private void GetArrowFromArrowReleaseEvent(Transform target,GameObject arrow)
 	{
 		_arrowToFollow = arrow;
+		_arrowToFollow.gameObject.name = "ArrowCameraFollow";
+	}
+	
+	public void SetArrowToFollow(GameObject arrow)
+	{
+		_arrowToFollow = arrow;
+		_arrowToFollow.gameObject.name = "ArrowCameraFollow";
 	}
 
 	private void OnCameraFollowArrowStart()

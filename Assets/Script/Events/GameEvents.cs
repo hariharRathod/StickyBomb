@@ -9,8 +9,6 @@ public class GameEvents
 	public static event Action MoveToNextArea,ReactNextArea;
 	public static event Action CameraFollowArrowStart;
 	
-
-
 	public static void InvokeOnTapToPlay()
 	{
 		TapToPlay?.Invoke();

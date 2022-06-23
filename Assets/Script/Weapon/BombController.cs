@@ -4,5 +4,6 @@ using UnityEngine;
 
 public class BombController : MonoBehaviour
 {
+	public bool IAmOnEnemy;
 	public GameObject myParent;
 }

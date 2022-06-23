@@ -24,13 +24,15 @@ public class LevelFlowController : MonoBehaviour
 	private void OnEnable()
 	{
 		EnemyEvents.EnemyDied +=OnEnemyDied;
-		GameEvents.ReactNextArea += OnReachNextArea;
+		GameEvents.MoveToNextArea += OnMoveNextArea;
+
 	}
 
 	private void OnDisable()
 	{
 		EnemyEvents.EnemyDied -=OnEnemyDied;
-		GameEvents.ReactNextArea -= OnReachNextArea;
+		GameEvents.MoveToNextArea -= OnMoveNextArea;
+		
 	}
 
 	private void Start()
@@ -52,7 +54,9 @@ public class LevelFlowController : MonoBehaviour
 	
 	public bool IsThisLastEnemy()
 	{
-		return _totalEnemiesRemaining == 1;
+		if (_totalEnemiesRemaining == 1) return true;
+
+		return false;
 	}
 	
 	public bool IsThisLastEnemyOfArea()
@@ -93,7 +97,7 @@ public class LevelFlowController : MonoBehaviour
 		
 	}
 	
-	private void OnReachNextArea()
+	private void OnMoveNextArea()
 	{
 		enemiesInCurrentArea = enemiesInArea[++currentArea];
 		enemiesKilledInCurrentArea = 0;

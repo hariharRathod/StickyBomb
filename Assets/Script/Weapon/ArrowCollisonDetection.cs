@@ -52,8 +52,10 @@ public class ArrowCollisonDetection : MonoBehaviour
 
 			
 		}
-
-		if (other.transform.TryGetComponent(out ShieldController shieldController))
+		
+		//agar yad ajaye ke ye yaha ye kyu hai to please batna mujhe............
+		//agar koi pareshaniiiii  aaye ,to mujhe uncomment tum karna, mat bhulo...............
+		/*if (other.transform.TryGetComponent(out ShieldController shieldController))
 		{
 			transform.parent = other.transform;
 			
@@ -65,7 +67,7 @@ public class ArrowCollisonDetection : MonoBehaviour
 			_projectileController.ICameFromIncrementGate = false;
 			
 			
-		}
+		}*/
 
 
 		if (other.collider.CompareTag("Player")) return;

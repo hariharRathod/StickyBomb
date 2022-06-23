@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 
 public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
@@ -80,11 +81,20 @@ public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 	}
 	private void OnReachNextArea()
 	{
+		print("onreach next area");
+		
+		print("Enemy area: " + _my.gameObject.name + _my.area);
+		print("level flow area: " + _my.gameObject.name + LevelFlowController.only.currentArea);
+		
+		
 		if(_my.area != LevelFlowController.only.currentArea) return;
 		print("Reach next area enemy");
 
-		StartChasingPlayer();
-		
+		DOVirtual.DelayedCall(Random.Range(0, 0.5f), () =>
+		{
+			StartChasingPlayer();
+		});
+
 	}
 
 
@@ -162,6 +172,7 @@ public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 		var bombController = bomb.GetComponent<BombController>();
 		if(bombController==null) return false;
 		bombController.myParent = gameObject;
+		bombController.IAmOnEnemy = true;
 		AddBomb(bomb);
 		bomb.transform.parent = target;
 		_my.Animations.GetHit();
