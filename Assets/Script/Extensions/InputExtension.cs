@@ -126,7 +126,7 @@ public static class InputExtensions
 		
 		if (!IsUsingTouch) return Input.GetMouseButton(0);
 
-		if (EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId)) return false;
+		//if (EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId)) return false;
 		
 		if (Input.touchCount == 0) return false;
 		
