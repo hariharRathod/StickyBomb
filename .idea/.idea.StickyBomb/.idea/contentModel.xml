@@ -346,6 +346,7 @@
           </e>
         </e>
         <e p="Script" t="Include">
+          <e p="AimController.cs" t="Include" />
           <e p="ArrowFollowCamera.cs" t="Include" />
           <e p="CameraController.cs" t="Include" />
           <e p="Canvas" t="Include">
@@ -404,9 +405,11 @@
             <e p="ShieldController.cs" t="Include" />
           </e>
           <e p="Statemachine" t="Include">
+            <e p="AimingState.cs" t="Include" />
             <e p="DragToAimState.cs" t="Include" />
             <e p="InputHandler.cs" t="Include" />
             <e p="InputStateBase.cs" t="Include" />
+            <e p="TapState.cs" t="Include" />
           </e>
           <e p="Weapon" t="Include">
             <e p="ArrowCollisonDetection.cs" t="Include" />

@@ -4,8 +4,14 @@ using UnityEngine;
 
 public class PlayerAnimations : MonoBehaviour
 {
-	public Animator Anim { get; private set; }
-	
+	[SerializeField] private Animator anim;
+
+	public Animator Anim
+	{
+		get => anim;
+		set => anim = value;
+	}
+
 	public static readonly int ArrowSelected = Animator.StringToHash("ArrowSelected");
 	public static readonly int BombSelected = Animator.StringToHash("BombSelected");
 	public static readonly int ArrowAim = Animator.StringToHash("ArrowAim");
@@ -25,10 +31,7 @@ public class PlayerAnimations : MonoBehaviour
 		WeaponEvents.OnBombSelectEvent -= OnBombWeaponSelectedAnimation;
 	}
 
-	private void Awake()
-	{
-		Anim = transform.GetChild(0).GetComponent<Animator>();
-	}
+	
 
 	private void Start()
 	{

@@ -3,7 +3,7 @@ using DG.Tweening;
 using UnityEngine;
 
 
-public enum InputState { Idle, DragToAim,Disabled }
+public enum InputState { Idle, DragToAim,TapState,AimingState,Disabled }
 public class InputHandler : MonoBehaviour
 {
 	private static InputStateBase _currentInputState;
@@ -12,6 +12,8 @@ public class InputHandler : MonoBehaviour
 	private static readonly IdleState IdleState = new IdleState();
 	private static readonly DragToAimState DragToAimState =  new DragToAimState();
 	private static readonly DisabledState DisabledState =  new DisabledState();
+	private static readonly TapState TapState=new TapState();
+	private static AimingState _aimingState;
 	
 	
 	private bool _hasTappedToPlay;
@@ -48,6 +50,7 @@ public class InputHandler : MonoBehaviour
 		var player = GameObject.FindGameObjectWithTag("PlayerRoot");
 		var refbank = player.GetComponent<PlayerRefBank>();
 		_ = new InputStateBase(refbank);
+		_aimingState=new AimingState(player.GetComponent<AimController>());
 		//OnTapToPlay();//yaha ye kya karra hai saleeeeeeee
 		
 	}
@@ -64,21 +67,17 @@ public class InputHandler : MonoBehaviour
 			_currentInputState = HandleInput();
 			_currentInputState?.OnEnter();
 		}
+		
 
 		_currentInputState?.Execute();
-
-
 	}
 
 	private InputStateBase HandleInput()
 	{
-		
-		if (InputExtensions.GetFingerHeld()) //InputExtensions.GetFingerDown()
-		{
-			
-			return DragToAimState;
-		}
+		//if (InputExtensions.GetFingerUp()) return TapState;
 
+		if (InputExtensions.GetFingerHeld()) return _aimingState;
+		
 		return _currentInputState;
 	}
 	
@@ -92,6 +91,8 @@ public class InputHandler : MonoBehaviour
 			InputState.Idle => IdleState, 
 			InputState.DragToAim=> DragToAimState,
 			InputState.Disabled=>DisabledState,
+			InputState.TapState=>TapState,
+			InputState.AimingState=>_aimingState,
 			_ => throw new ArgumentOutOfRangeException(nameof(state), state, "aisa kya pass kar diya vrooo tune yahaan")
 		};
 

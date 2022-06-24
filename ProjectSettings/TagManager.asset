@@ -15,6 +15,7 @@ TagManager:
   - ExplosiveBarrel
   - ShieldSurface
   - IncrementGate
+  - PlayerHolder
   layers:
   - Default
   - TransparentFX

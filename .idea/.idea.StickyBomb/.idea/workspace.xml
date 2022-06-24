@@ -19,7 +19,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c4fe96e-f45c-4672-b895-16116b91b9bc" name="Default Changelist" comment="" />
+    <list default="true" id="6c4fe96e-f45c-4672-b895-16116b91b9bc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Extensions/InputExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Extensions/InputExtension.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/ArrowShootMechanic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/ArrowShootMechanic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/PlayerAnimations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/PlayerAnimations.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Statemachine/DragToAimState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Statemachine/DragToAimState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Statemachine/InputHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Statemachine/InputHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +47,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Statemachine/TapState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/IncrementGate.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Events/GameEvents.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Statemachine/DragToAimState.cs" root0="FORCE_HIGHLIGHTING" />
@@ -52,6 +65,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Dreamteck/Splines/Components/SplineComputer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Props/PropExplosion.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/ArrowShootMechanic.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Statemachine/AimingState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemy/EnemyRagdollController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemy/Gaint/EnemyGaintRefBank.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/ArrowFollowCamera.cs" root0="FORCE_HIGHLIGHTING" />
@@ -61,6 +75,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/GroundAreaDetection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/AimController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/BombThrowerMechanic.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/BombController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/IncrementGate/IncrementGateMovement.cs" root0="FORCE_HIGHLIGHTING" />
@@ -95,10 +110,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Script/Weapon/WeaponSelectManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Player/PlayerAnimations.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Events/EnemyEvents.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Player/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemy/EnemyRagdollController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/GroundAreaDetection.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Events/PlayerEvents.cs" />
@@ -123,8 +134,6 @@
         <option value="$PROJECT_DIR$/Assets/Script/IncrementGate/IncrementGateController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/ArrowShootProjectileController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/BombArrowCollison.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Statemachine/DragToAimState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Statemachine/InputHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/BombThrowerMechanic.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemy/EnemyBodyCollider.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/ArrowController.cs" />
@@ -137,7 +146,6 @@
         <option value="$PROJECT_DIR$/Assets/Script/Player/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/BombController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Canvas/MainCanvasController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Player/ArrowShootMechanic.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/SplineTriggerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemy/EnemyController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/LevelFlowController.cs" />
@@ -145,7 +153,14 @@
         <option value="$PROJECT_DIR$/Assets/Script/GameLoopManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/ArrowCollisonDetection.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemy/Gaint/EnemyGaintController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/PlayerAnimations.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Statemachine/DragToAimState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/ArrowShootMechanic.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Statemachine/TapState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/AimController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Extensions/InputExtension.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Statemachine/InputHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Statemachine/AimingState.cs" />
       </list>
     </option>
   </component>
@@ -206,7 +221,8 @@
     <MESSAGE value="Multiplayer done,Scene scale change done." />
     <MESSAGE value="Small effects and few bugs fix done,Gaint setup intial done." />
     <MESSAGE value="5 Levels made, few bug fixes done." />
-    <option name="LAST_COMMIT_MESSAGE" value="5 Levels made, few bug fixes done." />
+    <MESSAGE value="Retry constant button fixed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Retry constant button fixed." />
   </component>
   <component name="WindowStateProjectService">
     <state width="1865" height="103" key="GridCell.Tab.0.bottom" timestamp="1655215288372">
@@ -277,10 +293,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="768" y="149" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1655562838515" />
-    <state x="452" y="172" key="Vcs.Push.Dialog.v2" timestamp="1655994626950">
+    <state x="452" y="172" key="Vcs.Push.Dialog.v2" timestamp="1655995342657">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="172" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1655994626950" />
+    <state x="452" y="172" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1655995342657" />
     <state x="544" y="41" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1655882747375">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -289,9 +305,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="530" y="190" width="859" height="660" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1655298265024" />
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1655994094088">
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1656067549358">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1655994094088" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1656067549358" />
   </component>
 </project>

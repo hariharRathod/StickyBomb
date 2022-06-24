@@ -123,10 +123,10 @@ public static class InputExtensions
 	public static bool GetFingerHeld ()
 	{
 		if (EventSystem.current.IsPointerOverGameObject(-1)) return false;
-		
+
 		if (!IsUsingTouch) return Input.GetMouseButton(0);
 
-		//if (EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId)) return false;
+		if (EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId)) return false;
 		
 		if (Input.touchCount == 0) return false;
 		

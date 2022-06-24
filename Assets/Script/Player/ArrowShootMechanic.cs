@@ -64,7 +64,7 @@ public class ArrowShootMechanic : MonoBehaviour
 	private void Start()
 	{
 		_my = GetComponent<PlayerRefBank>();
-		_player = GameObject.FindGameObjectWithTag("PlayerRoot").transform;
+		_player = GameObject.FindGameObjectWithTag("PlayerHolder").transform;
 		
 		_arrowsFromIncrementGateList=new List<GameObject>();
 		
@@ -96,6 +96,7 @@ public class ArrowShootMechanic : MonoBehaviour
 		_my.PlayerAnimation.Anim.SetBool(PlayerAnimations.ArrowAim,true);
 		_my.PlayerAnimation.Anim.SetBool(PlayerAnimations.ArrowShoot,false);
 		
+		
 		var position = _my.Camera.transform.position;
 		Debug.DrawLine(position, hitPoint, Color.red, 5f, false);
 		
@@ -119,6 +120,7 @@ public class ArrowShootMechanic : MonoBehaviour
 	
 	public void Aim(Vector2 inputDelta)
 	{
+		
 		_rotY += inputDelta.x * aimSpeedHorizontal * Time.deltaTime;
 		_rotX -= inputDelta.y * aimSpeedVertical * Time.deltaTime;
 
@@ -132,6 +134,7 @@ public class ArrowShootMechanic : MonoBehaviour
 
 	public void Shoot(Transform hitTransform,Vector3 hitPoint)
 	{
+		
 		InputHandler.PutInCoolDown();
 		_targetPos = hitPoint;
 		_targetTransform = hitTransform;
@@ -149,6 +152,11 @@ public class ArrowShootMechanic : MonoBehaviour
 				//_player.rotation = _playerDefaultRotation;
 			});
 
+	}
+
+	public void DisableArrowShoot()
+	{
+		_my.PlayerAnimation.Anim.SetBool(PlayerAnimations.ArrowShoot,false);
 	}
 
 

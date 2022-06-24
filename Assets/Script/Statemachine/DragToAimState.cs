@@ -10,7 +10,7 @@ public class DragToAimState : InputStateBase
 
 	public override void Execute()
 	{
-
+		
 		var ray = Player.Camera.ScreenPointToRay(InputExtensions.GetInputPosition());
 		Debug.Log("player camera raycast: " + Player.Camera.tag, Player.Camera);
 
@@ -30,7 +30,7 @@ public class DragToAimState : InputStateBase
 
 		if (Player.WeaponSelect.currentWeapon == WeaponSelectManager.Weapon.Bomb)
 		{
-			Player.BombThrower.DrawTrajectory(hit);
+			//Player.BombThrower.DrawTrajectory(hit);
 			print("Draw trajectory");
 		}
 		else if(Player.WeaponSelect.currentWeapon == WeaponSelectManager.Weapon.Arrow)
@@ -39,12 +39,12 @@ public class DragToAimState : InputStateBase
 			Player.ArrowShoot.ArrowAim(hit,hit.point);
 			Player.ArrowShoot.Aim(InputExtensions.GetInputDelta());
 		}
-
+		
 		
 		//Player.BombThrower.updateTrajetory(hit);
 		if (InputExtensions.GetFingerUp())
 		{
-			if (Player.WeaponSelect.currentWeapon == WeaponSelectManager.Weapon.Bomb)
+			/*if (Player.WeaponSelect.currentWeapon == WeaponSelectManager.Weapon.Bomb)
 			{
 				//need to think of some cooldown mechanism that will make game smooth.//soachna par iske bare me pakka..
 				Player.BombThrower.Shoot(hit.transform, hit.point);
@@ -55,7 +55,7 @@ public class DragToAimState : InputStateBase
 				//need to think of some cooldown mechanism that will make game smooth.//soachna par iske bare me pakka..
 				Player.ArrowShoot.Shoot(hit.transform,hit.point);
 				
-			}
+			}*/
 			
 			InputHandler.AssignNewState(InputState.Idle);
 		}
