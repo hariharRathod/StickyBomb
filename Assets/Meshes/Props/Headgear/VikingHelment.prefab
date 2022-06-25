@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 2257201518254000049}
   - component: {fileID: 1957473338097122703}
   - component: {fileID: 1611685229693330058}
+  - component: {fileID: -8201088710476219961}
   m_Layer: 0
   m_Name: VikingHelment
-  m_TagString: Untagged
+  m_TagString: Props
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117,3 +118,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-8201088710476219961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2257201518254000047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac3a455a761525c4f95d599c697283c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stickingBehaviour: 0
+  explodBehaviour: 0
+  shouldThrownBack: 1
+  throwBackForce: 25
+  upForce: 25

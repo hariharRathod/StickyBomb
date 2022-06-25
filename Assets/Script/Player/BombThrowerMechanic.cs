@@ -55,7 +55,7 @@ public class BombThrowerMechanic : MonoBehaviour
 	private void OnBombWeaponSelected()
 	{
 		bombHolder.SetActive(true);
-		hitMarker.gameObject.SetActive(true);
+		//hitMarker.gameObject.SetActive(true);
 	}
 
 	public void Shoot(Transform hitTransform, Vector3 hitPoint)

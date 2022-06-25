@@ -1311,6 +1311,7 @@ GameObject:
   - component: {fileID: 1144891451789163647}
   - component: {fileID: 75472142830525307}
   - component: {fileID: 892710405211409410}
+  - component: {fileID: 2145894831784035242}
   m_Layer: 0
   m_Name: Player
   m_TagString: PlayerRoot
@@ -1932,6 +1933,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _arrowFollowCamera: {fileID: 1979802176}
+--- !u!114 &2145894831784035242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4354699649110761150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0176a9ab1df1c5f498f986a0f71f5b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  screenPercentageOnY: 0.5
+  aimSpeedVertical: 80
+  aimSpeedHorizontal: 80
+  clampAngleVertical: 40
+  clampAngleHorizontal: 40
+  findTargetColor: {r: 0.3529412, g: 1, b: 0.37254903, a: 0.83137256}
+  missingTargetColor: {r: 1, g: 0.16470589, b: 0.29411766, a: 0.83137256}
 --- !u!1001 &264886166
 PrefabInstance:
   m_ObjectHideFlags: 0

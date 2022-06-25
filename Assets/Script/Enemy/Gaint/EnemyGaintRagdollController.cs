@@ -26,8 +26,8 @@ public class EnemyGaintRagdollController : MonoBehaviour
 	
 	public void GoRagdoll(bool getThrownBack)
 	{
-		print("Enemy ragdoll");
-		//_my.Animations.SetAnimatorStatus(false);
+		print("Enemy gaint ragdoll");
+		_my.GaintAnimations.SetAnimatorStatus(false);
 
 		var direction = -transform.forward;
 		foreach (var rb in rigidbodies)

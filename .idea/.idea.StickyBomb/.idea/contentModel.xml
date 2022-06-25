@@ -362,9 +362,14 @@
             <e p="EnemyRagdollController.cs" t="Include" />
             <e p="EnemyRefbank.cs" t="Include" />
             <e p="EnemySheildController.cs" t="Include" />
+            <e p="EnemySideWalk" t="Include">
+              <e p="EnemySideWalkController.cs" t="Include" />
+            </e>
             <e p="Gaint" t="Include">
+              <e p="EnemyGaintAnimations.cs" t="Include" />
               <e p="EnemyGaintBodyCollider.cs" t="Include" />
               <e p="EnemyGaintController.cs" t="Include" />
+              <e p="EnemyGaintMovement.cs" t="Include" />
               <e p="EnemyGaintRagdollController.cs" t="Include" />
               <e p="EnemyGaintRefBank.cs" t="Include" />
             </e>
@@ -402,6 +407,7 @@
           <e p="Props" t="Include">
             <e p="ExplosiveBarrelController.cs" t="Include" />
             <e p="PropExplosion.cs" t="Include" />
+            <e p="PropsController.cs" t="Include" />
             <e p="ShieldController.cs" t="Include" />
           </e>
           <e p="Statemachine" t="Include">

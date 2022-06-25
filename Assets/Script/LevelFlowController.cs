@@ -24,6 +24,7 @@ public class LevelFlowController : MonoBehaviour
 	private void OnEnable()
 	{
 		EnemyEvents.EnemyDied +=OnEnemyDied;
+		EnemyEvents.GaintEnemyDied += OnGaintDied;
 		GameEvents.MoveToNextArea += OnMoveNextArea;
 
 	}
@@ -31,6 +32,7 @@ public class LevelFlowController : MonoBehaviour
 	private void OnDisable()
 	{
 		EnemyEvents.EnemyDied -=OnEnemyDied;
+		EnemyEvents.GaintEnemyDied -= OnGaintDied;
 		GameEvents.MoveToNextArea -= OnMoveNextArea;
 		
 	}
@@ -63,7 +65,16 @@ public class LevelFlowController : MonoBehaviour
 	{
 		return enemiesInArea[currentArea] - enemiesKilledInCurrentArea == 1;
 	}
-	
+
+
+	private void OnGaintDied(EnemyGaintController econ)
+	{
+		if(_deadBodies.Contains(econ.transform)) return;
+		
+		OnEnemyKilled();
+		_deadBodies.Add(econ.transform);
+	}
+
 	private void OnEnemyDied(EnemyController econ)
 	{
 		if(_deadBodies.Contains(econ.transform)) return;
@@ -81,7 +92,6 @@ public class LevelFlowController : MonoBehaviour
 	
 	private IEnumerator WaitBeforeMovingToNextArea()
 	{
-		
 		yield return new WaitForSeconds(1f);
 		
 		if (currentArea == enemiesInArea.Count - 1)
@@ -94,7 +104,6 @@ public class LevelFlowController : MonoBehaviour
 			GameEvents.InvokeOnMoveToNextArea();
 		}
 
-		
 	}
 	
 	private void OnMoveNextArea()

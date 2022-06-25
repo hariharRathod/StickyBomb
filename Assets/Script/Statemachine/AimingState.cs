@@ -5,7 +5,6 @@ public class AimingState : InputStateBase
 {
 	
 	private static AimController _aimer;
-	private RaycastHit _hit;
 	private static bool _hasTarget;
 	private static float _screenPercentageOnY;
 	
@@ -19,7 +18,11 @@ public class AimingState : InputStateBase
 	
 	public override void OnEnter()
 	{
+		print("In aim state");
 		base.OnEnter();
+		IsPersistent = false;
+		_aimer.SetReticleStatus(true);
+		
 	}
 
 
@@ -30,7 +33,48 @@ public class AimingState : InputStateBase
 		
 		var ray = Player.Camera.ScreenPointToRay(InputExtensions.GetCenterOfScreen(_screenPercentageOnY));
 
-		if (!Physics.Raycast(ray, out var hit, MaxRayDistance)) {return;}
+		if (!Physics.Raycast(ray, out var hit, MaxRayDistance))
+		{
+			_aimer.LoseTarget();
+			/*Player.ArrowShoot.ArrowAim(hit,hit.point);
+			if (InputExtensions.GetFingerUp())
+			{
+				if (Player.WeaponSelect.currentWeapon == WeaponSelectManager.Weapon.Bomb)
+				{
+					//need to think of some cooldown mechanism that will make game smooth.//soachna par iske bare me pakka..
+					Player.BombThrower.Shoot(hit.transform, hit.point);
+				
+				}
+				else if(Player.WeaponSelect.currentWeapon == WeaponSelectManager.Weapon.Arrow)
+				{
+					//need to think of some cooldown mechanism that will make game smooth.//soachna par iske bare me pakka..
+					if (Camera.main != null)
+						Player.ArrowShoot.ShootAnyWhere(MaxRayDistance * Camera.main.transform.forward);
+				}
+				InputHandler.AssignNewState(InputState.Idle);
+			}*/
+			return;
+		}
+		
+		if (!hit.collider.CompareTag("TargetEnemy") && !hit.collider.CompareTag("ExplosiveBarrel") && 
+			!hit.collider.CompareTag("ShieldSurface") && !hit.collider.CompareTag("Bomb") && 
+			!hit.collider.CompareTag("Ground") && !hit.collider.CompareTag("IncrementGate") && 
+			!hit.collider.CompareTag("Props"))
+		{
+			_aimer.LoseTarget();
+			return;
+		}
+
+		if (hit.collider.TryGetComponent(out EnemyRefbank enemyRefbank))
+		{
+			if(enemyRefbank.area!=LevelFlowController.only.currentArea)
+			{
+				_aimer.LoseTarget();
+				return;
+			}
+		}
+		
+		_aimer.FindTarget();
 		
 		if (Player.WeaponSelect.currentWeapon == WeaponSelectManager.Weapon.Bomb)
 		{
@@ -58,6 +102,8 @@ public class AimingState : InputStateBase
 				Player.ArrowShoot.Shoot(hit.transform,hit.point);
 				
 			}
+			
+			InputHandler.AssignNewState(InputState.Idle);
 		}
 		
 	}

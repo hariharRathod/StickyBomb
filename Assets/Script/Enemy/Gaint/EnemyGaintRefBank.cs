@@ -10,6 +10,13 @@ public class EnemyGaintRefBank : MonoBehaviour
 	public EnemyGaintController GaintController { get; private set; }
 
 	public EnemyGaintRagdollController GaintRagdollController { get; private set; }
+	
+	public EnemyGaintAnimations GaintAnimations { get; private set; }
+	
+	
+	public EnemyGaintMovement GaintMovement { get; private set; }
+	
+	
 
 
 
@@ -17,5 +24,7 @@ public class EnemyGaintRefBank : MonoBehaviour
 	{
 		GaintController = GetComponent<EnemyGaintController>();
 		GaintRagdollController = GetComponent<EnemyGaintRagdollController>();
+		GaintAnimations = GetComponent<EnemyGaintAnimations>();
+		GaintMovement = GetComponent<EnemyGaintMovement>();
 	}
 }

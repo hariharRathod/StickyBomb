@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class InputStateBase
 {
+	public static bool IsPersistent;
     protected static float MaxRayDistance;
 	protected static PlayerRefBank Player;
 	

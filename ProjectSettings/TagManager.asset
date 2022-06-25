@@ -16,6 +16,8 @@ TagManager:
   - ShieldSurface
   - IncrementGate
   - PlayerHolder
+  - AimCanvas
+  - Props
   layers:
   - Default
   - TransparentFX

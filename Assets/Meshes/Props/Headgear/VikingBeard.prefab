@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 1712616660564862168}
   - component: {fileID: 3677899963706547323}
   - component: {fileID: 1588736373175157616}
+  - component: {fileID: -9204066468340378521}
   m_Layer: 0
   m_Name: VikingBeard
-  m_TagString: Untagged
+  m_TagString: Props
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115,3 +116,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-9204066468340378521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5670500581860101999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac3a455a761525c4f95d599c697283c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stickingBehaviour: 0
+  explodBehaviour: 0
+  shouldThrownBack: 0
+  throwBackForce: 0
+  upForce: 0

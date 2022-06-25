@@ -22,11 +22,13 @@ public class ArrowCollisonDetection : MonoBehaviour
 			_projectileController.ICameFromIncrementGate = false;
 			_rb.isKinematic = true;
 			transform.parent = other.collider.transform;
+			_trailRenderer.enabled = false;
 		}
 
 		if (other.collider.CompareTag("Ground"))
 		{
 			_rb.isKinematic = true;
+			_trailRenderer.enabled = false;
 			if (!_projectileController.ICameFromIncrementGate) return;
 			//ye singlecast ke tarah use hora hai abhi bhi, so change it,koi dusra tareka dekhna iska .................
 			WeaponEvents.InvokeOnMultipleArrowCollison();	
@@ -34,13 +36,28 @@ public class ArrowCollisonDetection : MonoBehaviour
 			
 		}
 
+		if (other.transform.TryGetComponent(out PropsController propsController))
+		{
+			transform.parent = other.transform;
+			_rb.isKinematic = true;
+			_trailRenderer.enabled = false;
+			//propsController.OnArrowCollison();
+			
+			
+			if(!_projectileController.ICameFromIncrementGate) return;
+			//ye singlecast ke tarah use hora hai abhi bhi, so change it,koi dusra tareka dekhna iska .................
+			WeaponEvents.InvokeOnMultipleArrowCollison();	
+			_projectileController.ICameFromIncrementGate = false;
+		}
+
 		if (other.transform.parent)
 		{
 			if (other.transform.parent.TryGetComponent(out ShieldController parentShieldController))
 			{
+				print("collided with sheild");
 				transform.parent = other.transform;
 				_rb.isKinematic = true;
-				
+				_trailRenderer.enabled = false;
 				
 				if (!_projectileController.ICameFromIncrementGate) return;
 				//ye singlecast ke tarah use hora hai abhi bhi, so change it,koi dusra tareka dekhna iska .................
@@ -50,7 +67,6 @@ public class ArrowCollisonDetection : MonoBehaviour
 				
 			}
 
-			
 		}
 		
 		//agar yad ajaye ke ye yaha ye kyu hai to please batna mujhe............
@@ -73,6 +89,7 @@ public class ArrowCollisonDetection : MonoBehaviour
 		if (other.collider.CompareTag("Player")) return;
 		WeaponEvents.InvokeArrowCollisionWithObjects();
 		_trailRenderer.enabled = false;
+		print("collided with something");
 
 	}
 }

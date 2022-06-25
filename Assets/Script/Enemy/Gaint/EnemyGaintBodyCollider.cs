@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class EnemyGaintBodyCollider : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	private EnemyGaintRefBank _my;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	private void Start()
+	{
+		_my = transform.root.GetComponent<EnemyGaintRefBank>();
+	}
+
+
+	private void OnCollisionEnter(Collision other)
+	{
+		if (other.collider.CompareTag("Arrow"))
+		{
+			
+			print("Give damage");
+			WeaponEvents.InvokeArrowCollisonWithTargetDone();
+
+			if (!other.collider.TryGetComponent(out ArrowController arrowController)) return;
+			
+			arrowController.OnArrowCollisonWithEnemy(this.transform);
+			_my.GaintController.ArrowDamage();
+		}
+	}
 }

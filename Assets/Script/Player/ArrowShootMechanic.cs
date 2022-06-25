@@ -48,7 +48,7 @@ public class ArrowShootMechanic : MonoBehaviour
 		WeaponEvents.OnBombSelectEvent += OnBombWeaponSelected;
 		GameEvents.GameWin += OnGameWin;
 		GameEvents.CameraFollowArrowStart += OnCameraFollowArrowStart;
-		GameEvents.ReactNextArea += OnReachNextArea;
+		
 	}
 
 	private void OnDisable()
@@ -57,7 +57,7 @@ public class ArrowShootMechanic : MonoBehaviour
 		WeaponEvents.OnBombSelectEvent -= OnBombWeaponSelected;
 		GameEvents.GameWin -= OnGameWin;
 		GameEvents.CameraFollowArrowStart -= OnCameraFollowArrowStart;
-		GameEvents.ReactNextArea -= OnReachNextArea;
+		
 	}
 
 	
@@ -68,20 +68,20 @@ public class ArrowShootMechanic : MonoBehaviour
 		
 		_arrowsFromIncrementGateList=new List<GameObject>();
 		
-		_areaInitRotation = _player.rotation;
+		/*_areaInitRotation = _player.rotation;
 		var rot = _areaInitRotation.eulerAngles;
 
 		_initRotAxisX = rot.x;
 		_initRotAxisY = rot.y;
 		
 		_rotY = rot.y;
-		_rotX = rot.x;
+		_rotX = rot.x;*/
 	}
 	
 	private void OnArrowWeaponSelected()
 	{
 		bowHolder.SetActive(true);
-		hitMarker.gameObject.SetActive(true);
+		//hitMarker.gameObject.SetActive(true);
 	}
 	
 	private void OnBombWeaponSelected()
@@ -92,12 +92,12 @@ public class ArrowShootMechanic : MonoBehaviour
 
 	public void ArrowAim(RaycastHit hitInfo,Vector3 hitPoint)
 	{
-		hitMarker.gameObject.SetActive(true);
+		//hitMarker.gameObject.SetActive(true);
 		_my.PlayerAnimation.Anim.SetBool(PlayerAnimations.ArrowAim,true);
 		_my.PlayerAnimation.Anim.SetBool(PlayerAnimations.ArrowShoot,false);
 		
-		
-		var position = _my.Camera.transform.position;
+		//enable if hit marker is allowed to enable.
+		/*var position = _my.Camera.transform.position;
 		Debug.DrawLine(position, hitPoint, Color.red, 5f, false);
 		
 		if(hitInfo.collider.CompareTag("Ground"))
@@ -115,7 +115,7 @@ public class ArrowShootMechanic : MonoBehaviour
 		if(hitInfo.collider.CompareTag("IncrementGate"))
 			hitMarker.position = hitInfo.point + hitInfo.normal * 0.05f;
 		
-		hitMarker.rotation = Quaternion.LookRotation(hitInfo.normal);
+		hitMarker.rotation = Quaternion.LookRotation(hitInfo.normal);*/
 	}
 	
 	public void Aim(Vector2 inputDelta)
@@ -131,6 +131,25 @@ public class ArrowShootMechanic : MonoBehaviour
 		_player.rotation = newRot;
 		
 	}
+
+	public void ShootAnyWhere(Vector3 hitPoint)
+	{
+		InputHandler.PutInCoolDown();
+		_targetPos = hitPoint;
+		_targetTransform = null;
+		_my.PlayerAnimation.Anim.SetBool(PlayerAnimations.ArrowShoot,true);
+		
+		DOVirtual.DelayedCall(0.3f, () =>
+		{
+			if (GameLoopManager.InSlowMotion) return;
+			arrow.SetActive(true);
+		}).OnComplete(
+			() =>
+			{
+				//_player.rotation = _playerDefaultRotation;
+			});
+	}
+	
 
 	public void Shoot(Transform hitTransform,Vector3 hitPoint)
 	{
@@ -172,7 +191,9 @@ public class ArrowShootMechanic : MonoBehaviour
 		var rb = arrow.GetComponent<Rigidbody>();
 		var dirToTarget = _targetPos - arrow.transform.position;
 		//arrow.transform.rotation = Quaternion.LookRotation(dirToTarget,Vector3.up);
-		WeaponEvents.InvokeOnArrowRealeaseEvent(_targetTransform,arrow);
+		if(_targetTransform)
+			WeaponEvents.InvokeOnArrowRealeaseEvent(_targetTransform,arrow);
+		
 		arrow.transform.DORotateQuaternion(Quaternion.LookRotation(dirToTarget, Vector3.up), 0.1f);
 		arrow.transform.DOMove(_targetPos, 0.2f).SetEase(Ease.Linear).OnComplete(
 			() =>
@@ -272,16 +293,6 @@ public class ArrowShootMechanic : MonoBehaviour
 
 	}
 	
-	private void OnReachNextArea()
-	{
-		_areaInitRotation = _player.rotation;
-		var rot = _areaInitRotation.eulerAngles;
-
-		_initRotAxisX = rot.x;
-		_initRotAxisY = rot.y;
-		
-		_rotY = rot.y;
-		_rotX = rot.x;
-	}
+	
 
 }

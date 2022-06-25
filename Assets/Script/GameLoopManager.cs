@@ -96,6 +96,8 @@ public class GameLoopManager : MonoBehaviour
 			if (!target.TryGetComponent(out BombController bombController)) return;
 
 			if (!bombController.IAmOnEnemy) return;
+
+			if (bombController.myParent.TryGetComponent(out EnemyGaintController enemyGaintController)) return;
 			
 			print("bomb");
 			Debug.DrawLine(Camera.main.transform.position, target.position, Color.yellow, 5f, false);

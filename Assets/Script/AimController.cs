@@ -18,12 +18,31 @@ public class AimController : MonoBehaviour
 	private Quaternion _areaInitRotation;
 	private Canvas _canvas;
 
+	private void OnEnable()
+	{
+		GameEvents.ReactNextArea += OnReachNextArea;
+		GameEvents.GameLose += OnGameLose;
+		GameEvents.GameWin += OnGameWin;
+	}
+
+	private void OnDisable()
+	{
+		GameEvents.ReactNextArea -= OnReachNextArea;
+		GameEvents.GameLose -= OnGameLose;
+		GameEvents.GameWin -= OnGameWin;
+	}
+
+	
 
 	private void Start()
 	{
+		_transform = transform;
 		_canvas = GameObject.FindGameObjectWithTag("AimCanvas").GetComponent<Canvas>();
 		
 		_canvas.worldCamera = Camera.main;
+		_canvas.planeDistance = 1f;
+		_reticle = _canvas.transform.GetChild(0).GetComponent<Image>();
+		
 		_areaInitRotation = _transform.rotation;
 		var rot = _areaInitRotation.eulerAngles;
 
@@ -45,5 +64,44 @@ public class AimController : MonoBehaviour
 
 		var newRot = Quaternion.Euler(_rotX, _rotY, 0.0f);
 		_transform.rotation = newRot;
+	}
+	
+	public void SetReticleStatus(bool isOn)
+	{
+		_reticle.enabled = isOn;
+	}
+	
+	public void LoseTarget()
+	{
+		_reticle.color = missingTargetColor;
+		
+	}
+	
+	public void FindTarget()
+	{
+		_reticle.color = findTargetColor;
+		
+	}
+	
+	private void OnReachNextArea()
+	{
+		_areaInitRotation = _transform.rotation;
+		var rot = _areaInitRotation.eulerAngles;
+
+		_initRotAxisX = rot.x;
+		_initRotAxisY = rot.y;
+		
+		_rotY = rot.y;
+		_rotX = rot.x;
+	}
+	
+	private void OnGameWin()
+	{
+		SetReticleStatus(false);
+	}
+
+	private void OnGameLose()
+	{
+		SetReticleStatus(false);
 	}
 }
