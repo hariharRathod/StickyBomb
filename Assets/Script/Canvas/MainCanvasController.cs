@@ -1,4 +1,3 @@
-
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
@@ -31,8 +30,7 @@ public class MainCanvasController : MonoBehaviour
 
 	private void Start()
 	{
-		//var levelNo = PlayerPrefs.GetInt("levelNo", 1);
-		var levelNo = SceneManager.GetActiveScene().buildIndex + 1;
+		var levelNo = PlayerPrefs.GetInt("levelNo", 1);
 		levelText.text = "Level " + levelNo;
 	}
 
@@ -54,7 +52,7 @@ public class MainCanvasController : MonoBehaviour
 
 	public void NextLevel()
 	{
-		/*if (PlayerPrefs.GetInt("levelNo", 1) < SceneManager.sceneCountInBuildSettings - 1)
+		if (PlayerPrefs.GetInt("levelNo", 1) < SceneManager.sceneCountInBuildSettings - 1)
 		{
 			var x = PlayerPrefs.GetInt("levelNo", 1) + 1;
 			PlayerPrefs.SetInt("lastBuildIndex", x);
@@ -63,27 +61,10 @@ public class MainCanvasController : MonoBehaviour
 		else
 		{
 			var x = Random.Range(0, SceneManager.sceneCountInBuildSettings - 1);
-			if (PlayerPrefs.GetInt("levelNo", 1) % 10 == 0)
-				x = 12;
 			PlayerPrefs.SetInt("lastBuildIndex", x);
 			SceneManager.LoadScene(x);
 		}
-		PlayerPrefs.SetInt("levelNo", PlayerPrefs.GetInt("levelNo", 1) + 1);*/
-
-
-		var levelNo = SceneManager.GetActiveScene().buildIndex;
-		if (levelNo < SceneManager.sceneCountInBuildSettings-1)
-		{
-			levelNo += 1;
-			SceneManager.LoadScene(levelNo);
-		}
-		else
-		{
-			var x = Random.Range(0, SceneManager.sceneCountInBuildSettings);
-			SceneManager.LoadScene(x);
-
-		}
-
+		PlayerPrefs.SetInt("levelNo", PlayerPrefs.GetInt("levelNo", 1) + 1);
 
 	}
 

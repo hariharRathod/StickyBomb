@@ -18,6 +18,7 @@ TagManager:
   - PlayerHolder
   - AimCanvas
   - Props
+  - Hostage
   layers:
   - Default
   - TransparentFX

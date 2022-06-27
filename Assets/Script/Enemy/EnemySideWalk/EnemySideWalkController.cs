@@ -5,14 +5,14 @@ using UnityEngine;
 
 public class EnemySideWalkController : MonoBehaviour
 {
-	[SerializeField] private float maxDist;
+	[SerializeField] private float maxDist,leftPos,rightPos;
 	private bool right, left=true;
 	
 	public void MoveSideOnAnimation()
 	{
 		if (left)
 		{
-			transform.DOMoveX(-3f, 0.4f).SetEase(Ease.Linear);
+			transform.DOMoveX(leftPos, 1.4f).SetEase(Ease.Linear);
 			right = true;
 			left = false;
 			return;
@@ -20,7 +20,7 @@ public class EnemySideWalkController : MonoBehaviour
 
 		if (right)
 		{
-			transform.DOMoveX(3f, 0.4f).SetEase(Ease.Linear);
+			transform.DOMoveX(rightPos, 1.4f).SetEase(Ease.Linear);
 			left = true;
 			return;
 		}

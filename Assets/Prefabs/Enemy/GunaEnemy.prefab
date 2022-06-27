@@ -573,7 +573,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b13468c7a82ad4aaf4ae4d84308558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0.2
+  damage: 0.35
 --- !u!4 &318664239697016204 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 528bc01bb633a434a8daae463b329f93, type: 3}
@@ -625,7 +625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b13468c7a82ad4aaf4ae4d84308558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0.2
+  damage: 0.35
 --- !u!1 &1092069980934172470 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 528bc01bb633a434a8daae463b329f93, type: 3}
@@ -730,6 +730,8 @@ MonoBehaviour:
   stickingBehaviour: 0
   explodBehaviour: 0
   isEnemyShielded: 0
+  isEnemySideWalk: 0
+  ShouldEnemySideWalkOneShotRagdoll: 0
 --- !u!114 &4714022544095872858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -854,7 +856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b13468c7a82ad4aaf4ae4d84308558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0.2
+  damage: 0.35
 --- !u!1 &3007049084444299367 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6170625038081293824, guid: 528bc01bb633a434a8daae463b329f93, type: 3}
@@ -948,7 +950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b13468c7a82ad4aaf4ae4d84308558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0.2
+  damage: 0.35
 --- !u!1 &3831380005207246636 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3948933247560734027, guid: 528bc01bb633a434a8daae463b329f93, type: 3}
@@ -1042,7 +1044,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b13468c7a82ad4aaf4ae4d84308558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0.2
+  damage: 0.35
 --- !u!1 &4627875282367266607 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4332706925441422008, guid: 528bc01bb633a434a8daae463b329f93, type: 3}
@@ -1136,7 +1138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b13468c7a82ad4aaf4ae4d84308558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0.2
+  damage: 0.35
 --- !u!1 &6254480417625269996 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3086436065929644917, guid: 528bc01bb633a434a8daae463b329f93, type: 3}
@@ -1230,7 +1232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b13468c7a82ad4aaf4ae4d84308558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0.2
+  damage: 0.35
 --- !u!137 &6487922617319788836 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: -2742941541001706685, guid: 528bc01bb633a434a8daae463b329f93, type: 3}
@@ -1328,7 +1330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b13468c7a82ad4aaf4ae4d84308558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0.25
+  damage: 0.35
 --- !u!1 &8651883344140545432 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -290750445479886849, guid: 528bc01bb633a434a8daae463b329f93, type: 3}
@@ -1422,7 +1424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b13468c7a82ad4aaf4ae4d84308558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0.2
+  damage: 0.35
 --- !u!1 &8771286238759430116 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8817898888258712963, guid: 528bc01bb633a434a8daae463b329f93, type: 3}
@@ -1516,7 +1518,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b13468c7a82ad4aaf4ae4d84308558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0.2
+  damage: 0.35
 --- !u!1 &9137072913949212256 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -203856693384778745, guid: 528bc01bb633a434a8daae463b329f93, type: 3}
@@ -1609,4 +1611,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b13468c7a82ad4aaf4ae4d84308558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0.2
+  damage: 0.35

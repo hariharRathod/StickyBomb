@@ -6,7 +6,127 @@ ModelImporter:
   - first:
       74: -203655887218126122
     second: mixamo.com
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: model_L_eye_ref_circle_mesh_model_geo_Geometry_GroupMat
+    second: {fileID: 2100000, guid: 02bcf28f2bf2a604082cd3619f9538f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: model_geo_Geometry_Group_model_Face_meshMat
+    second: {fileID: 2100000, guid: 02bcf28f2bf2a604082cd3619f9538f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: model_geo_Geometry_Group_model_Hair_meshMat
+    second: {fileID: 2100000, guid: 02bcf28f2bf2a604082cd3619f9538f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: model_geo_Geometry_Group_model_Headband_meshMat
+    second: {fileID: 2100000, guid: 02bcf28f2bf2a604082cd3619f9538f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: model_geo_Geometry_Group_model_L_Upper_eye_lash_meshMat
+    second: {fileID: 2100000, guid: 02bcf28f2bf2a604082cd3619f9538f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: model_geo_Geometry_Group_model_L_arm_meshMat
+    second: {fileID: 2100000, guid: 02bcf28f2bf2a604082cd3619f9538f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: model_geo_Geometry_Group_model_L_eye_ball_meshMat
+    second: {fileID: 2100000, guid: 02bcf28f2bf2a604082cd3619f9538f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: model_geo_Geometry_Group_model_L_eye_brow_meshMat
+    second: {fileID: 2100000, guid: 02bcf28f2bf2a604082cd3619f9538f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: model_geo_Geometry_Group_model_L_lower_eye_lash_meshMat
+    second: {fileID: 2100000, guid: 02bcf28f2bf2a604082cd3619f9538f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: model_geo_Geometry_Group_model_L_shoe_meshMat
+    second: {fileID: 2100000, guid: 02bcf28f2bf2a604082cd3619f9538f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: model_geo_Geometry_Group_model_Legs_meshMat
+    second: {fileID: 2100000, guid: 02bcf28f2bf2a604082cd3619f9538f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: model_geo_Geometry_Group_model_Lower_teeth_gum_meshMat
+    second: {fileID: 2100000, guid: 02bcf28f2bf2a604082cd3619f9538f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: model_geo_Geometry_Group_model_Lower_teeth_meshMat
+    second: {fileID: 2100000, guid: 02bcf28f2bf2a604082cd3619f9538f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: model_geo_Geometry_Group_model_R_Upper_eye_lash_meshMat
+    second: {fileID: 2100000, guid: 02bcf28f2bf2a604082cd3619f9538f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: model_geo_Geometry_Group_model_R_arm_meshMat
+    second: {fileID: 2100000, guid: 02bcf28f2bf2a604082cd3619f9538f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: model_geo_Geometry_Group_model_R_eye_ball_meshMat
+    second: {fileID: 2100000, guid: 02bcf28f2bf2a604082cd3619f9538f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: model_geo_Geometry_Group_model_R_eye_brow_meshMat
+    second: {fileID: 2100000, guid: 02bcf28f2bf2a604082cd3619f9538f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: model_geo_Geometry_Group_model_R_eye_ref_circle_meshMat
+    second: {fileID: 2100000, guid: 02bcf28f2bf2a604082cd3619f9538f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: model_geo_Geometry_Group_model_R_lower_eye_lash_meshMat
+    second: {fileID: 2100000, guid: 02bcf28f2bf2a604082cd3619f9538f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: model_geo_Geometry_Group_model_R_shoe_meshMat
+    second: {fileID: 2100000, guid: 02bcf28f2bf2a604082cd3619f9538f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: model_geo_Geometry_Group_model_Tongue_meshMat
+    second: {fileID: 2100000, guid: 02bcf28f2bf2a604082cd3619f9538f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: model_geo_Geometry_Group_model_Torso_meshMat
+    second: {fileID: 2100000, guid: 02bcf28f2bf2a604082cd3619f9538f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: model_geo_Geometry_Group_model_Upper_teeth_gum_meshMat
+    second: {fileID: 2100000, guid: 02bcf28f2bf2a604082cd3619f9538f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: model_geo_Geometry_Group_model_Upper_teeth_meshMat
+    second: {fileID: 2100000, guid: 02bcf28f2bf2a604082cd3619f9538f7, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -38,7 +158,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.001
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -69,7 +189,7 @@ ModelImporter:
     secondaryUVMinLightmapResolution: 40
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -83,7 +203,262 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: Girl@T-Pose(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Girl
+      parentName: Girl@T-Pose(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:Face_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:Hair_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:Headband_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:L_arm_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:L_eye_ball_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:L_eye_brow_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:L_lower_eye_lash_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:L_shoe_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:L_Upper_eye_lash_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:Legs_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:Lower_teeth_gum_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:Lower_teeth_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:R_arm_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:R_eye_ball_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:R_eye_brow_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:R_eye_ref_circle_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:R_lower_eye_lash_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:R_shoe_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:R_Upper_eye_lash_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:Tongue_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:Torso_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:Upper_teeth_gum_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:Upper_teeth_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:L_eye_ref_circle_mesh_model:geo_Geometry_Group
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model::Hips
+      parentName: Girl@T-Pose(Clone)
+      position: {x: -0.0000021369444, y: 0.07609291, z: 0.002418236}
+      rotation: {x: -0.0000057440693, y: -0.0000062642785, z: 0.00019883995, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model::Spine
+      parentName: model::Hips
+      position: {x: -0, y: 0.009396416, z: -0.00158518}
+      rotation: {x: -0.08346044, y: 0.000022838967, z: -0.00019762327, w: 0.9965111}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model::Spine1
+      parentName: model::Spine
+      position: {x: -0, y: 0.01111739, z: -2.273737e-18}
+      rotation: {x: -1.3877788e-17, y: -1.5550969e-13, z: 6.655247e-13, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model::Spine2
+      parentName: model::Spine1
+      position: {x: -0, y: 0.012705583, z: 0}
+      rotation: {x: -1.3877788e-17, y: 2.524355e-29, z: 8.2041534e-29, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model::LeftShoulder
+      parentName: model::Spine2
+      position: {x: -0.0046685906, y: 0.01263754, z: -0.00026606442}
+      rotation: {x: 0.53958505, y: -0.44973695, z: 0.56151414, w: 0.43736312}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model::LeftArm
+      parentName: model::LeftShoulder
+      position: {x: -2.273737e-18, y: 0.009402705, z: 1.8189895e-17}
+      rotation: {x: -0.106860675, y: 0.0030473645, z: -0.017992677, w: 0.99410653}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model::LeftForeArm
+      parentName: model::LeftArm
+      position: {x: -0, y: 0.019158829, z: 0}
+      rotation: {x: -0.00000030547204, y: 0.0026169906, z: -0.00000040335124, w: 0.9999966}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model::LeftHand
+      parentName: model::LeftForeArm
+      position: {x: 4.547474e-18, y: 0.015922781, z: 1.8189895e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model::RightShoulder
+      parentName: model::Spine2
+      position: {x: 0.0046685906, y: 0.012641917, z: -0.00029201192}
+      rotation: {x: -0.5376047, y: -0.45109087, z: 0.56299734, w: -0.43649995}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model::RightArm
+      parentName: model::RightShoulder
+      position: {x: 2.273737e-18, y: 0.009402705, z: 0}
+      rotation: {x: -0.10632598, y: -0.0032801488, z: 0.020920796, w: 0.9941058}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model::RightForeArm
+      parentName: model::RightArm
+      position: {x: -0, y: 0.019159177, z: 0}
+      rotation: {x: -0.0000003040511, y: -0.0028785155, z: -0.00000010828815, w: 0.9999959}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model::RightHand
+      parentName: model::RightForeArm
+      position: {x: -0, y: 0.015933491, z: -1.8189895e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model::Neck
+      parentName: model::Spine2
+      position: {x: -0, y: 0.014293777, z: 0.0000000013318253}
+      rotation: {x: 0.083466254, y: -4.8266525e-20, z: 1.3195703e-19, w: 0.9965106}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model::Head
+      parentName: model::Neck
+      position: {x: -0, y: 0.008461143, z: -0.00039913147}
+      rotation: {x: 0, y: -0, z: -9.943322e-38, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model::HeadTop_End
+      parentName: model::Head
+      position: {x: -0, y: 0.031451706, z: -0.0014836462}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model::RightUpLeg
+      parentName: model::Hips
+      position: {x: 0.0070623476, y: -0.005227695, z: -0.002225078}
+      rotation: {x: 0.0004450365, y: -0.006905962, z: 0.9999336, w: -0.009219941}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model::RightLeg
+      parentName: model::RightUpLeg
+      position: {x: -0, y: 0.034766484, z: 0}
+      rotation: {x: -0.024549473, y: -0.00026792224, z: -0.021507276, w: 0.9994672}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model::RightFoot
+      parentName: model::RightLeg
+      position: {x: -0, y: 0.026866317, z: 1.1368685e-18}
+      rotation: {x: 0.49038982, y: 0.0014181355, z: -0.008063012, w: 0.8714647}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model::RightToeBase
+      parentName: model::RightFoot
+      position: {x: -0, y: 0.014489908, z: 1.1368685e-18}
+      rotation: {x: 0.33068398, y: -0.060086064, z: 0.021102035, w: 0.9415904}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model::RightToe_End
+      parentName: model::RightToeBase
+      position: {x: 1.1368685e-18, y: 0.005748978, z: -2.8421711e-19}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model::LeftUpLeg
+      parentName: model::Hips
+      position: {x: -0.0070623476, y: -0.005227695, z: -0.0026331118}
+      rotation: {x: -0.00029438548, y: -0.014044478, z: 0.9998549, w: 0.009635844}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model::LeftLeg
+      parentName: model::LeftUpLeg
+      position: {x: -1.1368685e-18, y: 0.034738902, z: 0}
+      rotation: {x: -0.0005676903, y: 0.0004914822, z: 0.021576228, w: 0.99976695}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model::LeftFoot
+      parentName: model::LeftLeg
+      position: {x: -1.1368685e-18, y: 0.026856445, z: 0}
+      rotation: {x: 0.4846123, y: -0.0009537624, z: 0.007881529, w: 0.8746931}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model::LeftToeBase
+      parentName: model::LeftFoot
+      position: {x: -0, y: 0.014931217, z: 1.1368685e-18}
+      rotation: {x: 0.31984854, y: 0.059756078, z: -0.020217448, w: 0.9453663}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model::LeftToe_End
+      parentName: model::LeftToeBase
+      position: {x: -5.6843423e-19, y: 0.0059772558, z: 2.8421711e-19}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -91,7 +466,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.001
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 1

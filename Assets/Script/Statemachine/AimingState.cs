@@ -59,7 +59,7 @@ public class AimingState : InputStateBase
 		if (!hit.collider.CompareTag("TargetEnemy") && !hit.collider.CompareTag("ExplosiveBarrel") && 
 			!hit.collider.CompareTag("ShieldSurface") && !hit.collider.CompareTag("Bomb") && 
 			!hit.collider.CompareTag("Ground") && !hit.collider.CompareTag("IncrementGate") && 
-			!hit.collider.CompareTag("Props"))
+			!hit.collider.CompareTag("Props") && !hit.collider.CompareTag("Hostage"))
 		{
 			_aimer.LoseTarget();
 			return;
@@ -85,6 +85,8 @@ public class AimingState : InputStateBase
 		{
 			print("Arrow aim");
 			Player.ArrowShoot.ArrowAim(hit,hit.point);
+			Player.CameraController.ZoomAction();
+			
 		}
 
 
@@ -100,6 +102,7 @@ public class AimingState : InputStateBase
 			{
 				//need to think of some cooldown mechanism that will make game smooth.//soachna par iske bare me pakka..
 				Player.ArrowShoot.Shoot(hit.transform,hit.point);
+				Player.CameraController.ZoomNormal();
 				
 			}
 			

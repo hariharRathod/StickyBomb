@@ -388,11 +388,16 @@
           <e p="GameLoopManager.cs" t="Include" />
           <e p="GroundAreaDetection.cs" t="Include" />
           <e p="GroundController.cs" t="Include" />
+          <e p="Hostage" t="Include">
+            <e p="HostageBodyCollider.cs" t="Include" />
+            <e p="HostageController.cs" t="Include" />
+          </e>
           <e p="IncrementGate" t="Include">
             <e p="IncrementGateController.cs" t="Include" />
             <e p="IncrementGateMovement.cs" t="Include" />
           </e>
           <e p="LevelFlowController.cs" t="Include" />
+          <e p="MainMenuScript.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="ArrowShootMechanic.cs" t="Include" />
             <e p="BombThrowerMechanic.cs" t="Include" />
@@ -425,6 +430,7 @@
             <e p="BombArrowCollison.cs" t="Include" />
             <e p="BombController.cs" t="Include" />
             <e p="BombRefBank.cs" t="Include" />
+            <e p="BombShootProjectileController.cs" t="Include" />
             <e p="BombStickCollison.cs" t="Include" />
             <e p="WeaponSelectManager.cs" t="Include" />
           </e>

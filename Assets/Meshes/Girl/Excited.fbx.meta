@@ -1,0 +1,568 @@
+fileFormatVersion: 2
+guid: 97c749ca503f4864d83b1dc5317caa41
+ModelImporter:
+  serializedVersion: 21202
+  internalIDToNameTable:
+  - first:
+      74: -203655887218126122
+    second: GirlExcited
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: GirlExcited
+      takeName: mixamo.com
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 197
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: model::Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: model::LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: model::RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: model::LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: model::RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: model::LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: model::RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: model::Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: model::Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: model::Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: model::Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: model::LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: model::RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: model::LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: model::RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: model::LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: model::RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: model::LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: model::RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: model::LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: model::RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: model::Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Excited(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Girl
+      parentName: Excited(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:Face_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:Hair_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:Headband_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:L_arm_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:L_eye_ball_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:L_eye_brow_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:L_lower_eye_lash_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:L_shoe_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:L_Upper_eye_lash_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:Legs_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:Lower_teeth_gum_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:Lower_teeth_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:R_arm_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:R_eye_ball_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:R_eye_brow_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:R_eye_ref_circle_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:R_lower_eye_lash_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:R_shoe_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:R_Upper_eye_lash_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:Tongue_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:Torso_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:Upper_teeth_gum_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:geo_Geometry_Group_model:Upper_teeth_mesh
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model:L_eye_ref_circle_mesh_model:geo_Geometry_Group
+      parentName: Girl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model::Hips
+      parentName: Excited(Clone)
+      position: {x: -0.2133886, y: 77.03423, z: 2.3838243}
+      rotation: {x: 0.0000000014551915, y: 0.0000000014551915, z: 0.0000000013869794, w: 1}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+    - name: model::Spine
+      parentName: model::Hips
+      position: {x: -0, y: 9.396416, z: -1.58518}
+      rotation: {x: -0.08346619, y: -7.085939e-10, z: -0.0000000024365954, w: 0.9965106}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: model::Spine1
+      parentName: model::Spine
+      position: {x: -0, y: 11.11739, z: -2.2737367e-15}
+      rotation: {x: -0.000000074505806, y: -6.4908634e-10, z: 0.0000000027540947, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: model::Spine2
+      parentName: model::Spine1
+      position: {x: -0, y: 12.705585, z: 0}
+      rotation: {x: -0, y: 0.0000000012322444, z: -0.000000018239039, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: model::LeftShoulder
+      parentName: model::Spine2
+      position: {x: -4.6685905, y: 12.637539, z: -0.26606444}
+      rotation: {x: 0.5584767, y: -0.42304382, z: 0.59047616, w: 0.4005941}
+      scale: {x: 1.0000001, y: 1.0000006, z: 1.0000005}
+    - name: model::LeftArm
+      parentName: model::LeftShoulder
+      position: {x: -2.2737367e-15, y: 9.402705, z: 1.8189894e-14}
+      rotation: {x: -0.13822623, y: 0.004882619, z: -0.018857867, w: 0.99020916}
+      scale: {x: 1.0000002, y: 1.0000006, z: 1.0000005}
+    - name: model::LeftForeArm
+      parentName: model::LeftArm
+      position: {x: -0, y: 19.158827, z: 0}
+      rotation: {x: -0.05789402, y: 0.002795519, z: -0.02871398, w: 0.9979058}
+      scale: {x: 1, y: 0.99999946, z: 1}
+    - name: model::LeftHand
+      parentName: model::LeftForeArm
+      position: {x: 4.5474734e-15, y: 15.92278, z: 1.8189894e-14}
+      rotation: {x: -0.000000044703473, y: 0.0000000197906, z: 0.000000042127784, w: 1}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1}
+    - name: model::RightShoulder
+      parentName: model::Spine2
+      position: {x: 4.6685905, y: 12.641916, z: -0.2920119}
+      rotation: {x: -0.55697834, y: -0.4239907, z: 0.59160924, w: -0.40000695}
+      scale: {x: 1.0000001, y: 1.0000014, z: 1.0000008}
+    - name: model::RightArm
+      parentName: model::RightShoulder
+      position: {x: 2.2737367e-15, y: 9.402705, z: 0}
+      rotation: {x: -0.1354474, y: -0.007627202, z: 0.033564918, w: 0.99018645}
+      scale: {x: 1.0000005, y: 1.0000008, z: 1.0000006}
+    - name: model::RightForeArm
+      parentName: model::RightArm
+      position: {x: -0, y: 19.159176, z: 0}
+      rotation: {x: -0.056290783, y: -0.0030827136, z: 0.03135973, w: 0.99791706}
+      scale: {x: 1.0000012, y: 1.0000012, z: 1.0000004}
+    - name: model::RightHand
+      parentName: model::RightForeArm
+      position: {x: -0, y: 15.933492, z: -1.8189894e-14}
+      rotation: {x: 0.000000007450579, y: -0, z: -0.0000000033469396, w: 1}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: model::Neck
+      parentName: model::Spine2
+      position: {x: -0, y: 14.293777, z: 0.0000013318253}
+      rotation: {x: 0.083466254, y: 4.3858472e-10, z: 0.000000012198187, w: 0.9965106}
+      scale: {x: 1.0000002, y: 1, z: 1}
+    - name: model::Head
+      parentName: model::Neck
+      position: {x: -0, y: 8.461143, z: -0.39913145}
+      rotation: {x: 0.000000007450581, y: -3.6379816e-10, z: 1.5916074e-10, w: 1}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1}
+    - name: model::HeadTop_End
+      parentName: model::Head
+      position: {x: -0, y: 31.451708, z: -1.4836462}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model::RightUpLeg
+      parentName: model::Hips
+      position: {x: 7.0623474, y: -5.227695, z: -2.2250779}
+      rotation: {x: -0.00012513963, y: -0.039890897, z: 0.99919915, w: -0.0031343936}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1}
+    - name: model::RightLeg
+      parentName: model::RightUpLeg
+      position: {x: -0, y: 34.76648, z: 0}
+      rotation: {x: 0.005628618, y: -0.000121445744, z: -0.021571452, w: 0.9997515}
+      scale: {x: 1.0000005, y: 1.0000008, z: 1.0000001}
+    - name: model::RightFoot
+      parentName: model::RightLeg
+      position: {x: -0, y: 26.866316, z: 1.1368684e-15}
+      rotation: {x: 0.4928485, y: 0.004172696, z: -0.0023635242, w: 0.870102}
+      scale: {x: 1.0000011, y: 1.0000008, z: 1.0000005}
+    - name: model::RightToeBase
+      parentName: model::RightFoot
+      position: {x: -0, y: 14.489908, z: 1.1368684e-15}
+      rotation: {x: 0.33068383, y: -0.06008602, z: 0.021102058, w: 0.9415905}
+      scale: {x: 1.0000006, y: 1.0000013, z: 0.99999946}
+    - name: model::RightToe_End
+      parentName: model::RightToeBase
+      position: {x: 1.1368684e-15, y: 5.7489777, z: -2.842171e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: model::LeftUpLeg
+      parentName: model::Hips
+      position: {x: -7.0623474, y: -5.227695, z: -2.6331115}
+      rotation: {x: 0.00010855252, y: -0.03457711, z: 0.9993971, w: 0.0031375228}
+      scale: {x: 1.0000004, y: 1.0000006, z: 1}
+    - name: model::LeftLeg
+      parentName: model::LeftUpLeg
+      position: {x: -1.1368684e-15, y: 34.7389, z: 0}
+      rotation: {x: 0.0031086716, y: 0.00006712228, z: 0.021580154, w: 0.99976236}
+      scale: {x: 1.0000002, y: 1, z: 1.0000001}
+    - name: model::LeftFoot
+      parentName: model::LeftLeg
+      position: {x: -1.1368684e-15, y: 26.856441, z: 0}
+      rotation: {x: 0.49930164, y: -0.0038757299, z: 0.0022335262, w: 0.8664167}
+      scale: {x: 1.0000007, y: 1.0000008, z: 1.0000004}
+    - name: model::LeftToeBase
+      parentName: model::LeftFoot
+      position: {x: -0, y: 14.931215, z: 1.1368684e-15}
+      rotation: {x: 0.31984854, y: 0.05975604, z: -0.020217407, w: 0.94536626}
+      scale: {x: 1.0000006, y: 1.0000007, z: 1.0000005}
+    - name: model::LeftToe_End
+      parentName: model::LeftToeBase
+      position: {x: -5.684342e-16, y: 5.9772553, z: 2.842171e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

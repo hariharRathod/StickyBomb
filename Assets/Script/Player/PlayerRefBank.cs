@@ -4,6 +4,9 @@ public class PlayerRefBank : MonoBehaviour
 {
 	 
 	public PlayerAnimations PlayerAnimation {get; private set;}
+	
+	public CameraController CameraController { get; private set; }
+	
 	public Camera Camera { get; private set; }
 
 	public BombThrowerMechanic BombThrower { get; private set; }
@@ -23,6 +26,10 @@ public class PlayerRefBank : MonoBehaviour
 	{
 		Camera = Camera.main;
 		Debug.Log("player camera raycast: " + Camera.tag, Camera);
+		if (Camera != null)
+		{
+			CameraController = Camera.GetComponent<CameraController>();
+		}
 		PlayerAnimation = GetComponent<PlayerAnimations>();
 		Controller = GetComponent<PlayerController>();
 		BombThrower = GetComponent<BombThrowerMechanic>();

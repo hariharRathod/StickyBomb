@@ -39,6 +39,7 @@ public class GameLoopManager : MonoBehaviour
 		_startTimeScale = Time.timeScale;
 		_startFixedDeltaTime = Time.fixedDeltaTime;
 		_playerRefBank = GameObject.FindGameObjectWithTag("PlayerRoot").GetComponent<PlayerRefBank>();
+		StopSlowMotion();
 
 	}
 
@@ -98,6 +99,8 @@ public class GameLoopManager : MonoBehaviour
 			if (!bombController.IAmOnEnemy) return;
 
 			if (bombController.myParent.TryGetComponent(out EnemyGaintController enemyGaintController)) return;
+
+			if (bombController.myParent.TryGetComponent(out EnemySideWalkController enemySideWalkController)) return;
 			
 			print("bomb");
 			Debug.DrawLine(Camera.main.transform.position, target.position, Color.yellow, 5f, false);
@@ -109,6 +112,8 @@ public class GameLoopManager : MonoBehaviour
 
 		if (target.CompareTag("TargetEnemy"))
 		{
+			if (target.transform.root.TryGetComponent(out EnemySideWalkController enemySideWalkController)) return;
+			
 			print("target enemy");
 			if (target.transform.root.TryGetComponent(out EnemyRefbank enemyRefbank) &&
 				target.transform.TryGetComponent(out EnemyBodyCollider enemyBodyCollider))

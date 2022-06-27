@@ -135,6 +135,16 @@ public class InputHandler : MonoBehaviour
 	{
 		AssignNewState(InputState.Idle);
 	}
-	
-	
+
+	public static void ScreenShakeBegin()
+	{
+		AssignNewState(InputState.Disabled);
+	}
+
+	public static void ScreenShakeEnd()
+	{
+		AssignNewState(InputState.Idle);
+	}
+
+
 }

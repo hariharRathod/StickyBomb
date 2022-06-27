@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 public class BombThrowerMechanic : MonoBehaviour
@@ -17,12 +18,19 @@ public class BombThrowerMechanic : MonoBehaviour
 
 	private PlayerRefBank _my;
 
+
+	private int _bombsCount;
+	private List<GameObject> _bombsFromIncrementGateList;
+
 	private LineRenderer _line;
 	private Transform _hitTransform;
 	private Vector3 _lastHitOffset;
 	private const float Gravity = -9.81f;
 
 	private List<Vector3> linePoints= new List<Vector3>();
+	[SerializeField] private float multipleBombRadius;
+	[SerializeField] private int shootSpeedMin;
+	[SerializeField] private int shootSpeedMax;
 
 	private void OnEnable()
 	{
@@ -40,7 +48,7 @@ public class BombThrowerMechanic : MonoBehaviour
 	{
 		_my = GetComponent<PlayerRefBank>();
 		_line = GetComponent<LineRenderer>();
-			
+		_bombsFromIncrementGateList=new List<GameObject>();
 		_trajectoryPath = new Vector3[trajectoryResolution];
 		_line.positionCount = trajectoryResolution - 1;
 	}
@@ -148,6 +156,68 @@ public class BombThrowerMechanic : MonoBehaviour
 		
 		hitMarker.rotation = Quaternion.LookRotation(hitInfo.normal);
 	}
-	
-	
+
+
+	public void ShootMultipleBombs(int number,GateType gateType, Transform initialBomb, Transform spwanPoint)
+	{
+		switch (gateType)
+		{
+			case GateType.Add:
+			{
+				_bombsCount = number;
+			}
+				break;
+			case GateType.Multiply:
+			{
+				_bombsCount = number;
+			}
+				break;
+		}
+		
+		if (_bombsCount <= 0) return;
+
+		if (_bombsFromIncrementGateList.Contains(initialBomb.gameObject)) return;
+		
+		for (int i = 0; i < _bombsCount; i++)
+		{
+			var radians = (Mathf.PI) / _bombsCount * i;
+
+			var vertical = Mathf.Sin(radians);
+			var horizontal = Mathf.Cos(radians);
+			
+			var spwanDir= new Vector3(horizontal,0,vertical);
+
+			var position = initialBomb.position;
+			var spwanpos = position + spwanDir * multipleBombRadius;
+			var random = Random.Range(-1f, 2f);
+			random *= 0.4f;
+			spwanpos.y = position.y + random;
+
+			var bomb = Instantiate(bombPrefab, spwanpos, Quaternion.identity) as GameObject;
+			
+			_bombsFromIncrementGateList.Add(bomb);
+			
+			if (!bomb.TryGetComponent(out BombShootProjectileController bombShootProjectileController))
+			{
+				bomb.SetActive(false);
+				continue;
+			}
+			
+			bombShootProjectileController.ShootBombInProjectile(shootSpeedMin,shootSpeedMax);
+
+		}
+		
+		DOVirtual.DelayedCall(6f, () =>
+		{
+			if (_bombsFromIncrementGateList.Count < 15) return;
+
+			for (int i = 0; i < 10; i++)
+			{
+				_bombsFromIncrementGateList[i].SetActive(false);
+			}
+		
+		});
+		
+	}
+
 }

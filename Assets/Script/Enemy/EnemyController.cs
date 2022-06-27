@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Runtime.InteropServices.WindowsRuntime;
 using DG.Tweening;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -18,7 +19,7 @@ public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 	[SerializeField] private IStickable.StickableBehaviour stickingBehaviour;
 	[SerializeField] private IExplodDamageable.ExplodableBehaviour explodBehaviour;
 
-	[SerializeField] private bool isEnemyShielded;
+	[SerializeField] private bool isEnemyShielded,isEnemySideWalk,ShouldEnemySideWalkOneShotRagdoll;
 	
 	
 	
@@ -62,8 +63,12 @@ public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 		
 
 		_my.isDead = true;
-		_my.Movement.StopMovement();
-		_my.Movement.DisableAgent();
+		if (!isEnemySideWalk)
+		{
+			_my.Movement.StopMovement();
+			_my.Movement.DisableAgent();
+		}
+		
 		ResetHealthAfterDie();
 			
 		_my.RagdollController.GoRagdoll(getThrownBack);
@@ -90,6 +95,9 @@ public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 		if(_my.area != LevelFlowController.only.currentArea) return;
 		print("Reach next area enemy");
 
+
+		if (isEnemySideWalk) return;
+		
 		DOVirtual.DelayedCall(Random.Range(0, 0.5f), () =>
 		{
 			StartChasingPlayer();
@@ -121,6 +129,16 @@ public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 				return false;
 		
 		
+		if(isEnemySideWalk)
+			if (ShouldEnemySideWalkOneShotRagdoll)
+			{
+				ResetHealthAfterDie();
+				_my.RagdollController.GoRagdoll(true);
+				EnemyEvents.InvokeOnEnemyDied(this);
+				return true;
+			}
+		
+		
 		_health -= damage;
 		healthCanvas.SetHealth(_health);
 		_my.Animations.GetHit();
@@ -141,8 +159,13 @@ public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 		if(_my.isDead) return;
 
 		_my.isDead = true;
-		_my.Movement.StopMovement();
-		_my.Movement.DisableAgent();
+
+		if (!isEnemySideWalk)
+		{
+			_my.Movement.StopMovement();
+			_my.Movement.DisableAgent();
+		}
+		
 		ResetHealthAfterDie();
 			
 		_my.RagdollController.GoRagdoll(getThrownBack);

@@ -1,5 +1,6 @@
 using DG.Tweening;
 using UnityEngine;
+using Input = UnityEngine.Windows.Input;
 
 public class CameraController : MonoBehaviour
 {
@@ -45,22 +46,24 @@ public class CameraController : MonoBehaviour
 		_initialLocalPos = transform.localPosition;
 	}
 	
-	private void ZoomNormal()
+	public void ZoomNormal()
 	{
 		DOTween.To(() => _me.fieldOfView, value => _me.fieldOfView = value, _normalFov, zoomDuration);
 	}
 
-	private void ZoomAction()
+	public void ZoomAction()
 	{
-		DOTween.To(() => _me.fieldOfView, value => _me.fieldOfView = value, actionFov, zoomDuration).OnComplete(ZoomNormal);
+		DOTween.To(() => _me.fieldOfView, value => _me.fieldOfView = value, actionFov, zoomDuration);
 	}
 
 	public void ScreenShake(float intensity)
 	{
+		InputHandler.ScreenShakeBegin();
 		_me.DOShakePosition(shakeDuration * intensity / 2f, shakeStrength * intensity, 10, 45f).OnComplete(() =>
 		{
 			
 			transform.DOLocalMove(_initialLocalPos, 0.15f);
+			InputHandler.ScreenShakeEnd();
 		});
 	}
 	

@@ -159,17 +159,9 @@ public class ArrowShootMechanic : MonoBehaviour
 		_targetTransform = hitTransform;
 		_my.PlayerAnimation.Anim.SetBool(PlayerAnimations.ArrowShoot,true);
 		
-		//ye yaha karra hu taki slow motion me arrow activate hota na dikhe camera me
+		
 
-		DOVirtual.DelayedCall(0.3f, () =>
-		{
-			if (GameLoopManager.InSlowMotion) return;
-			arrow.SetActive(true);
-		}).OnComplete(
-			() =>
-			{
-				//_player.rotation = _playerDefaultRotation;
-			});
+		
 
 	}
 
@@ -182,6 +174,16 @@ public class ArrowShootMechanic : MonoBehaviour
 	public void OnShootAnimation()
 	{
 		arrow.SetActive(false);
+		//ye yaha karra hu taki slow motion me arrow activate hota na dikhe camera me
+		DOVirtual.DelayedCall(0.3f, () =>
+		{
+			if (GameLoopManager.InSlowMotion) return;
+			arrow.SetActive(true);
+		}).OnComplete(
+			() =>
+			{
+				//_player.rotation = _playerDefaultRotation;
+			});
 		LaunchArrow();
 	}
 
@@ -198,6 +200,7 @@ public class ArrowShootMechanic : MonoBehaviour
 		arrow.transform.DOMove(_targetPos, 0.2f).SetEase(Ease.Linear).OnComplete(
 			() =>
 			{
+				
 				HideHitMarker();
 				//arrow.transform.DOMoveZ(arrow.transform.position.z + 0.05f, 0.01f);
 				//rb.isKinematic = true;
@@ -287,8 +290,7 @@ public class ArrowShootMechanic : MonoBehaviour
 			{
 				_arrowsFromIncrementGateList[i].SetActive(false);
 			}
-			
-			
+		
 		});
 
 	}

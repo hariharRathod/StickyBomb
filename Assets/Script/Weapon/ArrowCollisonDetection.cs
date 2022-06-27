@@ -68,7 +68,14 @@ public class ArrowCollisonDetection : MonoBehaviour
 			}
 
 		}
-		
+
+		if (other.collider.CompareTag("Hostage"))
+		{
+			transform.parent = other.transform;
+			_rb.isKinematic = true;
+			_trailRenderer.enabled = false;
+		}
+
 		//agar yad ajaye ke ye yaha ye kyu hai to please batna mujhe............
 		//agar koi pareshaniiiii  aaye ,to mujhe uncomment tum karna, mat bhulo...............
 		/*if (other.transform.TryGetComponent(out ShieldController shieldController))

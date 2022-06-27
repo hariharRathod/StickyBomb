@@ -300,14 +300,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7264151, g: 0.7024297, b: 0.7024297, a: 1}
+  m_Color: {r: 0.21698111, g: 0.21698111, b: 0.21698111, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 879cc24510c70ce4b8449e655dc6fe7a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 20b0a01e4180fea41b6fc68ae8de5ee1, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -504,7 +504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33863463616b87b4dbe55911c7a1fb69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actionFov: 35
+  actionFov: 40
   zoomDuration: 0.5
   shakeDuration: 0.5
   shakeStrength: 0.075
@@ -1568,6 +1568,9 @@ MonoBehaviour:
   bananaTorque: 40
   hitMarker: {fileID: 1886236889}
   trajectoryResolution: 30
+  multipleBombRadius: 0
+  shootSpeedMin: 0
+  shootSpeedMax: 0
 --- !u!114 &1438040357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1946,10 +1949,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   screenPercentageOnY: 0.5
-  aimSpeedVertical: 80
-  aimSpeedHorizontal: 80
-  clampAngleVertical: 40
-  clampAngleHorizontal: 40
+  aimSpeedVertical: 60
+  aimSpeedHorizontal: 60
+  clampAngleVertical: 25
+  clampAngleHorizontal: 15
   findTargetColor: {r: 0.3529412, g: 1, b: 0.37254903, a: 0.83137256}
   missingTargetColor: {r: 1, g: 0.16470589, b: 0.29411766, a: 0.83137256}
 --- !u!1001 &264886166
@@ -2071,15 +2074,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 692650846, guid: b17cd5d6f86cf234fab9cbe7be55941c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: -0.007
       objectReference: {fileID: 0}
     - target: {fileID: 692650846, guid: b17cd5d6f86cf234fab9cbe7be55941c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.132
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 692650846, guid: b17cd5d6f86cf234fab9cbe7be55941c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.532
       objectReference: {fileID: 0}
     - target: {fileID: 692650846, guid: b17cd5d6f86cf234fab9cbe7be55941c, type: 3}
       propertyPath: m_ConstrainProportionsScale

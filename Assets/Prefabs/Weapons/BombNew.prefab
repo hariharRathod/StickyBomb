@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4560786246218033130}
   - component: {fileID: 2544282865852299498}
   - component: {fileID: 1215476094250897769}
+  - component: {fileID: -8944244736991880341}
   m_Layer: 0
   m_Name: BombNew
   m_TagString: Bomb
@@ -120,6 +121,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IAmOnEnemy: 0
   myParent: {fileID: 0}
+--- !u!114 &-8944244736991880341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6934775489548998994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f1ac0493b60b724ba66308dcef9bb0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4149875988658313724
 PrefabInstance:
   m_ObjectHideFlags: 0
