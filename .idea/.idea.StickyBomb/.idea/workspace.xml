@@ -21,19 +21,14 @@
   <component name="ChangeListManager">
     <list default="true" id="6c4fe96e-f45c-4672-b895-16116b91b9bc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 0_ 1 Enemy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 0_ 1 Enemy.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 1_2 Enemy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 1_2 Enemy.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 2_3 Enemy with Barrel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 2_3 Enemy with Barrel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 3_Crowd Enemy with multiplay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 3_Crowd Enemy with multiplay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 4_2 Platform 1 enemy 2 sheild Enemy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 4_2 Platform 1 enemy 2 sheild Enemy.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 5_ 1 gaint.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 5_ 1 gaint.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Canvas/MainCanvasController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Canvas/MainCanvasController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Enemy/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Enemy/EnemyController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Enemy/Gaint/EnemyGaintController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Enemy/Gaint/EnemyGaintController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/HandAnimationHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/HandAnimationHelper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/WeaponSelectCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/WeaponSelectCanvas.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Weapon/BombArrowCollison.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Weapon/BombArrowCollison.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,6 +86,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/AimController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/BombThrowerMechanic.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/BombController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/GA_FB.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/IncrementGate/IncrementGateMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Props/PropsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/PlayerRefBank.cs" root0="FORCE_HIGHLIGHTING" />
@@ -124,8 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Script/Props/ExplosiveBarrelController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Weapon/BombStickCollison.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemy/EnemyMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Props/ShieldController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/IncrementGate/IncrementController.cs" />
@@ -171,10 +165,12 @@
         <option value="$PROJECT_DIR$/Assets/Script/Statemachine/AimingState.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/HandAnimationHelper.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/BombArrowCollison.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Canvas/MainCanvasController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/WeaponSelectCanvas.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemy/EnemyController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemy/Gaint/EnemyGaintController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/Android/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/Assets/Script/GA_FB.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Canvas/MainCanvasController.cs" />
       </list>
     </option>
   </component>
@@ -240,7 +236,8 @@
     <MESSAGE value="New controls added,gaint added,enemy side walk intial setup done." />
     <MESSAGE value="11 levels added" />
     <MESSAGE value="Tutorial Added,All Bug fixes done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tutorial Added,All Bug fixes done" />
+    <MESSAGE value="Audios added,all changes for final done." />
+    <option name="LAST_COMMIT_MESSAGE" value="Audios added,all changes for final done." />
   </component>
   <component name="WindowStateProjectService">
     <state width="1865" height="103" key="GridCell.Tab.0.bottom" timestamp="1655215288372">
@@ -311,10 +308,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="768" y="149" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1656305102964" />
-    <state x="452" y="172" key="Vcs.Push.Dialog.v2" timestamp="1656410263701">
+    <state x="452" y="172" key="Vcs.Push.Dialog.v2" timestamp="1656419754417">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="172" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1656410263701" />
+    <state x="452" y="172" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1656419754417" />
     <state x="544" y="41" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1655882747375">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

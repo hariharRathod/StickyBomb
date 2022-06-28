@@ -45,6 +45,8 @@ public class MainCanvasController : MonoBehaviour
 		
 		dragToAimInfinityImage.gameObject.SetActive(true);
 		releaseToShootText.gameObject.SetActive(false);
+		
+		GA_FB.instance.LevelStart(levelNo.ToString());
 	}
 
 	private void Update()
@@ -139,12 +141,16 @@ public class MainCanvasController : MonoBehaviour
 	private void OnEnemyReachPlayer()
 	{
 		Invoke(nameof(EnableLossObjects), 1.5f);
+		var levelNo = PlayerPrefs.GetInt("levelNo", 1);
+		GA_FB.instance.LevelFail(levelNo.ToString());
 	
 	}
 
 	private void OnGameWin()
 	{
 		Invoke(nameof(EnableVictoryObjects), 1f);
+		var levelNo = PlayerPrefs.GetInt("levelNo", 1);
+		GA_FB.instance.LevelCompleted(levelNo.ToString());
 	
 	}
 	
