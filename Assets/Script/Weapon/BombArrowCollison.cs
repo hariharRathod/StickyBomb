@@ -29,6 +29,8 @@ public class BombArrowCollison : MonoBehaviour
 			if(!explodDamageable.OnExplodeDamage(this.gameObject)) return;
 			explosionParticleSystem.SetActive(true);
 			
+			AudioManager.instance.Play("BombExplode");
+			
 			if(!_my.BombShootProjectileController.ICameFromIncrementGate)
 				WeaponEvents.InvokeOnBombExplosion();
 			

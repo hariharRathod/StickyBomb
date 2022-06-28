@@ -65,6 +65,7 @@ public class MainCanvasController : MonoBehaviour
 
 	public void NextLevel()
 	{
+		
 		if (PlayerPrefs.GetInt("levelNo", 1) < SceneManager.sceneCountInBuildSettings - 1)
 		{
 			var x = PlayerPrefs.GetInt("levelNo", 1) + 1;
@@ -78,6 +79,8 @@ public class MainCanvasController : MonoBehaviour
 			SceneManager.LoadScene(x);
 		}
 		PlayerPrefs.SetInt("levelNo", PlayerPrefs.GetInt("levelNo", 1) + 1);
+		
+		AudioManager.instance.Play("ButtonPress");
 
 	}
 
@@ -101,6 +104,7 @@ public class MainCanvasController : MonoBehaviour
 		nextLevelButton.interactable = true;
 		constantRetryButton.SetActive(false);
 		
+		AudioManager.instance.Play("Win");
 		
 	}
 	
@@ -121,13 +125,15 @@ public class MainCanvasController : MonoBehaviour
 		constantRetryButton.SetActive(false);
 		_hasLost = true;
 		
+		AudioManager.instance.Play("Lose");
+		
 		
 	}
 	
 	public void Retry()
 	{
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-		
+		AudioManager.instance.Play("ButtonPress");
 	}
 	
 	private void OnEnemyReachPlayer()

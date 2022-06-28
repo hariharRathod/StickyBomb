@@ -76,8 +76,8 @@ public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 		disableAllBombsOnMe();
 		
 		EnemyEvents.InvokeOnEnemyDied(this);
-		//audio jab set honga on karna isee.......
-		//AudioManager.instance.Play("Die");
+		
+		AudioManager.instance.Play("Die");
 	}
 	private void StartChasingPlayer()
 	{
@@ -142,6 +142,7 @@ public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 		_health -= damage;
 		healthCanvas.SetHealth(_health);
 		_my.Animations.GetHit();
+		AudioManager.instance.Play("ArrowHit");
 		
 		if (_health > 0f)
 		{
@@ -173,6 +174,8 @@ public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 			
 		EnemyEvents.InvokeOnEnemyDied(this);
 		
+		AudioManager.instance.Play("Die");
+		
 	}
 
 	public void ResetHealthAfterDie()
@@ -199,6 +202,8 @@ public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 		AddBomb(bomb);
 		bomb.transform.parent = target;
 		_my.Animations.GetHit();
+		
+		AudioManager.instance.Play("BombHit");
 		
 		return true;
 	}

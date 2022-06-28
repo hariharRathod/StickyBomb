@@ -9,12 +9,14 @@ public class HandAnimationHelper : MonoBehaviour
 	public void ThrowOnAnimation()
 	{
 		_my.BombThrower.ThrowOnAnimation();
+		AudioManager.instance.Play("BombShoot");
 		
 	}
 
 	public void ArrowShootAnimation()
 	{
 		_my.ArrowShoot.OnShootAnimation();
+		AudioManager.instance.Play("ArrowShoot");
 	}
 
 

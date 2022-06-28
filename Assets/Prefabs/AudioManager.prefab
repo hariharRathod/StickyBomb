@@ -1,0 +1,148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3575898037757990648
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3575898037757990646}
+  - component: {fileID: 3575898037757990649}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3575898037757990646
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3575898037757990648}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3575898037757990649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3575898037757990648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ebc5bbdc31d9914e91ea5633c3680eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixerGroup: {fileID: 0}
+  sounds:
+  - name: BombExplode
+    clip: {fileID: 8300000, guid: 6ea6bb377050a5c4c8890a36ed1b08b9, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0.1
+    loop: 0
+    enableReverb: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: BombShoot
+    clip: {fileID: 8300000, guid: c97919db7768d0942a89cb48c626c19b, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0.1
+    loop: 0
+    enableReverb: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: ArrowShoot
+    clip: {fileID: 8300000, guid: cd680205c4bb00e40899a2f68f0e05e5, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    enableReverb: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Die
+    clip: {fileID: 8300000, guid: 037a56caae255fb4ba170cea85f0f907, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0.75
+    pitchVariance: 0
+    loop: 0
+    enableReverb: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Win
+    clip: {fileID: 8300000, guid: 275cac35b58ba1a40bcbedb1cfdd6090, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    enableReverb: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: ButtonPress
+    clip: {fileID: 8300000, guid: 9e60922743cdeaa4fa31248e34546d20, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 0.75
+    pitchVariance: 0
+    loop: 0
+    enableReverb: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: WeaponButton
+    clip: {fileID: 8300000, guid: 753e00286c9dda9479db7ddff57c5a62, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    enableReverb: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Lose
+    clip: {fileID: 8300000, guid: bb84aae713b328c4bb9d422ce30d7d21, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    enableReverb: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: BombHit
+    clip: {fileID: 8300000, guid: c66b436eb1cebad448dac60decc3f185, type: 3}
+    volume: 0.3
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    enableReverb: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: ArrowHit
+    clip: {fileID: 8300000, guid: c66b436eb1cebad448dac60decc3f185, type: 3}
+    volume: 0.2
+    volumeVariance: 0.1
+    pitch: 1.5
+    pitchVariance: 0.2
+    loop: 0
+    enableReverb: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}

@@ -109,6 +109,7 @@ public class EnemyGaintController : MonoBehaviour,IStickable,IExplodDamageable
 		_health -= damage;
 		healthCanvas.SetHealth(_health);
 		_my.GaintAnimations.GetHit();
+		AudioManager.instance.Play("ArrowHit");
 		
 		if (_health > 0f)
 		{
@@ -136,6 +137,8 @@ public class EnemyGaintController : MonoBehaviour,IStickable,IExplodDamageable
 		disableAllBombsOnMe();
 		
 		EnemyEvents.InvokeOnGaintEnemyDied(this);
+		
+		AudioManager.instance.Play("Die");
 		
 	}
 	
@@ -211,6 +214,7 @@ public class EnemyGaintController : MonoBehaviour,IStickable,IExplodDamageable
 		
 		BombDamage();
 		_my.GaintAnimations.GetHit();
+		
 		
 		return true;
 	}

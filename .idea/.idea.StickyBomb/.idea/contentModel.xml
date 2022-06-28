@@ -348,6 +348,10 @@
         <e p="Script" t="Include">
           <e p="AimController.cs" t="Include" />
           <e p="ArrowFollowCamera.cs" t="Include" />
+          <e p="Audio" t="Include">
+            <e p="AudioManager.cs" t="Include" />
+            <e p="Sound.cs" t="Include" />
+          </e>
           <e p="CameraController.cs" t="Include" />
           <e p="Canvas" t="Include">
             <e p="CanvasLookAtCam.cs" t="Include" />

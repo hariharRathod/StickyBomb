@@ -54,6 +54,8 @@ public class WeaponSelectCanvas : MonoBehaviour
 			{
 				bombImage.rectTransform.DOScale(Vector3.one, 0.25f).SetEase(Ease.InBack).OnComplete(EnableWeaponSelectButton);
 			});
+		
+		
 	}
 	
 	private void OnBombWeaponSelected()
@@ -73,6 +75,7 @@ public class WeaponSelectCanvas : MonoBehaviour
 		//_my.WeaponSelect.WeaponChange();
 		//ye event call singlecast jaisa work karra hai kuch kar iska.
 		WeaponEvents.InvokeWeaponActivate();
+		AudioManager.instance.Play("WeaponButton");
 	}
 
 	public void EnableWeaponSelectButton()
