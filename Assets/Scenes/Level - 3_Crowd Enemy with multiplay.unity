@@ -1448,5 +1448,9 @@ PrefabInstance:
       propertyPath: enemiesInArea.Array.data[0]
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 6963877531415294458, guid: 6f95b4bad7559fb4c8cfd3fe985fbf2a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f95b4bad7559fb4c8cfd3fe985fbf2a, type: 3}
