@@ -1,14 +1,18 @@
 
 using DG.Tweening;
+using DG.Tweening.Core;
+using DG.Tweening.Plugins.Options;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class WeaponSelectCanvas : MonoBehaviour
 {
+	[SerializeField] private bool showTutorial;
 	[SerializeField] private Button weaponSelectButton;
-	[SerializeField] private Image bombImage, arrowImage;
+	[SerializeField] private Image bombImage, arrowImage,arrowPointDown;
 	
 	private PlayerRefBank _my;
+	private Tween arrowPointDownTween;
 
 	private void OnEnable()
 	{
@@ -17,6 +21,7 @@ public class WeaponSelectCanvas : MonoBehaviour
 		GameEvents.GameLose += DisableWeaponSelectButton;
 		GameEvents.GameWin += DisableWeaponSelectButton;
 		GameEvents.CameraFollowArrowStart += DisableWeaponSelectButton;
+		GameEvents.BombRelease += OnBombRelease;
 	}
 
 	private void OnDisable()
@@ -26,16 +31,22 @@ public class WeaponSelectCanvas : MonoBehaviour
 		GameEvents.GameLose -= DisableWeaponSelectButton;
 		GameEvents.GameWin -= DisableWeaponSelectButton;
 		GameEvents.CameraFollowArrowStart -= DisableWeaponSelectButton;
+		GameEvents.BombRelease -= OnBombRelease;
 	}
 
 	private void Start()
 	{
 		_my = GetComponent<PlayerRefBank>();
+
+		if (!showTutorial) return;
+		
+		arrowPointDown.gameObject.SetActive(false);
 	}
 
 	
 	private void OnArrowWeaponSelected()
 	{
+		DisableArrowPointDown();
 		bombImage.rectTransform.localScale=Vector3.zero;
 		DisableWeaponSelectButton();
 		arrowImage.rectTransform.DOScale(Vector3.zero,0.25f).SetEase(Ease.InBack).OnComplete(
@@ -72,6 +83,24 @@ public class WeaponSelectCanvas : MonoBehaviour
 	public void DisableWeaponSelectButton()
 	{
 		weaponSelectButton.interactable = false;
+	}
+	
+	private void OnBombRelease()
+	{
+		if (!showTutorial) return;
+		
+		arrowPointDown.gameObject.SetActive(true);
+		arrowPointDownTween= arrowPointDown.rectTransform.DOLocalMoveY(arrowPointDown.rectTransform.localPosition.y + 40f, 0.5f)
+			.SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo);
+
+	}
+
+	private void DisableArrowPointDown()
+	{
+		if (!showTutorial) return;
+		
+		arrowPointDownTween.Kill();
+		arrowPointDown.gameObject.SetActive(false);
 	}
 
 }

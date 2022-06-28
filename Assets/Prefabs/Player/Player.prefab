@@ -658,7 +658,7 @@ BoxCollider:
   m_GameObject: {fileID: 1701464809}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 2.6754131, z: 0.5532301}
   m_Center: {x: -6.4783723e-10, y: 0.8377004, z: -0.534104}
@@ -831,7 +831,7 @@ MeshCollider:
   m_GameObject: {fileID: 1886236888}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -1059,7 +1059,7 @@ GameObject:
   - component: {fileID: 2079671473}
   - component: {fileID: 2079671477}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: WeaponCanvas
   m_TagString: WeaponSelectCanvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1078,6 +1078,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 529508711}
+  - {fileID: 6904506126625996442}
   m_Father: {fileID: 4354699649110761144}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1159,9 +1160,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b99a1c42e4b189440aa2b80b596b47f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  showTutorial: 0
   weaponSelectButton: {fileID: 529508712}
   bombImage: {fileID: 503177992}
   arrowImage: {fileID: 1754119132}
+  arrowPointDown: {fileID: 5055503993047096425}
 --- !u!1 &3752673595560159491
 GameObject:
   m_ObjectHideFlags: 0
@@ -1287,7 +1290,7 @@ MeshCollider:
   m_GameObject: {fileID: 3922801666504287198}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -1568,9 +1571,9 @@ MonoBehaviour:
   bananaTorque: 40
   hitMarker: {fileID: 1886236889}
   trajectoryResolution: 30
-  multipleBombRadius: 0
-  shootSpeedMin: 0
-  shootSpeedMax: 0
+  multipleBombRadius: 4
+  shootSpeedMin: 700
+  shootSpeedMax: 750
 --- !u!114 &1438040357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1607,6 +1610,8 @@ MonoBehaviour:
   multipleArrowRadius: 2
   shootSpeedMin: 700
   shootSpeedMax: 750
+  arrowSpeed: 6
+  arrowSpeedAfterDotween: 2
 --- !u!114 &9123990464858042432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1952,9 +1957,85 @@ MonoBehaviour:
   aimSpeedVertical: 60
   aimSpeedHorizontal: 60
   clampAngleVertical: 25
-  clampAngleHorizontal: 15
+  clampAngleHorizontal: 20
   findTargetColor: {r: 0.3529412, g: 1, b: 0.37254903, a: 0.83137256}
   missingTargetColor: {r: 1, g: 0.16470589, b: 0.29411766, a: 0.83137256}
+--- !u!1 &6869584965852053790
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6904506126625996442}
+  - component: {fileID: 7057777755512278888}
+  - component: {fileID: 5055503993047096425}
+  m_Layer: 5
+  m_Name: ArrowButtonImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &6904506126625996442
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6869584965852053790}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2079671476}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -409, y: -82}
+  m_SizeDelta: {x: 200, y: 300}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &7057777755512278888
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6869584965852053790}
+  m_CullTransparentMesh: 1
+--- !u!114 &5055503993047096425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6869584965852053790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.5486372, g: 0.3254717, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 2e82db2ab20bd8941a55b84ce7d5d828, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1001 &264886166
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1973,6 +2054,10 @@ PrefabInstance:
     - target: {fileID: 4020841089241187259, guid: db2fb8f0a116f6d4d9951a8af15004eb, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4217397336137974405, guid: db2fb8f0a116f6d4d9951a8af15004eb, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4361513065296189697, guid: db2fb8f0a116f6d4d9951a8af15004eb, type: 3}
       propertyPath: m_RootOrder
@@ -2078,7 +2163,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 692650846, guid: b17cd5d6f86cf234fab9cbe7be55941c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.128
       objectReference: {fileID: 0}
     - target: {fileID: 692650846, guid: b17cd5d6f86cf234fab9cbe7be55941c, type: 3}
       propertyPath: m_LocalPosition.z

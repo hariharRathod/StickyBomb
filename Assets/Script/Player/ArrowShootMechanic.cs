@@ -29,6 +29,8 @@ public class ArrowShootMechanic : MonoBehaviour
 	private int _shootSpeed;
 
 	private List<GameObject> _arrowsFromIncrementGateList;
+	[SerializeField] private float arrowSpeed;
+	[SerializeField] private float arrowSpeedAfterDotween;
 
 	public int ArrowsCount
 	{
@@ -192,15 +194,20 @@ public class ArrowShootMechanic : MonoBehaviour
 		var arrow = Instantiate(arrowPrefab, startPoint.position, startPoint.rotation);
 		var rb = arrow.GetComponent<Rigidbody>();
 		var dirToTarget = _targetPos - arrow.transform.position;
-		//arrow.transform.rotation = Quaternion.LookRotation(dirToTarget,Vector3.up);
+		arrow.transform.rotation = Quaternion.LookRotation(dirToTarget,Vector3.up);
 		if(_targetTransform)
 			WeaponEvents.InvokeOnArrowRealeaseEvent(_targetTransform,arrow);
 		
-		arrow.transform.DORotateQuaternion(Quaternion.LookRotation(dirToTarget, Vector3.up), 0.1f);
-		arrow.transform.DOMove(_targetPos, 0.2f).SetEase(Ease.Linear).OnComplete(
+		//ye ek quick fix hai to the problem of arrrow colliding and dropping down.
+		//rb.AddForce(arrowSpeed * dirToTarget,ForceMode.Impulse);
+		
+		
+		//ye dotween se move karra hai arrow ko,isme kuch problem hai shyad isliye ye abhi ke liye comment kiya hai
+		arrow.transform.DOMove(_targetPos, 0.2f).SetUpdate(UpdateType.Fixed).SetEase(Ease.Linear).OnComplete(
 			() =>
 			{
-				
+				rb.AddForce(arrowSpeedAfterDotween * dirToTarget, ForceMode.Impulse);
+				//arrow.transform.DORotateQuaternion(Quaternion.LookRotation(dirToTarget, Vector3.up), 0.1f);
 				HideHitMarker();
 				//arrow.transform.DOMoveZ(arrow.transform.position.z + 0.05f, 0.01f);
 				//rb.isKinematic = true;

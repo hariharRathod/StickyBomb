@@ -36,7 +36,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Level - 8_2 Platform crowdand gaint multiplay.unity
     guid: c220264bff014f14784cbd8b960deb55
   - enabled: 1
-    path: Assets/Scenes/Level - 9_2 Platform with crowd and barrel and multiplay.unity
+    path: Assets/Scenes/Level - 9_2 Platform with crowd and barrel and moving multiplay.unity
     guid: bddcecb800613e5468550a2f6e99cf6d
   - enabled: 1
     path: Assets/Scenes/Level - 10_2 Platform 2 enemy sheild and 1 enemy sidewalk

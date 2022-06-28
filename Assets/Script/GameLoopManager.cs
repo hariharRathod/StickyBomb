@@ -1,4 +1,5 @@
 
+using System;
 using DG.Tweening;
 using UnityEngine;
 
@@ -36,11 +37,32 @@ public class GameLoopManager : MonoBehaviour
 
 	private void Start()
 	{
-		_startTimeScale = Time.timeScale;
-		_startFixedDeltaTime = Time.fixedDeltaTime;
+		StopSlowMotionAtStart();
+		print("_startfixed deltatime: " + _startFixedDeltaTime);
 		_playerRefBank = GameObject.FindGameObjectWithTag("PlayerRoot").GetComponent<PlayerRefBank>();
-		StopSlowMotion();
+		
 
+	}
+
+	private void StopSlowMotionAtStart()
+	{
+		print("stop start slow motion");
+		print("game time.timescale: " + Time.timeScale);
+		
+		if (Time.timeScale < 1)
+		{
+			_inSlowMotion = false;
+			Time.timeScale = 1;
+			Time.fixedDeltaTime = 0.02f;
+			_startTimeScale = Time.timeScale;
+			_startFixedDeltaTime = Time.fixedDeltaTime;
+		}
+		else if(Time.timeScale >= 1)
+		{
+			_inSlowMotion = false;
+			_startTimeScale = Time.timeScale;
+			_startFixedDeltaTime = Time.fixedDeltaTime;
+		}
 	}
 
 	private void Update()

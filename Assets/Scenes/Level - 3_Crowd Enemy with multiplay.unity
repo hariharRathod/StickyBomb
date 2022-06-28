@@ -984,18 +984,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1438040356, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
-      propertyPath: shootSpeedMax
-      value: 750
-      objectReference: {fileID: 0}
-    - target: {fileID: 1438040356, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
-      propertyPath: shootSpeedMin
-      value: 700
-      objectReference: {fileID: 0}
-    - target: {fileID: 1438040356, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
-      propertyPath: multipleBombRadius
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 75472142830525307, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
       propertyPath: _spline
       value: 

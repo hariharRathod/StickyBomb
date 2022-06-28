@@ -624,6 +624,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 948578204, guid: ebd06037d169d7741942efa07483eb57, type: 3}
+      propertyPath: leftPos
+      value: -1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 948578204, guid: ebd06037d169d7741942efa07483eb57, type: 3}
+      propertyPath: rightPos
+      value: 1.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2811013288696262396, guid: ebd06037d169d7741942efa07483eb57, type: 3}
       propertyPath: m_Name
       value: GunaEnemySIdeWalk

@@ -96,6 +96,7 @@ public class AimingState : InputStateBase
 			{
 				//need to think of some cooldown mechanism that will make game smooth.//soachna par iske bare me pakka..
 				Player.BombThrower.Shoot(hit.transform, hit.point);
+				GameEvents.InvokeOnBombRelease();
 				
 			}
 			else if(Player.WeaponSelect.currentWeapon == WeaponSelectManager.Weapon.Arrow)
@@ -106,6 +107,7 @@ public class AimingState : InputStateBase
 				
 			}
 			
+			GameEvents.InvokeOnFingerUp();
 			InputHandler.AssignNewState(InputState.Idle);
 		}
 		

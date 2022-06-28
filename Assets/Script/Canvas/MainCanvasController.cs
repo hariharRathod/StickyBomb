@@ -5,12 +5,15 @@ using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class MainCanvasController : MonoBehaviour
+public class MainCanvasController : MonoBehaviour	
 {
 	[SerializeField] private GameObject holdToAim, victory, defeat, nextLevel, retry, constantRetryButton;
-	[SerializeField] private TextMeshProUGUI levelText, instructionText;
+	[SerializeField] private TextMeshProUGUI levelText, instructionText,releaseToShootText;
 	[SerializeField] private Image red;
 	[SerializeField] private string tapInstruction, swipeInstruction;
+	[SerializeField] private Image dragToAimInfinityImage;
+	[SerializeField] private bool showTutorial;
+	
 	
 	[SerializeField] private Button nextLevelButton;
 	private bool _hasLost;
@@ -20,18 +23,28 @@ public class MainCanvasController : MonoBehaviour
 	{
 		GameEvents.GameLose += OnEnemyReachPlayer;
 		GameEvents.GameWin += OnGameWin;
+		GameEvents.FingerUp += OnFingerUp;
+		GameEvents.BombRelease += OnBombRelease;
+
 	}
 
 	private void OnDisable()
 	{
 		GameEvents.GameLose -= OnEnemyReachPlayer;
 		GameEvents.GameWin -= OnGameWin;
+		GameEvents.FingerUp -= OnFingerUp;
+		GameEvents.BombRelease -= OnBombRelease;
 	}
 
 	private void Start()
 	{
+		
 		var levelNo = PlayerPrefs.GetInt("levelNo", 1);
 		levelText.text = "Level " + levelNo;
+		if (!showTutorial) return;
+		
+		dragToAimInfinityImage.gameObject.SetActive(true);
+		releaseToShootText.gameObject.SetActive(false);
 	}
 
 	private void Update()
@@ -74,6 +87,9 @@ public class MainCanvasController : MonoBehaviour
 		_hasTapped = true;
 		holdToAim.SetActive(false);
 		GameEvents.InvokeOnTapToPlay();
+		if (!showTutorial) return;
+		dragToAimInfinityImage.gameObject.SetActive(false);
+		releaseToShootText.gameObject.SetActive(true);
 	
 	}
 	private void EnableVictoryObjects()
@@ -117,14 +133,26 @@ public class MainCanvasController : MonoBehaviour
 	private void OnEnemyReachPlayer()
 	{
 		Invoke(nameof(EnableLossObjects), 1.5f);
-		
-		
+	
 	}
 
 	private void OnGameWin()
 	{
 		Invoke(nameof(EnableVictoryObjects), 1f);
+	
+	}
+	
+	private void OnFingerUp()
+	{
+		if (!showTutorial) return;
 		
+		releaseToShootText.gameObject.SetActive(false);
+	}
+	
+	private void OnBombRelease()
+	{
+		if (!showTutorial) return;
 		
+		releaseToShootText.gameObject.SetActive(false);
 	}
 }

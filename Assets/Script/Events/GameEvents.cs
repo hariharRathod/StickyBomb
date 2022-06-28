@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameEvents
 {
-	public static event Action TapToPlay;
+	public static event Action TapToPlay,FingerUp,BombRelease;
 	public static event Action GameLose,GameWin;
 	public static event Action MoveToNextArea,ReactNextArea;
 	public static event Action CameraFollowArrowStart;
@@ -36,5 +36,15 @@ public class GameEvents
 	public static void InvokeOnCameraFollowArrowStart()
 	{
 		CameraFollowArrowStart?.Invoke();
+	}
+
+	public static void InvokeOnFingerUp()
+	{
+		FingerUp?.Invoke();
+	}
+
+	public static void InvokeOnBombRelease()
+	{
+		BombRelease?.Invoke();
 	}
 }
