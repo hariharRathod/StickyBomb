@@ -161,10 +161,6 @@ public class ArrowShootMechanic : MonoBehaviour
 		_targetTransform = hitTransform;
 		_my.PlayerAnimation.Anim.SetBool(PlayerAnimations.ArrowShoot,true);
 		
-		
-
-		
-
 	}
 
 	public void DisableArrowShoot()
@@ -202,7 +198,8 @@ public class ArrowShootMechanic : MonoBehaviour
 		//rb.AddForce(arrowSpeed * dirToTarget,ForceMode.Impulse);
 		
 		
-		//ye dotween se move karra hai arrow ko,isme kuch problem hai shyad isliye ye abhi ke liye comment kiya hai
+		//ye dot
+		//dotween se move karra hai arrow ko,isme kuch problem hai shyad isliye ye abhi ke liye comment kiya hai
 		arrow.transform.DOMove(_targetPos, 0.2f).SetUpdate(UpdateType.Fixed).SetEase(Ease.Linear).OnComplete(
 			() =>
 			{
@@ -246,12 +243,10 @@ public class ArrowShootMechanic : MonoBehaviour
 				break;
 		}
 
-
 		if (_arrowsCount <= 0) return;
 
 		if (_arrowsFromIncrementGateList.Contains(initialArrow.gameObject)) return;
 
-		
 		for (int i = 0; i < _arrowsCount; i++)
 		{
 			var radians = (Mathf.PI) / _arrowsCount * i;
@@ -288,7 +283,6 @@ public class ArrowShootMechanic : MonoBehaviour
 
 		}
 		
-		
 		DOVirtual.DelayedCall(6f, () =>
 		{
 			if (_arrowsFromIncrementGateList.Count < 15) return;
@@ -302,6 +296,4 @@ public class ArrowShootMechanic : MonoBehaviour
 
 	}
 	
-	
-
 }

@@ -564,6 +564,8 @@
             <e p="PropsController.cs" t="Include" />
             <e p="ShieldController.cs" t="Include" />
           </e>
+          <e p="Shatterable.cs" t="Include" />
+          <e p="ShatterableParent.cs" t="Include" />
           <e p="Statemachine" t="Include">
             <e p="AimingState.cs" t="Include" />
             <e p="DragToAimState.cs" t="Include" />
