@@ -227,7 +227,7 @@ public class ArrowShootMechanic : MonoBehaviour
 		hitMarker.gameObject.SetActive(false);
 	}
 
-	public void ShootMutipleArrows(int number,GateType gateType, Transform initialArrow, Transform spwanPoint)
+	public void ShootMutipleArrows(int number, GateType gateType, Transform initialArrow, Transform spwanPoint)
 	{
 		switch (gateType)
 		{

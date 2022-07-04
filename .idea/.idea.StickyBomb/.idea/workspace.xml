@@ -23,12 +23,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Titillium-Black SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Titillium-Black SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 1_2 Enemy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 1_2 Enemy.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 2_3 Enemy with Barrel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 2_3 Enemy with Barrel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 3_Crowd Enemy with multiplay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 3_Crowd Enemy with multiplay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Canvas/MainCanvasController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Canvas/MainCanvasController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/IncrementGate/IncrementGateController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/IncrementGate/IncrementGateController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Player/ArrowShootMechanic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/ArrowShootMechanic.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Weapon/ArrowShootProjectileController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Weapon/ArrowShootProjectileController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
@@ -78,6 +78,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Statemachine/AimingState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemy/EnemyRagdollController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemy/Gaint/EnemyGaintRefBank.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/DeviateGate/DeviateGateController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/ArrowFollowCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Statemachine/InputHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/BombRefBank.cs" root0="FORCE_HIGHLIGHTING" />
@@ -118,14 +119,13 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemy/EnemySheildController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/ArrowShootProjectileController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GameInterfaces.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/DeviateGate.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemy/EnemyAnimations.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/ArrowController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Script/IncrementGate/IncrementController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Weapon/ArrowShootProjectileController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemy/EnemyBodyCollider.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/ArrowController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Events/WeaponEvents.cs" />
@@ -173,8 +173,10 @@
         <option value="$PROJECT_DIR$/Assets/Script/Canvas/MainCanvasController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/ShatterableParent.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Shatterable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/IncrementGate/IncrementGateController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/ArrowShootMechanic.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Weapon/ArrowShootProjectileController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/IncrementGate/IncrementGateController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/DeviateGate/DeviateGateController.cs" />
       </list>
     </option>
   </component>
@@ -242,7 +244,8 @@
     <MESSAGE value="Tutorial Added,All Bug fixes done" />
     <MESSAGE value="Audios added,all changes for final done." />
     <MESSAGE value="GA and FB Added." />
-    <option name="LAST_COMMIT_MESSAGE" value="GA and FB Added." />
+    <MESSAGE value="brick walls added." />
+    <option name="LAST_COMMIT_MESSAGE" value="brick walls added." />
   </component>
   <component name="WindowStateProjectService">
     <state width="1865" height="103" key="GridCell.Tab.0.bottom" timestamp="1655215288372">
@@ -313,10 +316,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="768" y="149" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1656305102964" />
-    <state x="452" y="172" key="Vcs.Push.Dialog.v2" timestamp="1656419754417">
+    <state x="452" y="172" key="Vcs.Push.Dialog.v2" timestamp="1656594798389">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="172" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1656419754417" />
+    <state x="452" y="172" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1656594798389" />
     <state x="544" y="41" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1655882747375">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -325,9 +328,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="530" y="190" width="859" height="660" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1655298265024" />
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1656585868103">
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1656933139681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1656585868103" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1656933139681" />
   </component>
 </project>

@@ -500,6 +500,9 @@
             <e p="HealthCanvas.cs" t="Include" />
             <e p="MainCanvasController.cs" t="Include" />
           </e>
+          <e p="DeviateGate" t="Include">
+            <e p="DeviateGateController.cs" t="Include" />
+          </e>
           <e p="Enemy" t="Include">
             <e p="EnemyAnimations.cs" t="Include" />
             <e p="EnemyBodyCollider.cs" t="Include" />

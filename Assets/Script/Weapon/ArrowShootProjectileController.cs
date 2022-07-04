@@ -31,7 +31,6 @@ public class ArrowShootProjectileController : MonoBehaviour
 		print("inside update arroowwww");
 		SpinInAir();
 		
-	
 	}
 
 
@@ -66,5 +65,6 @@ public class ArrowShootProjectileController : MonoBehaviour
 		print("arrow shoot projectile");
 		GetComponentInChildren<TrailRenderer>().time = 0.3f;
 		//DOVirtual.DelayedCall(0.1f, () => _collider.enabled=true);
+		//DOVirtual.DelayedCall(0.1f, () => print(_rb.velocity));
 	}
 }

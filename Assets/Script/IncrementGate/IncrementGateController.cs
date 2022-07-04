@@ -51,5 +51,6 @@ public class IncrementGateController : MonoBehaviour
 			other.gameObject.SetActive(false);
 		}
 		
+		
 	}
 }
