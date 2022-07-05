@@ -59,7 +59,7 @@ public class AimingState : InputStateBase
 		if (!hit.collider.CompareTag("TargetEnemy") && !hit.collider.CompareTag("ExplosiveBarrel") && 
 			!hit.collider.CompareTag("ShieldSurface") && !hit.collider.CompareTag("Bomb") && 
 			!hit.collider.CompareTag("Ground") && !hit.collider.CompareTag("IncrementGate") && 
-			!hit.collider.CompareTag("Props") && !hit.collider.CompareTag("Hostage"))
+			!hit.collider.CompareTag("Props") && !hit.collider.CompareTag("Hostage") && !hit.collider.CompareTag("DeviateGate"))
 		{
 			_aimer.LoseTarget();
 			return;

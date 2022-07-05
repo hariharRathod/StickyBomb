@@ -98,6 +98,37 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!1 &1316088609272652976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 704171799611807625}
+  m_Layer: 0
+  m_Name: LeftPosBomb
+  m_TagString: Untagged
+  m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &704171799611807625
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316088609272652976}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.271, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6328986425810258484}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1448689922418425921
 GameObject:
   m_ObjectHideFlags: 0
@@ -291,10 +322,10 @@ GameObject:
   - component: {fileID: 6328986425810258484}
   - component: {fileID: 6328986425810258441}
   - component: {fileID: 6328986425810258442}
-  - component: {fileID: 6328986425810258485}
+  - component: {fileID: -6489511893465207931}
   m_Layer: 0
-  m_Name: DeviateGate
-  m_TagString: IncrementGate
+  m_Name: DeviateRightLeftGate
+  m_TagString: DeviateGate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -319,6 +350,8 @@ Transform:
   - {fileID: 8262210405341902341}
   - {fileID: 7186078932277973145}
   - {fileID: 7186078932021373087}
+  - {fileID: 6357440637378811707}
+  - {fileID: 704171799611807625}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -351,7 +384,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
---- !u!114 &6328986425810258485
+--- !u!114 &-6489511893465207931
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -360,17 +393,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 6328986425810258486}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1310015d01d1d084c9bf33a3857cf632, type: 3}
+  m_Script: {fileID: 11500000, guid: 236f71f474255714d86f2744d40e53eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deviateGateType: 0
   arrowPrefab: {fileID: 3916790263263047121, guid: 5257ae6e57d0f47499e8bfb8914d3e6f, type: 3}
   bombPrefab: {fileID: 6934775489548998994, guid: 098949a6932860d468f2c0842d07dbc2, type: 3}
-  rightSpwanPos: {fileID: 7186078932277973145}
-  LeftSpawnPos: {fileID: 7186078932021373087}
-  rightLeftGateMaxDistBeforeRotate: 0
+  rightSpawnPosArrow: {fileID: 7186078932277973145}
+  leftSpawnPosArrow: {fileID: 7186078932021373087}
+  rightSpawnPosBomb: {fileID: 6357440637378811707}
+  leftSpawnPosBomb: {fileID: 704171799611807625}
   arrowSpeed: 700
-  bombSpeed: 500
+  bombSpeed: 1000
+  leftArrowRotateAngle: -20
+  rightArrowRotateAngle: 20
+  rightBombRotateAngle: 15
+  leftBombRotateAngle: -15
+  useGravityForArrow: 0
+  useGravityForBomb: 0
 --- !u!1 &6328986426741489094
 GameObject:
   m_ObjectHideFlags: 0
@@ -561,7 +600,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7186078932021373087}
   m_Layer: 0
-  m_Name: LeftPOs
+  m_Name: LeftPosArrow
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -592,7 +631,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7186078932277973145}
   m_Layer: 0
-  m_Name: RightPos
+  m_Name: RightPosArrow
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -697,3 +736,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &7817444531982424668
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6357440637378811707}
+  m_Layer: 0
+  m_Name: RightPosBomb
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6357440637378811707
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7817444531982424668}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.323, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6328986425810258484}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

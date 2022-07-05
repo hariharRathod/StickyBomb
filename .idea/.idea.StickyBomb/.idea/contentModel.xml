@@ -501,7 +501,11 @@
             <e p="MainCanvasController.cs" t="Include" />
           </e>
           <e p="DeviateGate" t="Include">
+            <e p="DeviateCenterRightController.cs" t="Include" />
+            <e p="DeviateCenterRightLeftController.cs" t="Include" />
+            <e p="DeviateCircularGateController.cs" t="Include" />
             <e p="DeviateGateController.cs" t="Include" />
+            <e p="DeviateRightLeftGateController.cs" t="Include" />
           </e>
           <e p="Enemy" t="Include">
             <e p="EnemyAnimations.cs" t="Include" />
@@ -583,6 +587,7 @@
             <e p="ArrowShootProjectileController.cs" t="Include" />
             <e p="BombArrowCollison.cs" t="Include" />
             <e p="BombController.cs" t="Include" />
+            <e p="BombNormalCollisionDetection.cs" t="Include" />
             <e p="BombRefBank.cs" t="Include" />
             <e p="BombShootProjectileController.cs" t="Include" />
             <e p="BombStickCollison.cs" t="Include" />

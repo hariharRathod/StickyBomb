@@ -92,6 +92,8 @@ public class LevelFlowController : MonoBehaviour
 	
 	private IEnumerator WaitBeforeMovingToNextArea()
 	{
+		GameEvents.InvokeOnCurrentAreaAllEnemyKilled();
+		
 		yield return new WaitForSeconds(1f);
 		
 		if (currentArea == enemiesInArea.Count - 1)

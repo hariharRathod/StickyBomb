@@ -19,6 +19,7 @@ TagManager:
   - AimCanvas
   - Props
   - Hostage
+  - DeviateGate
   layers:
   - Default
   - TransparentFX

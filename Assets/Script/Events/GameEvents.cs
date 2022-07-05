@@ -6,7 +6,7 @@ public class GameEvents
 {
 	public static event Action TapToPlay,FingerUp,BombRelease;
 	public static event Action GameLose,GameWin;
-	public static event Action MoveToNextArea,ReactNextArea;
+	public static event Action MoveToNextArea,ReactNextArea,CurrentAreaAllEnemyKilled;
 	public static event Action CameraFollowArrowStart;
 	
 	public static void InvokeOnTapToPlay()
@@ -46,5 +46,10 @@ public class GameEvents
 	public static void InvokeOnBombRelease()
 	{
 		BombRelease?.Invoke();
+	}
+
+	public static void InvokeOnCurrentAreaAllEnemyKilled()
+	{
+		CurrentAreaAllEnemyKilled?.Invoke();
 	}
 }

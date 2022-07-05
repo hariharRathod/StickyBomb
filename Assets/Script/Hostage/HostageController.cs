@@ -25,24 +25,24 @@ public class HostageController : MonoBehaviour,IStickable,IExplodDamageable
 
 	private void OnEnable()
 	{
-		EnemyEvents.EnemyDied += OnEnemyDie;
+		GameEvents.CurrentAreaAllEnemyKilled += OnCurrentAreaAllEnemyKilled;
 		
+
 	}
 
 	private void OnDisable()
 	{
-		EnemyEvents.EnemyDied -= OnEnemyDie;
+		GameEvents.CurrentAreaAllEnemyKilled += OnCurrentAreaAllEnemyKilled;
+		
 	}
 
-	private void OnEnemyDie(EnemyController obj)
+	private void OnCurrentAreaAllEnemyKilled()
 	{
 		if (area != LevelFlowController.only.currentArea) return;
 		
 		helpGameObject.SetActive(false);
 		Victory();
-		
 	}
-
 
 	private void Start()
 	{
