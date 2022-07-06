@@ -644,6 +644,7 @@ GameObject:
   - component: {fileID: 8984975278345535880}
   - component: {fileID: 8984975278345535883}
   - component: {fileID: 8984975278345535881}
+  - component: {fileID: 8538574638567672212}
   m_Layer: 0
   m_Name: DeviateCenterRightLeftGate
   m_TagString: IncrementGate
@@ -735,6 +736,25 @@ MonoBehaviour:
   rightBombRotateAngle: 15
   useGravityForArrow: 0
   useGravityForBomb: 0
+--- !u!114 &8538574638567672212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8984975278345535927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93b4eb485bab59442ad64f97bfd3c13e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startTransform: {fileID: 8984975277378570933}
+  endTransform: {fileID: 8984975277682767428}
+  movementDuration: 3
+  moveStart: 3
+  moveEnd: -3
+  flip: 0
+  gateShouldMove: 1
 --- !u!1 &9030301182260634150
 GameObject:
   m_ObjectHideFlags: 0

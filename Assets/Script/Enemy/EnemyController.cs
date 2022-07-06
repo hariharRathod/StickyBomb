@@ -19,7 +19,7 @@ public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 	[SerializeField] private IStickable.StickableBehaviour stickingBehaviour;
 	[SerializeField] private IExplodDamageable.ExplodableBehaviour explodBehaviour;
 
-	[SerializeField] private bool isEnemyShielded,isEnemySideWalk,ShouldEnemySideWalkOneShotRagdoll;
+	[SerializeField] private bool isEnemyShielded,isEnemySideWalk,isEnemyHostageHold,ShouldEnemySideWalkOneShotRagdoll;
 	
 	
 	
@@ -95,6 +95,7 @@ public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 		if(_my.area != LevelFlowController.only.currentArea) return;
 		print("Reach next area enemy");
 
+		if (isEnemyHostageHold) return;
 
 		if (isEnemySideWalk) return;
 		

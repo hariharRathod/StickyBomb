@@ -503,8 +503,9 @@
           <e p="DeviateGate" t="Include">
             <e p="DeviateCenterRightController.cs" t="Include" />
             <e p="DeviateCenterRightLeftController.cs" t="Include" />
-            <e p="DeviateCircularGateController.cs" t="Include" />
+            <e p="DeviateCircularRightGateController.cs" t="Include" />
             <e p="DeviateGateController.cs" t="Include" />
+            <e p="DeviateGateMovement.cs" t="Include" />
             <e p="DeviateRightLeftGateController.cs" t="Include" />
           </e>
           <e p="Enemy" t="Include">
