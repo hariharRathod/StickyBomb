@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour
 {
 	private PlayerRefBank _my;
 	[SerializeField] private ArrowFollowCamera _arrowFollowCamera;
+	[SerializeField] private GameObject _circularViewCamera;
 	private GameObject _arrowToFollow;
 
 	private void Start()
@@ -19,14 +20,17 @@ public class PlayerController : MonoBehaviour
 	{
 		//WeaponEvents.ArrowRealeaseEvent += GetArrowFromArrowReleaseEvent;
 		GameEvents.CameraFollowArrowStart += OnCameraFollowArrowStart;
+		GameEvents.CircularViewStart += OnCircularViewStart;
+		GameEvents.CircularViewEnd += OnCircularViewEnd;
 	}
 
 	private void OnDisable()
 	{
 		//WeaponEvents.ArrowRealeaseEvent -= GetArrowFromArrowReleaseEvent;
 		GameEvents.CameraFollowArrowStart -= OnCameraFollowArrowStart;
+		GameEvents.CircularViewStart -= OnCircularViewStart;
+		GameEvents.CircularViewEnd -= OnCircularViewEnd;
 	}
-
 
 	private void GetArrowFromArrowReleaseEvent(Transform target,GameObject arrow)
 	{
@@ -44,5 +48,17 @@ public class PlayerController : MonoBehaviour
 	{
 		_my.Camera.gameObject.SetActive(false);
 		_arrowFollowCamera.OnCameraFollowArrow(_arrowToFollow);
+	}
+	
+	private void OnCircularViewStart()
+	{
+		_my.Camera.gameObject.SetActive(false);
+		_circularViewCamera.SetActive(true);
+	}
+	
+	private void OnCircularViewEnd()
+	{
+		_circularViewCamera.SetActive(false);
+		_my.Camera.gameObject.SetActive(true);
 	}
 }

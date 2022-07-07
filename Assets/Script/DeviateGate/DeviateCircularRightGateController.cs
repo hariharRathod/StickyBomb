@@ -18,7 +18,7 @@ public class DeviateCircularRightGateController : MonoBehaviour
 	
 	private Transform _transform;
 	private Transform _middleTransform;
-	private Transform _targetTransform;
+	[SerializeField] private Transform targetTransform;
 
 	private void Start()
 	{
@@ -26,7 +26,10 @@ public class DeviateCircularRightGateController : MonoBehaviour
 		_bombFromDeviateGate=new List<GameObject>();
 		_transform = transform;
 		_middleTransform = middleGameObject.transform;
-		_targetTransform = GameObject.FindGameObjectWithTag("TargetEnemy").transform;
+
+		if (targetTransform) return;
+		
+		targetTransform = GameObject.FindGameObjectWithTag("TargetEnemy").transform;
 	}
 	
 	private void OnTriggerEnter(Collider other)
@@ -43,7 +46,7 @@ public class DeviateCircularRightGateController : MonoBehaviour
 	{
 		if (_bombFromDeviateGate.Contains(initialBomb)) return;
 
-		if (!_targetTransform) return;
+		if (!this.targetTransform) return;
 		
 		var myPosition = _transform.position;
 		var bomb = Instantiate(bombPrefab, myPosition, Quaternion.identity);
@@ -55,8 +58,8 @@ public class DeviateCircularRightGateController : MonoBehaviour
 		if(!useGravityForArrow)
 			rb.useGravity = false;
 		
-		Debug.DrawLine(_transform.position,_targetTransform.position ,Color.red,2f,false);
-		var targetTransform = _targetTransform;
+		Debug.DrawLine(_transform.position,this.targetTransform.position ,Color.red,2f,false);
+		var targetTransform = this.targetTransform;
 		Debug.Log(targetTransform.name, targetTransform);
 		var middlePoint = (targetTransform.position - myPosition) * 0.5f;
 		middlePoint.y = 0f;
@@ -66,11 +69,13 @@ public class DeviateCircularRightGateController : MonoBehaviour
 
 		var bombInitialAngle = Quaternion.Euler(0, bombRightAngle, 0);
 		bomb.transform.rotation = bombInitialAngle;
-		_middleTransform.DORotate(new Vector3(0, middleRotateEndValue, 0), 1f).SetEase(Ease.Linear).OnComplete(() =>
+		GameEvents.InvokeOnCircularViewStart();
+		_middleTransform.DORotate(new Vector3(0, middleRotateEndValue, 0), 1.5f).SetEase(Ease.Linear).OnComplete(() =>
 		{
 			//arrow.transform.parent = null;
 			rb.AddForce(bomb.transform.forward * bombSpeed);
 			_middleTransform.rotation = Quaternion.Euler(0,0,0);
+			GameEvents.InvokeOnCircularViewEnd();
 		});
 		initialBomb.SetActive(false);
 	}
@@ -79,7 +84,7 @@ public class DeviateCircularRightGateController : MonoBehaviour
 	{
 		if (_arrowsFromDeviateGate.Contains(initialArrow)) return;
 		
-		if (!_targetTransform) return;
+		if (!this.targetTransform) return;
 		
 		var myPosition = _transform.position;
 		var arrow = Instantiate(arrowPrefab, myPosition, Quaternion.identity);
@@ -90,8 +95,8 @@ public class DeviateCircularRightGateController : MonoBehaviour
 		if(!useGravityForArrow)
 			arrowRb.useGravity = false;
 		
-		Debug.DrawLine(_transform.position,_targetTransform.position, Color.red,2f,false);
-		var targetTransform = _targetTransform;
+		Debug.DrawLine(_transform.position,this.targetTransform.position, Color.red,2f,false);
+		var targetTransform = this.targetTransform;
 		Debug.Log(targetTransform.name, targetTransform);
 		var middlePoint = (targetTransform.position - myPosition) * 0.5f;
 		middlePoint.y = 0f;
@@ -101,11 +106,13 @@ public class DeviateCircularRightGateController : MonoBehaviour
 
 		var arrowInitialAngle = Quaternion.Euler(0, arrowRightAngle, 0);
 		arrow.transform.rotation = arrowInitialAngle;
-		_middleTransform.DORotate(new Vector3(0, middleRotateEndValue, 0), 1f).SetEase(Ease.Linear).OnComplete(() =>
+		GameEvents.InvokeOnCircularViewStart();
+		_middleTransform.DORotate(new Vector3(0, middleRotateEndValue, 0), 1.5f).SetEase(Ease.Linear).OnComplete(() =>
 		{
 			//arrow.transform.parent = null;
 			arrowRb.AddForce(arrow.transform.forward * arrowSpeed);
 			_middleTransform.rotation = Quaternion.Euler(0,0,0);
+			GameEvents.InvokeOnCircularViewEnd();
 		});
 		initialArrow.SetActive(false);
 

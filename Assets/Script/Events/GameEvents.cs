@@ -7,7 +7,7 @@ public class GameEvents
 	public static event Action TapToPlay,FingerUp,BombRelease;
 	public static event Action GameLose,GameWin;
 	public static event Action MoveToNextArea,ReactNextArea,CurrentAreaAllEnemyKilled;
-	public static event Action CameraFollowArrowStart;
+	public static event Action CameraFollowArrowStart,CircularViewStart,CircularViewEnd;
 	
 	public static void InvokeOnTapToPlay()
 	{
@@ -51,5 +51,15 @@ public class GameEvents
 	public static void InvokeOnCurrentAreaAllEnemyKilled()
 	{
 		CurrentAreaAllEnemyKilled?.Invoke();
+	}
+
+	public static void InvokeOnCircularViewStart()
+	{
+		CircularViewStart?.Invoke();
+	}
+
+	public static void InvokeOnCircularViewEnd()
+	{
+		CircularViewEnd?.Invoke();
 	}
 }

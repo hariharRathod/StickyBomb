@@ -42,13 +42,13 @@ public class IncrementGateController : MonoBehaviour
 		if (other.CompareTag("Arrow"))
 		{
 			_playerRefBank.ArrowShoot.ShootMutipleArrows(number,gateType,other.transform,transform);
-			other.gameObject.SetActive(false);
+			//other.gameObject.SetActive(false);
 		}
 
 		if (other.CompareTag("Bomb"))
 		{
 			_playerRefBank.BombThrower.ShootMultipleBombs(number,gateType,other.transform,transform);
-			other.gameObject.SetActive(false);
+			//other.gameObject.SetActive(false);
 		}
 		
 		

@@ -31,6 +31,7 @@ public class BombThrowerMechanic : MonoBehaviour
 	[SerializeField] private float multipleBombRadius;
 	[SerializeField] private int shootSpeedMin;
 	[SerializeField] private int shootSpeedMax;
+	[SerializeField] private bool enableBombRubberEffect;
 
 	private void OnEnable()
 	{
@@ -51,6 +52,10 @@ public class BombThrowerMechanic : MonoBehaviour
 		_bombsFromIncrementGateList=new List<GameObject>();
 		_trajectoryPath = new Vector3[trajectoryResolution];
 		_line.positionCount = trajectoryResolution - 1;
+		if (enableBombRubberEffect)
+			bombPrefab.GetComponent<BombController>().enableRubberEffect();
+		else
+			bombPrefab.GetComponent<BombController>().disableRubberEffect();
 	}
 	
 	private void OnArrowWeaponSelected()
@@ -178,6 +183,8 @@ public class BombThrowerMechanic : MonoBehaviour
 
 		if (_bombsFromIncrementGateList.Contains(initialBomb.gameObject)) return;
 		
+		initialBomb.gameObject.SetActive(false);
+		
 		for (int i = 0; i < _bombsCount; i++)
 		{
 			var radians = (Mathf.PI) / _bombsCount * i;
@@ -207,7 +214,7 @@ public class BombThrowerMechanic : MonoBehaviour
 
 		}
 		
-		DOVirtual.DelayedCall(6f, () =>
+		DOVirtual.DelayedCall(20f, () =>
 		{
 			if (_bombsFromIncrementGateList.Count < 15) return;
 

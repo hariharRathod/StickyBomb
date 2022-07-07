@@ -246,6 +246,8 @@ public class ArrowShootMechanic : MonoBehaviour
 		if (_arrowsCount <= 0) return;
 
 		if (_arrowsFromIncrementGateList.Contains(initialArrow.gameObject)) return;
+		
+		initialArrow.gameObject.SetActive(false);
 
 		for (int i = 0; i < _arrowsCount; i++)
 		{
@@ -283,7 +285,7 @@ public class ArrowShootMechanic : MonoBehaviour
 
 		}
 		
-		DOVirtual.DelayedCall(6f, () =>
+		DOVirtual.DelayedCall(20f, () =>
 		{
 			if (_arrowsFromIncrementGateList.Count < 15) return;
 

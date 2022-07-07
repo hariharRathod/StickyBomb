@@ -27,6 +27,8 @@ public class InputHandler : MonoBehaviour
 		GameEvents.CameraFollowArrowStart += OnCameraFollowArrowStart;
 		GameEvents.MoveToNextArea += OnMoveNextArea;
 		GameEvents.ReactNextArea += OnReachNextArea;
+		GameEvents.CircularViewStart += OnCircularViewStart;
+		GameEvents.CircularViewEnd += OnCircularViewEnd;
 	}
 
 	
@@ -38,8 +40,11 @@ public class InputHandler : MonoBehaviour
 		GameEvents.CameraFollowArrowStart -= OnCameraFollowArrowStart;
 		GameEvents.MoveToNextArea -= OnMoveNextArea;
 		GameEvents.ReactNextArea -= OnReachNextArea;
+		GameEvents.CircularViewStart -= OnCircularViewStart;
+		GameEvents.CircularViewEnd -= OnCircularViewEnd;
 	}
 
+	
 	private void Start()
 	{
 		_currentInputState = IdleState;
@@ -146,5 +151,16 @@ public class InputHandler : MonoBehaviour
 		AssignNewState(InputState.Idle);
 	}
 
+	
+	private void OnCircularViewStart()
+	{
+		AssignNewState(InputState.Disabled);
+	}
+	
+	private void OnCircularViewEnd()
+	{
+		AssignNewState(InputState.Idle);
+	}
+	
 
 }

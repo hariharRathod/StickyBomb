@@ -122,6 +122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IAmOnEnemy: 0
   myParent: {fileID: 0}
+  bombRubberEffect: {fileID: 8675946210309639535}
 --- !u!114 &-8944244736991880341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,6 +221,30 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4020841089241187259, guid: db2fb8f0a116f6d4d9951a8af15004eb, type: 3}
   m_PrefabInstance: {fileID: 4149875988658313724}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7046164638439724006 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6367618532837460506, guid: db2fb8f0a116f6d4d9951a8af15004eb, type: 3}
+  m_PrefabInstance: {fileID: 4149875988658313724}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8675946210309639535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7046164638439724006}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8f60ebfcab62204c86dae2fa477bc02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Presets: 1
+  reloadAllValuesToDefault: 0
+  m_EffectIntensity: 0.7
+  m_Damping: 0.87
+  m_Mass: 2
+  m_Stiffness: 0.25
+  sleeping: 1
 --- !u!1001 &6872062588771393193
 PrefabInstance:
   m_ObjectHideFlags: 0

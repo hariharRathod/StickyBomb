@@ -20,6 +20,7 @@ TagManager:
   - Props
   - Hostage
   - DeviateGate
+  - CircularViewCamera
   layers:
   - Default
   - TransparentFX
