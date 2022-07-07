@@ -20,30 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c4fe96e-f45c-4672-b895-16116b91b9bc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/Bomb/Bomb.obj.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/Bomb/Bomb.obj.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/IncrementGate.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/IncrementGate.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapons/BombNew.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapons/BombNew.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 11_3 Enemy with walls.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 11_3 Enemy with walls.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 13_3 Enemy with movement deviate Center Right Left  arrows.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 13_3 Enemy with movement deviate Center Right Left  arrows.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 16_2 Platform  enemy crowd and  deviate gaint 2 enemy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 16_2 Platform  enemy crowd and  deviate gaint 2 enemy.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 17_2 Platform hostage hold deviate gate and crowd Enemy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 17_2 Platform hostage hold deviate gate and crowd Enemy.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 23_2 Enemy with deviate Center Right arrows.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 23_2 Enemy with deviate Center Right arrows.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 3_Crowd Enemy with multiplay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 3_Crowd Enemy with multiplay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/DeviateGate/DeviateCircularRightGateController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/DeviateGate/DeviateCircularRightGateController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Events/GameEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Events/GameEvents.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/IncrementGate/IncrementGateController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/IncrementGate/IncrementGateController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/ArrowShootMechanic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/ArrowShootMechanic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/BombThrowerMechanic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/BombThrowerMechanic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Statemachine/InputHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Statemachine/InputHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Weapon/BombController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Weapon/BombController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 12_2 Enemy with deviate Right Left arrows.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 12_2 Enemy with deviate Right Left arrows.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 18_2 Enemy with deviate Center Right gat and hostage.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 18_2 Enemy with deviate Center Right gat and hostage.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 19_2 Platform  enemy crowd and  deviate gaint 2 enemy 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 19_2 Platform  enemy crowd and  deviate gaint 2 enemy 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Events/WeaponEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Events/WeaponEvents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/WeaponSelectCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/WeaponSelectCanvas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Weapon/WeaponSelectManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Weapon/WeaponSelectManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +40,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -145,8 +134,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Script/Statemachine/InputStateBase.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/AimController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemy/Gaint/EnemyGaintRefBank.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemy/Gaint/EnemyGaintMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemy/Gaint/EnemyGaintAnimations.cs" />
@@ -167,7 +154,6 @@
         <option value="$PROJECT_DIR$/Assets/Script/IncrementGate/IncrementGateMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/HandAnimationHelper.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/BombArrowCollison.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Player/WeaponSelectCanvas.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemy/Gaint/EnemyGaintController.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Android/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/Assets/Script/GA_FB.cs" />
@@ -196,6 +182,9 @@
         <option value="$PROJECT_DIR$/Assets/Script/Player/ArrowShootMechanic.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/BombThrowerMechanic.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/IncrementGate/IncrementGateController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Events/WeaponEvents.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Weapon/WeaponSelectManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Player/WeaponSelectCanvas.cs" />
       </list>
     </option>
   </component>
@@ -242,7 +231,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Arrow Aim and Idle Animation Done." />
     <MESSAGE value="Arrow animation done." />
     <MESSAGE value="Arrow Animation and Arrow shoot functinality done" />
     <MESSAGE value="Enemy setup done,enemy animations added." />
@@ -267,7 +255,8 @@
     <MESSAGE value="RightLeftGate Added." />
     <MESSAGE value="3 types of gate added and arrow size increase." />
     <MESSAGE value="18 levels added,Circular gate added." />
-    <option name="LAST_COMMIT_MESSAGE" value="18 levels added,Circular gate added." />
+    <MESSAGE value="20 levels added,new characters added." />
+    <option name="LAST_COMMIT_MESSAGE" value="20 levels added,new characters added." />
   </component>
   <component name="WindowStateProjectService">
     <state width="1865" height="103" key="GridCell.Tab.0.bottom" timestamp="1655215288372">
@@ -338,10 +327,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="768" y="149" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1656305102964" />
-    <state x="452" y="172" key="Vcs.Push.Dialog.v2" timestamp="1657116294875">
+    <state x="452" y="172" key="Vcs.Push.Dialog.v2" timestamp="1657196939941">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="172" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1657116294875" />
+    <state x="452" y="172" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1657196939941" />
     <state x="544" y="41" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1655882747375">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -350,9 +339,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="530" y="190" width="859" height="660" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1655298265024" />
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1657191862996">
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1657201436362">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1657191862996" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1657201436362" />
   </component>
 </project>

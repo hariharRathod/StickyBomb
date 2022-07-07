@@ -20,18 +20,23 @@ public class WeaponSelectManager : MonoBehaviour
 	private void OnEnable()
 	{
 		WeaponEvents.WeaponChangeEvent += WeaponChange;
+		WeaponEvents.OnBombButtonPressed += OnBombButtonPressed;
+		WeaponEvents.OnArrowButtonPressed += OnArrowButtonPressed;
 	}
 
 	private void OnDisable()
 	{
 		WeaponEvents.WeaponChangeEvent -= WeaponChange;
+		WeaponEvents.OnBombButtonPressed -= OnBombButtonPressed;
+		WeaponEvents.OnArrowButtonPressed -= OnArrowButtonPressed;
 	}
 
 	private void Start()
 	{
 		_my = GetComponent<PlayerRefBank>();
 		currentWeapon = Weapon.Bomb;
-		OnWeaponChange();
+		//OnWeaponChange();
+		OnBombButtonPressed();
 	
 	}
 	
@@ -65,6 +70,19 @@ public class WeaponSelectManager : MonoBehaviour
 			} break;
 			
 		}
+	}
+	
+	
+	private void OnBombButtonPressed()
+	{
+		currentWeapon = Weapon.Bomb;
+		WeaponEvents.InvokeOnBombSelectEvent();
+	}
+	
+	private void OnArrowButtonPressed()
+	{
+		currentWeapon = Weapon.Arrow;
+		WeaponEvents.InvokeOnArrowSelectEvent();
 	}
 
 }

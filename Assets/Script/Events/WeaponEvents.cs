@@ -5,8 +5,8 @@ using UnityEngine;
 public static class WeaponEvents
 {
 	public static event Action WeaponChangeEvent;
-	public static event Action OnBombSelectEvent,OnBombExplosion;
-	public static event Action OnArrowSelectEvent,ArrowCollisionWithObjects,OnMultipleArrowCollison;
+	public static event Action OnBombSelectEvent,OnBombExplosion,OnBombButtonPressed;
+	public static event Action OnArrowSelectEvent,ArrowCollisionWithObjects,OnMultipleArrowCollison,OnArrowButtonPressed;
 
 	public static event Action ArrowCollisonWithTargetDone;
 	
@@ -44,5 +44,15 @@ public static class WeaponEvents
 	public  static void InvokeOnMultipleArrowCollison()
 	{
 		OnMultipleArrowCollison?.Invoke();
+	}
+
+	public static void InvokeOnBombButtonPressed()
+	{
+		OnBombButtonPressed?.Invoke();
+	}
+
+	public static void InvokeOnArrowButtonPressed()
+	{
+		OnArrowButtonPressed?.Invoke();
 	}
 }
