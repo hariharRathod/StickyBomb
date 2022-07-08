@@ -32,7 +32,7 @@ public class HostageController : MonoBehaviour,IStickable,IExplodDamageable
 
 	private void OnDisable()
 	{
-		GameEvents.CurrentAreaAllEnemyKilled += OnCurrentAreaAllEnemyKilled;
+		GameEvents.CurrentAreaAllEnemyKilled -= OnCurrentAreaAllEnemyKilled;
 		
 	}
 

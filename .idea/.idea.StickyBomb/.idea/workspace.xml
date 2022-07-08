@@ -19,7 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c4fe96e-f45c-4672-b895-16116b91b9bc" name="Default Changelist" comment="" />
+    <list default="true" id="6c4fe96e-f45c-4672-b895-16116b91b9bc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 17_2 Platform hostage hold deviate gate and crowd Enemy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 17_2 Platform hostage hold deviate gate and crowd Enemy.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/DeviateGate/DeviateCenterRightLeftController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/DeviateGate/DeviateCenterRightLeftController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/DeviateGate/DeviateCircularRightGateController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/DeviateGate/DeviateCircularRightGateController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Hostage/HostageController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Hostage/HostageController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,13 +40,20 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="video" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///InputExtension.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemy/EnemySideWalk/EnemySideWalkController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Statemachine/TapState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/BombNormalCollisionDetection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/IncrementGate.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemy/Gaint/EnemyGaintBodyCollider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Level - 3_Crowd Enemy with multiplay.unity" root0="FORCE_HIGHLIGHTING" />
@@ -51,6 +67,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Dreamteck/Splines/Components/ObjectController CustomRules/Classes/ObjectControllerCustomRuleBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Hostage/HostageBodyCollider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Audio/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Hostage/HostageController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/WeaponSelectCanvas.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemy/EnemyBodyCollider.cs" root0="FORCE_HIGHLIGHTING" />
@@ -62,6 +79,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/BombShootProjectileController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Events/PlayerEvents.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dreamteck/Splines/Components/SplineComputer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Player.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Props/PropExplosion.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Player/ArrowShootMechanic.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Statemachine/AimingState.cs" root0="FORCE_HIGHLIGHTING" />
@@ -74,6 +92,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/BombArrowCollison.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GroundAreaDetection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/DeviateGate/DeviateCircularRightGateController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/BaseInputModule.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///female-pirate.blend.meta" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Shatterable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemy/Gaint/EnemyGaintAnimations.cs" root0="FORCE_HIGHLIGHTING" />
@@ -108,6 +128,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Extensions/InputExtension.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GroundController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/BombStickCollison.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Meshes/Enemy/NewChars/female-pirate/female-pirate.blend.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemy/EnemySheildController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/ArrowShootProjectileController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/GameInterfaces.cs" root0="FORCE_HIGHLIGHTING" />
@@ -138,7 +159,6 @@
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/BombShootProjectileController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemy/EnemySideWalk/EnemySideWalkController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/GameLoopManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Extensions/InputExtension.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/IncrementGate/IncrementGateMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/HandAnimationHelper.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/BombArrowCollison.cs" />
@@ -146,31 +166,32 @@
         <option value="$PROJECT_DIR$/Assets/Script/Enemy/Gaint/EnemyGaintController.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Android/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/Assets/Script/GA_FB.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Canvas/MainCanvasController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/ShatterableParent.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Shatterable.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/ArrowShootProjectileController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/DeviateGate/DeviateGateController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/LevelFlowController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Hostage/HostageController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/DeviateGate/DeviateRightLeftGateController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/DeviateGate/DeviateCenterRightController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/DeviateGate/DeviateCenterRightLeftController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/BombNormalCollisionDetection.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Statemachine/AimingState.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/ArrowFollowCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/DeviateGate/DeviateCircularGateController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/DeviateGate/DeviateGateMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemy/EnemyController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Events/GameEvents.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/DeviateGate/DeviateCircularRightGateController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/PlayerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Statemachine/InputHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/RubberEffect.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Weapon/BombController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/IncrementGate/IncrementGateController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/DeviateGate/DeviateCircularRightGateController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/DeviateGate/DeviateCenterRightLeftController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Extensions/InputExtension.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Canvas/MainCanvasController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/ArrowShootMechanic.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/BombThrowerMechanic.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/IncrementGate/IncrementGateController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Statemachine/AimingState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Hostage/HostageController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Statemachine/InputHandler.cs" />
       </list>
     </option>
   </component>
@@ -245,6 +266,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="18 levels added,Circular gate added." />
   </component>
   <component name="WindowStateProjectService">
+    <state x="184" y="86" key="DiffContextDialog" timestamp="1657278091807">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1657278091807" />
     <state width="1865" height="103" key="GridCell.Tab.0.bottom" timestamp="1655215288372">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -313,6 +338,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="768" y="149" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1656305102964" />
+    <state x="449" y="143" key="RollbackChangesDialog" timestamp="1657278167598">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="449" y="143" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1657278167598" />
     <state x="452" y="172" key="Vcs.Push.Dialog.v2" timestamp="1657116294875">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -325,9 +354,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="530" y="190" width="859" height="660" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1655298265024" />
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1657191862996">
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1657278201509">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1657191862996" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1657278201509" />
   </component>
 </project>

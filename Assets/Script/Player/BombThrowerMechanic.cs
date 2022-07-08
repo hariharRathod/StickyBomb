@@ -83,7 +83,7 @@ public class BombThrowerMechanic : MonoBehaviour
 	{
 		var idealDest = _hitTransform.position + _lastHitOffset;
 		LaunchBomb(idealDest);
-		Vibration.Vibrate(10);
+		Vibration.Vibrate(15);
 
 	}
 	
