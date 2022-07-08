@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 1215476094250897769}
   - component: {fileID: -8944244736991880341}
   - component: {fileID: 1979509458856420670}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BombNew
   m_TagString: Bomb
   m_Icon: {fileID: 0}
@@ -33,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 6934775489548998994}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.7999997, y: 3.7999997, z: 3.7999997}
+  m_LocalScale: {x: 5.4, y: 5.4, z: 5.4}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 364905093483626749}
@@ -154,9 +154,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3365237697018088236}
     m_Modifications:
+    - target: {fileID: 3698281672621081571, guid: db2fb8f0a116f6d4d9951a8af15004eb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4020841089241187259, guid: db2fb8f0a116f6d4d9951a8af15004eb, type: 3}
       propertyPath: m_Name
       value: Bomb
+      objectReference: {fileID: 0}
+    - target: {fileID: 4020841089241187259, guid: db2fb8f0a116f6d4d9951a8af15004eb, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4020841089241187259, guid: db2fb8f0a116f6d4d9951a8af15004eb, type: 3}
       propertyPath: m_TagString
@@ -205,6 +213,10 @@ PrefabInstance:
     - target: {fileID: 4361513065296189697, guid: db2fb8f0a116f6d4d9951a8af15004eb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367618532837460506, guid: db2fb8f0a116f6d4d9951a8af15004eb, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 475114985959387865, guid: db2fb8f0a116f6d4d9951a8af15004eb, type: 3}
@@ -257,8 +269,28 @@ PrefabInstance:
       value: ExplosionRoundFire
       objectReference: {fileID: 0}
     - target: {fileID: 105310, guid: e6ea0c2b13012484ba2f5dc1054e6d75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 105310, guid: e6ea0c2b13012484ba2f5dc1054e6d75, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108728, guid: e6ea0c2b13012484ba2f5dc1054e6d75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 148014, guid: e6ea0c2b13012484ba2f5dc1054e6d75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 155880, guid: e6ea0c2b13012484ba2f5dc1054e6d75, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 183920, guid: e6ea0c2b13012484ba2f5dc1054e6d75, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 407600, guid: e6ea0c2b13012484ba2f5dc1054e6d75, type: 3}
       propertyPath: m_RootOrder
@@ -374,8 +406,32 @@ PrefabInstance:
       value: ExplosionFireballFire
       objectReference: {fileID: 0}
     - target: {fileID: 130848, guid: d16221e794fe16e4e8994a7f8c770561, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 130848, guid: d16221e794fe16e4e8994a7f8c770561, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 134072, guid: d16221e794fe16e4e8994a7f8c770561, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 147980, guid: d16221e794fe16e4e8994a7f8c770561, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 158376, guid: d16221e794fe16e4e8994a7f8c770561, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 158376, guid: d16221e794fe16e4e8994a7f8c770561, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 160772, guid: d16221e794fe16e4e8994a7f8c770561, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 490358, guid: d16221e794fe16e4e8994a7f8c770561, type: 3}
       propertyPath: m_RootOrder
@@ -383,15 +439,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 490358, guid: d16221e794fe16e4e8994a7f8c770561, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.35
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 490358, guid: d16221e794fe16e4e8994a7f8c770561, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.35
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 490358, guid: d16221e794fe16e4e8994a7f8c770561, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.35
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 490358, guid: d16221e794fe16e4e8994a7f8c770561, type: 3}
       propertyPath: m_LocalPosition.x
@@ -476,9 +532,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7670443178616401442}
     m_Modifications:
+    - target: {fileID: 147164, guid: 34c006058d7d594449f3fb5c03a6d852, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 170494, guid: 34c006058d7d594449f3fb5c03a6d852, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 174658, guid: 34c006058d7d594449f3fb5c03a6d852, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 196622, guid: 34c006058d7d594449f3fb5c03a6d852, type: 3}
       propertyPath: m_Name
       value: MagicSoftExplosionFire
+      objectReference: {fileID: 0}
+    - target: {fileID: 196622, guid: 34c006058d7d594449f3fb5c03a6d852, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 196622, guid: 34c006058d7d594449f3fb5c03a6d852, type: 3}
       propertyPath: m_IsActive

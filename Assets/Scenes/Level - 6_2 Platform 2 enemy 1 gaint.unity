@@ -2419,6 +2419,10 @@ PrefabInstance:
       value: 73
       objectReference: {fileID: 0}
     - target: {fileID: 75472142830525307, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
+      propertyPath: _motion._offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 75472142830525307, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
       propertyPath: _result.forward.x
       value: -0.03138862
       objectReference: {fileID: 0}
@@ -2429,6 +2433,10 @@ PrefabInstance:
     - target: {fileID: 75472142830525307, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
       propertyPath: _result.forward.z
       value: -0.9994921
+      objectReference: {fileID: 0}
+    - target: {fileID: 75472142830525307, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
+      propertyPath: _motion._hasOffset
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 75472142830525307, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
       propertyPath: _result.position.x

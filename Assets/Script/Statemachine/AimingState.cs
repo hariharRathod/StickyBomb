@@ -106,7 +106,9 @@ public class AimingState : InputStateBase
 				Player.CameraController.ZoomNormal();
 				
 			}
-			
+
+			_aimer.SetReticleStatus(false);
+			_aimer.ResetRotation();
 			GameEvents.InvokeOnFingerUp();
 			InputHandler.AssignNewState(InputState.Idle);
 		}

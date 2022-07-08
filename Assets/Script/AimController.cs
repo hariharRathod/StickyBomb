@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -81,6 +82,13 @@ public class AimController : MonoBehaviour
 	{
 		_reticle.color = findTargetColor;
 		
+	}
+
+	public void ResetRotation()
+	{
+		_transform.DORotateQuaternion(_areaInitRotation, 0.2f).SetDelay(0.2f);
+		_rotX = _initRotAxisX;
+		_rotY = _initRotAxisY;
 	}
 	
 	private void OnReachNextArea()

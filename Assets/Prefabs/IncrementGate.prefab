@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3491158208585037779}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.647, y: -0.043, z: 0}
-  m_LocalScale: {x: 0.06, y: 0.7, z: 0.06}
+  m_LocalPosition: {x: -0.6802, y: -0.043, z: 0}
+  m_LocalScale: {x: 0.16576205, y: 0.7, z: 0.06}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3571369456082539584}
@@ -577,7 +577,7 @@ Transform:
   m_GameObject: {fileID: 7377159503349574698}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.635, y: -0.043, z: 0}
-  m_LocalScale: {x: 0.06, y: 0.7, z: 0.06}
+  m_LocalScale: {x: 0.139722, y: 0.7, z: 0.06}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3571369456082539584}
@@ -759,7 +759,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8241545302237121834}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.112999916}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.059911948, y: 0.042450845, z: 0.1198239}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -768,8 +768,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0505, y: -0.07489407}
-  m_SizeDelta: {x: 20, y: 5}
+  m_AnchoredPosition: {x: -0.0719, y: 0}
+  m_SizeDelta: {x: 30.4415, y: 20.1694}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &8241545302237121833
 MeshRenderer:
@@ -791,7 +791,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -9011196106482031438, guid: 4350f55ff9fde5d47be20c91794c9388, type: 2}
+  - {fileID: 8984268477474916819, guid: e6298bdeb0b960146add588013619e4d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -833,10 +833,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: +10
+  m_text: +20
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4350f55ff9fde5d47be20c91794c9388, type: 2}
-  m_sharedMaterial: {fileID: -9011196106482031438, guid: 4350f55ff9fde5d47be20c91794c9388, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e6298bdeb0b960146add588013619e4d, type: 2}
+  m_sharedMaterial: {fileID: 8984268477474916819, guid: e6298bdeb0b960146add588013619e4d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -860,10 +860,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 58
-  m_fontSizeBase: 36
+  m_fontSize: 104.9
+  m_fontSizeBase: 104.9
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 58
   m_fontStyle: 0
