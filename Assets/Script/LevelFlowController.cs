@@ -50,6 +50,8 @@ public class LevelFlowController : MonoBehaviour
 		
 		foreach (var area in enemiesInArea)
 			_totalEnemiesRemaining += area;
+		
+		Vibration.Init();
 
 	}
 	

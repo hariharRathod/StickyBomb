@@ -183,6 +183,7 @@ public class ArrowShootMechanic : MonoBehaviour
 				//_player.rotation = _playerDefaultRotation;
 			});
 		LaunchArrow();
+		Vibration.Vibrate(10);
 	}
 
 	public void LaunchArrow()
