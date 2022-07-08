@@ -24,7 +24,7 @@ public class IncrementGateController : MonoBehaviour
 		{
 			case GateType.Add:
 			{
-				numberText.text = "+ " + number.ToString();
+				numberText.text = "+" + number.ToString();
 			}
 				break;
 			case GateType.Multiply:

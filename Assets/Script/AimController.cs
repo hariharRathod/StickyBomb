@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -32,7 +33,6 @@ public class AimController : MonoBehaviour
 		GameEvents.GameWin -= OnGameWin;
 	}
 
-	
 
 	private void Start()
 	{
@@ -53,7 +53,6 @@ public class AimController : MonoBehaviour
 		_rotX = rot.x;
 	}
 
-
 	public void Aim(Vector2 inputDelta)
 	{
 		_rotY += inputDelta.x * aimSpeedHorizontal * Time.deltaTime;
@@ -65,24 +64,20 @@ public class AimController : MonoBehaviour
 		var newRot = Quaternion.Euler(_rotX, _rotY, 0.0f);
 		_transform.rotation = newRot;
 	}
-	
-	public void SetReticleStatus(bool isOn)
+
+	public void ResetRotation()
 	{
-		_reticle.enabled = isOn;
+		_transform.DORotateQuaternion(_areaInitRotation, 0.2f).SetDelay(0.2f);
+		_rotX = _initRotAxisX;
+		_rotY = _initRotAxisY;
 	}
-	
-	public void LoseTarget()
-	{
-		_reticle.color = missingTargetColor;
-		
-	}
-	
-	public void FindTarget()
-	{
-		_reticle.color = findTargetColor;
-		
-	}
-	
+
+	public void SetReticleStatus(bool isOn) => _reticle.enabled = isOn;
+
+	public void LoseTarget() => _reticle.color = missingTargetColor;
+
+	public void FindTarget() => _reticle.color = findTargetColor;
+
 	private void OnReachNextArea()
 	{
 		_areaInitRotation = _transform.rotation;

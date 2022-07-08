@@ -43,10 +43,15 @@ public class EnemyAnimations : MonoBehaviour
 		_anim.SetBool(IsWalking,false);
 	}
 
-
+	private bool cooldown = false;
 	public void GetHit()
 	{
+		if(cooldown) return;
+		
+		cooldown = true;
+		DOVirtual.DelayedCall(1f, () => cooldown = false);
 		_anim.SetTrigger(Hit);
+		
 		
 		//DOVirtual.DelayedCall(0.15f, () => _anim.ResetTrigger(Hit));
 	}

@@ -111,6 +111,7 @@ public class DeviateCircularRightGateController : MonoBehaviour
 			_middleTransform.rotation = Quaternion.Euler(0,0,0);
 			GameEvents.InvokeOnCircularViewEnd();
 		});
+		
 		initialArrow.SetActive(false);
 
 

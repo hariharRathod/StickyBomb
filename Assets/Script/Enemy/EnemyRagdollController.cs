@@ -1,9 +1,9 @@
-
 using DG.Tweening;
 using UnityEngine;
 
 public class EnemyRagdollController : MonoBehaviour
 {
+	public HostageController girl;
     [SerializeField] private Rigidbody[] rigidbodies;
 	[SerializeField] private float regularForce, throwBackForce, upForce;
 
@@ -24,7 +24,22 @@ public class EnemyRagdollController : MonoBehaviour
 		if (shouldTurnToGrey)
 			_material = skin.materials[toChangeMatIndex];
 	}
-	
+
+	private void Update()
+	{
+		if (Input.GetKeyDown(KeyCode.U))
+		{
+			transform.DORotateQuaternion(
+					Quaternion.LookRotation(girl.transform.position - transform.position), 0.5f)
+				.OnComplete(() =>
+			{
+				girl.DieCustom();
+				GetComponent<Animator>().SetTrigger("slap");
+				_my.Movement.StopMovement();
+			});
+		}
+	}
+
 	public void GoRagdoll(bool getThrownBack)
 	{
 		print("Enemy ragdoll");

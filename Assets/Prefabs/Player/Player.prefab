@@ -3096,7 +3096,7 @@ MonoBehaviour:
   bombBackgroundImage: {fileID: 5907343922651092901}
   arrowBackgroundImage: {fileID: 2748878929667332363}
   enableColor: {r: 0.47867373, g: 1, b: 0.2028302, a: 1}
-  disableColor: {r: 0.7075472, g: 0.7075472, b: 0.7075472, a: 1}
+  disableColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &264886166
 PrefabInstance:
   m_ObjectHideFlags: 0

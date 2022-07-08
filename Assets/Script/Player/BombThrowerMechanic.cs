@@ -204,6 +204,7 @@ public class BombThrowerMechanic : MonoBehaviour
 			var bomb = Instantiate(bombPrefab, spwanpos, Quaternion.identity) as GameObject;
 			
 			_bombsFromIncrementGateList.Add(bomb);
+			bomb.GetComponent<BombController>().disableRubberEffect();
 			
 			if (!bomb.TryGetComponent(out BombShootProjectileController bombShootProjectileController))
 			{

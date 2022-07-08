@@ -90,6 +90,15 @@ public class HostageController : MonoBehaviour,IStickable,IExplodDamageable
 		}
 		
 		GameEvents.InvokeOnGameLose();
+	}
+
+	public void DieCustom()
+	{
+		DOVirtual.DelayedCall(0.75f, () =>
+		{
+			HostageDie();
+			helpGameObject.SetActive(false);
+		});
 		
 	}
 }
