@@ -87,6 +87,7 @@ public class MainCanvasController : MonoBehaviour
 		PlayerPrefs.SetInt("levelNo", PlayerPrefs.GetInt("levelNo", 1) + 1);
 		
 		AudioManager.instance.Play("ButtonPress");
+		Vibration.Vibrate(15);
 
 	}
 

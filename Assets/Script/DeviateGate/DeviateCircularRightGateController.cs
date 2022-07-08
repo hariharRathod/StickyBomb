@@ -1,10 +1,7 @@
-using System.Collections;
+
 using System.Collections.Generic;
 using DG.Tweening;
-using Unity.Mathematics;
-using UnityEditor.PackageManager;
 using UnityEngine;
-using UnityEngine.Animations.Rigging;
 
 public class DeviateCircularRightGateController : MonoBehaviour
 {
