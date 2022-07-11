@@ -8,6 +8,8 @@ public class GameEvents
 	public static event Action GameLose,GameWin;
 	public static event Action MoveToNextArea,ReactNextArea,CurrentAreaAllEnemyKilled;
 	public static event Action CameraFollowArrowStart,CircularViewStart,CircularViewEnd;
+
+	public static event Action ContinousArrowShootEnable;
 	
 	public static void InvokeOnTapToPlay()
 	{
@@ -61,5 +63,10 @@ public class GameEvents
 	public static void InvokeOnCircularViewEnd()
 	{
 		CircularViewEnd?.Invoke();
+	}
+
+	public static void InvokeOnContinousArrowShootEnable()
+	{
+		ContinousArrowShootEnable?.Invoke();
 	}
 }
