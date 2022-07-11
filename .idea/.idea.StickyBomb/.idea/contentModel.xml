@@ -376,50 +376,6 @@
             </e>
           </e>
         </e>
-        <e p="FImpossible Creations" t="Include">
-          <e p="Editor" t="Include">
-            <e p="Plugins - Editor - Animating" t="Include">
-              <e p="Jiggling Editor" t="Include">
-                <e p="FJiggling_MultiEditor.cs" t="Include" />
-              </e>
-            </e>
-          </e>
-          <e p="Plugins - Animating" t="Include">
-            <e p="Jiggling" t="Include">
-              <e p="Behaviours" t="Include">
-                <e p="Bases" t="Include">
-                  <e p="FJiggling_Base.cs" t="Include" />
-                </e>
-                <e p="FJiggling_Active.cs" t="Include" />
-                <e p="FJiggling_Grow.cs" t="Include" />
-                <e p="FJiggling_Multi.cs" t="Include" />
-                <e p="FJiggling_Rect.cs" t="Include" />
-                <e p="FJiggling_Simple.cs" t="Include" />
-                <e p="FJiggling_SimpleBones.cs" t="Include" />
-              </e>
-              <e p="ReadMe - Jiggling.txt" t="Include" />
-            </e>
-          </e>
-          <e p="Plugins - Shared" t="Include">
-            <e p="Math Helpers" t="Include">
-              <e p="Helpers" t="Include">
-                <e p="FColorMethods.cs" t="Include" />
-                <e p="FDebug.cs" t="Include" />
-              </e>
-              <e p="Math" t="Include">
-                <e p="FEasing.cs" t="Include" />
-                <e p="FTransformMethods.cs" t="Include" />
-              </e>
-            </e>
-          </e>
-          <e p="Shared Tools" t="Include">
-            <e p="Editor Tools" t="Include">
-              <e p="Inspector And Scene Tools" t="Include">
-                <e p="FHierarchyIcons.cs" t="Include" />
-              </e>
-            </e>
-          </e>
-        </e>
         <e p="GameAnalytics" t="Include">
           <e p="Editor" t="Include">
             <e p="Android" t="Include">

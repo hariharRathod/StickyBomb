@@ -435,7 +435,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8241545302237121832, guid: 9f64586fccae2544f819db6bd63681db, type: 3}
       propertyPath: m_fontSize
-      value: 107.6
+      value: 81.94
       objectReference: {fileID: 0}
     - target: {fileID: 8241545302237121832, guid: 9f64586fccae2544f819db6bd63681db, type: 3}
       propertyPath: m_fontAsset
@@ -447,7 +447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8241545302237121832, guid: 9f64586fccae2544f819db6bd63681db, type: 3}
       propertyPath: m_fontSizeBase
-      value: 107.6
+      value: 81.94
       objectReference: {fileID: 0}
     - target: {fileID: 8241545302237121832, guid: 9f64586fccae2544f819db6bd63681db, type: 3}
       propertyPath: m_sharedMaterial
@@ -862,11 +862,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4278190353143947847, guid: 8e26ecfbef4324c4aa53b69bafd50de3, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 90
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 4278190353143947847, guid: 8e26ecfbef4324c4aa53b69bafd50de3, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 90
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 4278190354258886491, guid: 8e26ecfbef4324c4aa53b69bafd50de3, type: 3}
       propertyPath: m_Pivot.x
