@@ -50,6 +50,7 @@ public class EnemyRagdollController : MonoBehaviour
 		{
 			rb.isKinematic = false;
 			rb.AddForce(direction * (getThrownBack || _my.throwBackOnLastHit ? throwBackForce : regularForce) + Vector3.up * upForce, ForceMode.Impulse);
+			
 		}
 		
 		if(shouldTurnToGrey)

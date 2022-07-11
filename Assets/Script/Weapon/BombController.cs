@@ -13,7 +13,8 @@ public class BombController : MonoBehaviour
 
 	private void Start()
 	{
-		jiggle.StartJiggle(1f);
+		if(jiggle)
+			jiggle.StartJiggle(1f);
 	}
 
 	public void enableRubberEffect()
