@@ -2620,6 +2620,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1438040356, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
+      propertyPath: bombPrefab
+      value: 
+      objectReference: {fileID: 6934775489548998994, guid: 098949a6932860d468f2c0842d07dbc2, type: 3}
+    - target: {fileID: 1438040356, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
       propertyPath: shootSpeedMax
       value: 380
       objectReference: {fileID: 0}
@@ -2633,6 +2637,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1438040356, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
       propertyPath: enableBombRubberEffect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1572478872, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 75472142830525307, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
@@ -5883,6 +5891,14 @@ PrefabInstance:
       propertyPath: sampleCollection.samples.Array.data[72].position.z
       value: 90.39453
       objectReference: {fileID: 0}
+    - target: {fileID: 606894024602755859, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1709652040951429207, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2360861410226940567, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
       propertyPath: shootSpeedMax
       value: 450
@@ -5894,6 +5910,10 @@ PrefabInstance:
     - target: {fileID: 2360861410226940567, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
       propertyPath: multipleArrowRadius
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3720257773001378515, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4354699649110761144, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
       propertyPath: m_RootOrder
@@ -5962,6 +5982,10 @@ PrefabInstance:
     - target: {fileID: 4975626654956890186, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8489099517942583163, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
@@ -6200,6 +6224,18 @@ PrefabInstance:
     - target: {fileID: 1572900537, guid: 10c234b4bd3f69b4f9328211714fee4d, type: 3}
       propertyPath: m_Speed
       value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1435829162524113610, guid: 10c234b4bd3f69b4f9328211714fee4d, type: 3}
+      propertyPath: deadColor.b
+      value: 0.38131902
+      objectReference: {fileID: 0}
+    - target: {fileID: 1435829162524113610, guid: 10c234b4bd3f69b4f9328211714fee4d, type: 3}
+      propertyPath: deadColor.g
+      value: 0.38131902
+      objectReference: {fileID: 0}
+    - target: {fileID: 1435829162524113610, guid: 10c234b4bd3f69b4f9328211714fee4d, type: 3}
+      propertyPath: deadColor.r
+      value: 0.38679248
       objectReference: {fileID: 0}
     - target: {fileID: 1876561260226623690, guid: 10c234b4bd3f69b4f9328211714fee4d, type: 3}
       propertyPath: m_Enabled

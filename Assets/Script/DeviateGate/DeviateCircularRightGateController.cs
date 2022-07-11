@@ -49,6 +49,7 @@ public class DeviateCircularRightGateController : MonoBehaviour
 		var bomb = Instantiate(bombPrefab, myPosition, Quaternion.identity);
 		_bombFromDeviateGate.Add(bomb);
 		_middleTransform.rotation = Quaternion.Euler(0,0,0);
+		bomb.transform.localScale = Vector3.one * 22f;
 		
 
 		var rb = bomb.GetComponent<Rigidbody>();

@@ -423,6 +423,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1438040356, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
+      propertyPath: bombPrefab
+      value: 
+      objectReference: {fileID: 6934775489548998994, guid: c7214fa92ca354e418b4d635c959dd33, type: 3}
     - target: {fileID: 1886236888, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -632,6 +636,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1572900537, guid: 10c234b4bd3f69b4f9328211714fee4d, type: 3}
+      propertyPath: m_Speed
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1435829162524113610, guid: 10c234b4bd3f69b4f9328211714fee4d, type: 3}
       propertyPath: girl
       value: 
@@ -943,6 +951,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7313870119499546223, guid: a0a2f1a7c3559cf4d9e132928e32f3f0, type: 3}
+      propertyPath: bombPrefab
+      value: 
+      objectReference: {fileID: 6934775489548998994, guid: c7214fa92ca354e418b4d635c959dd33, type: 3}
     - target: {fileID: 7313870119499546223, guid: a0a2f1a7c3559cf4d9e132928e32f3f0, type: 3}
       propertyPath: middleGameObject
       value: 

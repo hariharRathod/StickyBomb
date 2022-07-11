@@ -720,11 +720,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3571369456082539584, guid: 9f64586fccae2544f819db6bd63681db, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.88
+      value: 5.8
       objectReference: {fileID: 0}
     - target: {fileID: 3571369456082539584, guid: 9f64586fccae2544f819db6bd63681db, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.62
+      value: 6.14
       objectReference: {fileID: 0}
     - target: {fileID: 3571369456082539584, guid: 9f64586fccae2544f819db6bd63681db, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2909,6 +2909,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1438040356, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
+      propertyPath: bombPrefab
+      value: 
+      objectReference: {fileID: 6934775489548998994, guid: c7214fa92ca354e418b4d635c959dd33, type: 3}
     - target: {fileID: 1438040356, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
       propertyPath: shootSpeedMax
       value: 550
@@ -6512,7 +6516,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5104552770530881711, guid: 10c234b4bd3f69b4f9328211714fee4d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 16.65
+      value: 14.17
       objectReference: {fileID: 0}
     - target: {fileID: 5104552770530881711, guid: 10c234b4bd3f69b4f9328211714fee4d, type: 3}
       propertyPath: m_LocalRotation.w

@@ -1,6 +1,7 @@
 
 using System.Collections;
 using System.Collections.Generic;
+using FIMSpace.Jiggling;
 using UnityEngine;
 
 public class LevelFlowController : MonoBehaviour
@@ -52,6 +53,9 @@ public class LevelFlowController : MonoBehaviour
 			_totalEnemiesRemaining += area;
 		
 		Vibration.Init();
+		
+		
+		
 
 	}
 	

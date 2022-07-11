@@ -1096,6 +1096,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e505a09964a1458489c0d45482d79b7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  girl: {fileID: 0}
   rigidbodies:
   - {fileID: 7404366300619293684}
   - {fileID: 8332672940736787079}
@@ -1114,7 +1115,7 @@ MonoBehaviour:
   skin: {fileID: 1752902049724606396}
   shouldTurnToGrey: 1
   toChangeMatIndex: 0
-  deadColor: {r: 0.7075472, g: 0.7075472, b: 0.7075472, a: 0}
+  deadColor: {r: 0.4716981, g: 0.4716981, b: 0.4716981, a: 1}
 --- !u!114 &5109364391807503272
 MonoBehaviour:
   m_ObjectHideFlags: 0

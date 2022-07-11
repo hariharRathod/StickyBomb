@@ -101,7 +101,7 @@ public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 		
 		DOVirtual.DelayedCall(Random.Range(0, 0.5f), () =>
 		{
-			StartChasingPlayer();
+			//StartChasingPlayer();
 		});
 
 	}

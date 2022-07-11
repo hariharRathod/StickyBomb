@@ -56,6 +56,8 @@ public class BombThrowerMechanic : MonoBehaviour
 			bombPrefab.GetComponent<BombController>().enableRubberEffect();
 		else
 			bombPrefab.GetComponent<BombController>().disableRubberEffect();
+		
+		
 	}
 	
 	private void OnArrowWeaponSelected()
