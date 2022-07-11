@@ -15,6 +15,10 @@ public class LevelFlowController : MonoBehaviour
 	private readonly List<Transform> _deadBodies = new List<Transform>();
 	[SerializeField] private int _totalEnemiesRemaining;
 
+	[SerializeField] private bool continousArrowEnable;
+
+	public bool ContinousArrowEnable => continousArrowEnable;
+
 	private void Awake()
 	{
 		if (!only) only = this;
@@ -52,7 +56,11 @@ public class LevelFlowController : MonoBehaviour
 			_totalEnemiesRemaining += area;
 		
 		Vibration.Init();
-
+		
+		if(continousArrowEnable)
+			GameEvents.InvokeOnContinousArrowShootEnable();
+		
+		
 	}
 	
 	
