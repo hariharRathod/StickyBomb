@@ -73,6 +73,7 @@ public class GameLoopManager : MonoBehaviour
 		if (_follow) return;
 		if (!_target) return;
 		if (!_target.transform.root.TryGetComponent(out EnemyRefbank enemyRefBank)) return;
+		if (enemyRefBank.isDead) return;
 		enemyRefBank.Animations.SetAnimatorStatus(true);
 	
 	}

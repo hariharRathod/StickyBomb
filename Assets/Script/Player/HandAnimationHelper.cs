@@ -18,6 +18,12 @@ public class HandAnimationHelper : MonoBehaviour
 		_my.ArrowShoot.OnShootAnimation();
 		AudioManager.instance.Play("ArrowShoot");
 	}
+	
+	public void ContinousShootAnimation()
+	{
+		_my.ArrowShoot.OnShootContinousArrowAnimation();
+		AudioManager.instance.Play("ArrowShoot");
+	}
 
 
 }

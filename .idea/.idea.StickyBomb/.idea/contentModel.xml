@@ -578,6 +578,7 @@
           <e p="ShatterableParent.cs" t="Include" />
           <e p="Statemachine" t="Include">
             <e p="AimingState.cs" t="Include" />
+            <e p="ContinousShootState.cs" t="Include" />
             <e p="DragToAimState.cs" t="Include" />
             <e p="InputHandler.cs" t="Include" />
             <e p="InputStateBase.cs" t="Include" />

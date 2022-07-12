@@ -20,16 +20,21 @@ public class WeaponSelectManager : MonoBehaviour
 	private void OnEnable()
 	{
 		WeaponEvents.WeaponChangeEvent += WeaponChange;
+		GameEvents.ContinousArrowShootEnable += OnContinouArrowEnable;
 	}
 
 	private void OnDisable()
 	{
 		WeaponEvents.WeaponChangeEvent -= WeaponChange;
+		GameEvents.ContinousArrowShootEnable -= OnContinouArrowEnable;
 	}
 
 	private void Start()
 	{
 		_my = GetComponent<PlayerRefBank>();
+		
+		if (LevelFlowController.only.ContinousArrowEnable) return; 
+		
 		currentWeapon = Weapon.Bomb;
 		OnWeaponChange();
 	
@@ -66,5 +71,12 @@ public class WeaponSelectManager : MonoBehaviour
 			
 		}
 	}
+	
+	private void OnContinouArrowEnable()
+	{
+		currentWeapon = Weapon.Arrow;
+		OnWeaponChange();
+	}
+
 
 }

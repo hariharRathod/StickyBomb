@@ -29,8 +29,9 @@ public class ArrowShootMechanic : MonoBehaviour
 	private int _shootSpeed;
 
 	private List<GameObject> _arrowsFromIncrementGateList;
-	[SerializeField] private float arrowSpeed;
+	[SerializeField] private float arrowSpeed,continousArrowSpeed;
 	[SerializeField] private float arrowSpeedAfterDotween;
+	private Vector3 continousArrowTargetPos;
 
 	public int ArrowsCount
 	{
@@ -50,7 +51,8 @@ public class ArrowShootMechanic : MonoBehaviour
 		WeaponEvents.OnBombSelectEvent += OnBombWeaponSelected;
 		GameEvents.GameWin += OnGameWin;
 		GameEvents.CameraFollowArrowStart += OnCameraFollowArrowStart;
-		
+		GameEvents.ContinousArrowShootEnable += OnContinousArrowEnable;
+
 	}
 
 	private void OnDisable()
@@ -59,10 +61,9 @@ public class ArrowShootMechanic : MonoBehaviour
 		WeaponEvents.OnBombSelectEvent -= OnBombWeaponSelected;
 		GameEvents.GameWin -= OnGameWin;
 		GameEvents.CameraFollowArrowStart -= OnCameraFollowArrowStart;
-		
+		GameEvents.ContinousArrowShootEnable -= OnContinousArrowEnable;
 	}
 
-	
 	private void Start()
 	{
 		_my = GetComponent<PlayerRefBank>();
@@ -155,12 +156,17 @@ public class ArrowShootMechanic : MonoBehaviour
 
 	public void Shoot(Transform hitTransform,Vector3 hitPoint)
 	{
-		
 		InputHandler.PutInCoolDown();
 		_targetPos = hitPoint;
 		_targetTransform = hitTransform;
-		_my.PlayerAnimation.Anim.SetBool(PlayerAnimations.ArrowShoot,true);
-		
+		if (!LevelFlowController.only.ContinousArrowEnable)
+		{
+			_my.PlayerAnimation.Anim.SetBool(PlayerAnimations.ArrowShoot,true);
+			return;
+		}
+
+		_my.PlayerAnimation.Anim.SetTrigger(PlayerAnimations.ContinousArrowShoot);
+
 	}
 
 	public void DisableArrowShoot()
@@ -171,17 +177,21 @@ public class ArrowShootMechanic : MonoBehaviour
 
 	public void OnShootAnimation()
 	{
-		arrow.SetActive(false);
-		//ye yaha karra hu taki slow motion me arrow activate hota na dikhe camera me
-		DOVirtual.DelayedCall(0.3f, () =>
-		{
-			if (GameLoopManager.InSlowMotion) return;
-			arrow.SetActive(true);
-		}).OnComplete(
-			() =>
+		//if (!LevelFlowController.only.ContinousArrowEnable)
+		//{
+			arrow.SetActive(false);
+			//ye yaha karra hu taki slow motion me arrow activate hota na dikhe camera me
+			DOVirtual.DelayedCall(0.3f, () =>
 			{
-				//_player.rotation = _playerDefaultRotation;
-			});
+				if (GameLoopManager.InSlowMotion) return;
+				arrow.SetActive(true);
+			}).OnComplete(
+				() =>
+				{
+					//_player.rotation = _playerDefaultRotation;
+				});
+		//}
+		
 		LaunchArrow();
 		Vibration.Vibrate(15);
 	}
@@ -226,6 +236,47 @@ public class ArrowShootMechanic : MonoBehaviour
 	public void HideHitMarker()
 	{
 		hitMarker.gameObject.SetActive(false);
+	}
+
+	public void ActivateArrow()
+	{
+		arrow.SetActive(true);
+	}
+
+	public void ShootContinousArrows(Vector3 target)
+	{
+		arrow.SetActive(false);
+		continousArrowTargetPos = target;
+		_my.PlayerAnimation.Anim.SetTrigger(PlayerAnimations.ContinousArrowShoot);
+	}
+
+	public void OnShootContinousArrowAnimation()
+	{
+		
+		/*DOVirtual.DelayedCall(0.05f, () =>
+		{
+			arrow.SetActive(true);
+		});*/
+		
+		LaunchContinousArrows();
+		Vibration.Vibrate(18);
+		WeaponEvents.InvokeOnContinousArrowShoot();
+	}
+
+	private void LaunchContinousArrows()
+	{
+		var arrow = Instantiate(arrowPrefab, this.arrow.transform.position, Quaternion.identity);
+		var rb = arrow.GetComponent<Rigidbody>();
+		var dirToTarget = continousArrowTargetPos - arrow.transform.position;
+		arrow.transform.rotation = Quaternion.LookRotation(dirToTarget,Vector3.up);
+		//rb.AddForce(dirToTarget * continousArrowSpeed,ForceMode.Impulse);
+		
+		arrow.transform.DOMove(continousArrowTargetPos, 0.2f).SetUpdate(UpdateType.Fixed).SetEase(Ease.Linear).OnComplete(
+			() =>
+			{
+				rb.AddForce(arrowSpeedAfterDotween * dirToTarget, ForceMode.Impulse);
+				HideHitMarker();
+			});
 	}
 
 	public void ShootMutipleArrows(int number, GateType gateType, Transform initialArrow, Transform spwanPoint)
@@ -297,6 +348,11 @@ public class ArrowShootMechanic : MonoBehaviour
 		
 		});
 
+	}
+	
+	private void OnContinousArrowEnable()
+	{
+		HideHitMarker();
 	}
 	
 }

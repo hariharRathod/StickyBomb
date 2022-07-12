@@ -1693,6 +1693,7 @@ MonoBehaviour:
   multipleBombRadius: 4
   shootSpeedMin: 700
   shootSpeedMax: 750
+  enableBombRubberEffect: 0
 --- !u!114 &1438040357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1730,6 +1731,7 @@ MonoBehaviour:
   shootSpeedMin: 700
   shootSpeedMax: 750
   arrowSpeed: 6
+  continousArrowSpeed: 2
   arrowSpeedAfterDotween: 2
 --- !u!114 &9123990464858042432
 MonoBehaviour:

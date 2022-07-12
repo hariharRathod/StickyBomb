@@ -22,6 +22,7 @@ public class WeaponSelectCanvas : MonoBehaviour
 		GameEvents.GameWin += DisableWeaponSelectButton;
 		GameEvents.CameraFollowArrowStart += DisableWeaponSelectButton;
 		GameEvents.BombRelease += OnBombRelease;
+		GameEvents.ContinousArrowShootEnable += OnContinouseArrowEnable;
 	}
 
 	private void OnDisable()
@@ -32,8 +33,10 @@ public class WeaponSelectCanvas : MonoBehaviour
 		GameEvents.GameWin -= DisableWeaponSelectButton;
 		GameEvents.CameraFollowArrowStart -= DisableWeaponSelectButton;
 		GameEvents.BombRelease -= OnBombRelease;
+		GameEvents.ContinousArrowShootEnable -= OnContinouseArrowEnable;
 	}
 
+	
 	private void Start()
 	{
 		_my = GetComponent<PlayerRefBank>();
@@ -104,6 +107,11 @@ public class WeaponSelectCanvas : MonoBehaviour
 		
 		arrowPointDownTween.Kill();
 		arrowPointDown.gameObject.SetActive(false);
+	}
+	
+	private void OnContinouseArrowEnable()
+	{
+		weaponSelectButton.gameObject.SetActive(false);
 	}
 
 }
