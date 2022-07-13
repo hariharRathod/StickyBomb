@@ -515,6 +515,7 @@
             <e p="EnemyMovement.cs" t="Include" />
             <e p="EnemyRagdollController.cs" t="Include" />
             <e p="EnemyRefbank.cs" t="Include" />
+            <e p="EnemyRunController.cs" t="Include" />
             <e p="EnemySheildController.cs" t="Include" />
             <e p="EnemySideWalk" t="Include">
               <e p="EnemySideWalkController.cs" t="Include" />
@@ -547,6 +548,7 @@
           <e p="Hostage" t="Include">
             <e p="HostageBodyCollider.cs" t="Include" />
             <e p="HostageController.cs" t="Include" />
+            <e p="HostageRunController.cs" t="Include" />
           </e>
           <e p="IncrementGate" t="Include">
             <e p="IncrementGateController.cs" t="Include" />
@@ -583,6 +585,10 @@
             <e p="InputHandler.cs" t="Include" />
             <e p="InputStateBase.cs" t="Include" />
             <e p="TapState.cs" t="Include" />
+          </e>
+          <e p="vehicle" t="Include">
+            <e p="VehicleDistanceUiCanvasController.cs" t="Include" />
+            <e p="VehicleMovement.cs" t="Include" />
           </e>
           <e p="Vibration.cs" t="Include" />
           <e p="Weapon" t="Include">

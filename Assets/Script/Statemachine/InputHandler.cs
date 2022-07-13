@@ -21,6 +21,7 @@ public class InputHandler : MonoBehaviour
 	private static bool _inCoolDown;
 	private GameObject _player;
 	private PlayerRefBank _playerRefBank;
+	private AimController aimer;
 
 	private void OnEnable()
 	{
@@ -58,7 +59,8 @@ public class InputHandler : MonoBehaviour
 		_player = GameObject.FindGameObjectWithTag("PlayerRoot");
 		_playerRefBank = _player.GetComponent<PlayerRefBank>();
 		_ = new InputStateBase(_playerRefBank);
-		_aimingState=new AimingState(_player.GetComponent<AimController>());
+		aimer = _player.GetComponent<AimController>();
+		_aimingState=new AimingState(aimer);
 		_continousShootState = new ContinousShootState(_player.GetComponent<AimController>());
 		if (LevelFlowController.only.ContinousArrowEnable) return;
 		
@@ -85,8 +87,12 @@ public class InputHandler : MonoBehaviour
 
 		if (!InputExtensions.GetFingerUp()) return;
 		
+		
+		
 		if(_playerRefBank.WeaponSelect.currentWeapon == WeaponSelectManager.Weapon.Arrow)
 		{
+			aimer.SetReticleStatus(false);
+			aimer.ResetRotation();
 			print("Arrow activate");
 			DOVirtual.DelayedCall(0.2f,()=>_playerRefBank.ArrowShoot.ActivateArrow());
 		}

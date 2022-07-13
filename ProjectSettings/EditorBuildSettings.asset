@@ -69,7 +69,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Level - 18_2 Enemy with deviate Center Right gat and hostage.unity
     guid: e41995954b21f734ead50b59f52d2ad9
   - enabled: 1
-    path: Assets/Scenes/Level - 19_2 Platform  enemy crowd and  deviate gaint 2 enemy
-      1.unity
+    path: Assets/Scenes/Level - 19_2 Platform  enemy crowd and  deviate gaint 2 enemy.unity
+    guid: 21b9a517c92f671438e9d6bb9b368d47
+  - enabled: 1
+    path: Assets/Scenes/Level - 20_2 Platform  enemy crowd and  Continous Arrow Shoot.unity
     guid: eea56154ab9642647b19c53734f0be92
   m_configObjects: {}

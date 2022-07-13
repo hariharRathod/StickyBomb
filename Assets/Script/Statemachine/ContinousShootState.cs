@@ -38,7 +38,13 @@ public class ContinousShootState : InputStateBase
 			Player.ArrowShoot.ShootContinousArrows(ray.origin + ray.direction * MaxRayDistance);
 			return;
 		}
-		
+
+		if (hit.collider.CompareTag("Hostage"))
+		{
+			_aimer.LoseTarget();
+			return;
+		}
+
 		if (hit.collider.TryGetComponent(out EnemyRefbank enemyRefbank))
 		{
 			if(enemyRefbank.area!=LevelFlowController.only.currentArea)
@@ -65,6 +71,12 @@ public class ContinousShootState : InputStateBase
 			
 			/*if (Camera.main != null)
 				Player.ArrowShoot.ShootContinousArrows(MaxRayDistance * Camera.main.transform.forward);*/
+		}
+
+		if (InputExtensions.GetFingerUp())
+		{
+			_aimer.SetReticleStatus(false);
+			_aimer.ResetRotation();
 		}
 		
 	}

@@ -9,13 +9,20 @@ public class HostageController : MonoBehaviour,IStickable,IExplodDamageable
 	[SerializeField] private int area;
 	[SerializeField] private GameObject helpGameObject;
 	
-	private bool _isDead;
+	private bool _isDead,_hasWon;
 	
 	[SerializeField] private IStickable.StickableBehaviour stickingBehaviour;
 	[SerializeField] private IExplodDamageable.ExplodableBehaviour explodBehaviour;
 	
 	private static readonly int Win = Animator.StringToHash("win");
 	
+
+	public bool HasWon
+	{
+		get => _hasWon;
+		set => _hasWon = value;
+	}
+
 
 	public bool IsDead
 	{
@@ -46,6 +53,8 @@ public class HostageController : MonoBehaviour,IStickable,IExplodDamageable
 
 	private void Start()
 	{
+		_isDead = false;
+		_hasWon = false;
 		_anim = GetComponent<Animator>();
 		foreach (var rb in rigidbodies) rb.isKinematic = true;
 	}
@@ -72,16 +81,17 @@ public class HostageController : MonoBehaviour,IStickable,IExplodDamageable
 		
 		if (explodBehaviour != IExplodDamageable.ExplodableBehaviour.Explodable) return false;
 		
-		HostageDie();
+		HostageDie(true);
 		
 		return true;
 	}
 
 
-	public void HostageDie()
+	public void HostageDie(bool shouldInvokeGameLose)
 	{
 		_isDead = true;
 		_anim.enabled = false;
+		helpGameObject.SetActive(false);
 		var direction = -transform.forward;
 		foreach (var rb in rigidbodies)
 		{
@@ -89,7 +99,8 @@ public class HostageController : MonoBehaviour,IStickable,IExplodDamageable
 			rb.AddForce(direction * ( throwBackForce ) + Vector3.up * upForce, ForceMode.Impulse);
 		}
 		
-		GameEvents.InvokeOnGameLose();
+		if(shouldInvokeGameLose)
+			GameEvents.InvokeOnGameLose();
 		
 	}
 }

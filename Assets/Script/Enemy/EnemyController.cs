@@ -98,6 +98,8 @@ public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 		if (isEnemyHostageHold) return;
 
 		if (isEnemySideWalk) return;
+
+		if (_my.transform.TryGetComponent(out EnemyRunController enemyRunController)) return;
 		
 		DOVirtual.DelayedCall(Random.Range(0, 0.5f), () =>
 		{
@@ -121,7 +123,7 @@ public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 	}
 
 
-	public bool GetHit(float damage)
+	public bool GetHit(float damage,bool shouldHit)
 	{
 		if (_my.isDead) return false;
 		
@@ -142,7 +144,8 @@ public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 		
 		_health -= damage;
 		healthCanvas.SetHealth(_health);
-		_my.Animations.GetHit();
+		if(shouldHit)
+			_my.Animations.GetHit();
 		AudioManager.instance.Play("ArrowHit");
 		
 		if (_health > 0f)
