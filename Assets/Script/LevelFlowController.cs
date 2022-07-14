@@ -16,6 +16,9 @@ public class LevelFlowController : MonoBehaviour
 	[SerializeField] private int _totalEnemiesRemaining;
 
 	[SerializeField] private bool continousArrowEnable;
+	
+	public EnemyRunController closest = null;
+	public float minDistance = 9999f;
 
 	public bool ContinousArrowEnable => continousArrowEnable;
 
@@ -123,6 +126,14 @@ public class LevelFlowController : MonoBehaviour
 		enemiesInCurrentArea = enemiesInArea[++currentArea];
 		enemiesKilledInCurrentArea = 0;
 	}
-	
-	
+
+
+	public void TryAssignMinDistance(float distance, EnemyRunController enemyRunController)
+	{
+		if(distance > minDistance) return;
+		if (enemyRunController.IsDead) return;
+
+		minDistance = distance;
+		closest = enemyRunController;
+	}
 }

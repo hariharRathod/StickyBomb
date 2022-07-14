@@ -65,8 +65,13 @@ public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 		_my.isDead = true;
 		if (!isEnemySideWalk)
 		{
-			_my.Movement.StopMovement();
-			_my.Movement.DisableAgent();
+			//vroooo kya hai ye soacho iska,tune isko wo enemy run controller ke liye sacrifice kardiya.
+			if (_my.Movement)
+			{
+				_my.Movement.StopMovement();
+				_my.Movement.DisableAgent();
+			}
+			
 		}
 		
 		ResetHealthAfterDie();

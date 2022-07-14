@@ -109,7 +109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3eaa5b8bb9e810449bc25276a25ae7c7, type: 3}
       propertyPath: m_TagString
-      value: Hostage
+      value: HostageRoot
       objectReference: {fileID: 0}
     - target: {fileID: 1302911376277527240, guid: 3eaa5b8bb9e810449bc25276a25ae7c7, type: 3}
       propertyPath: m_IsActive
@@ -371,6 +371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fastMoveSpeedMultiplier: 1.2
   maxDistanceToPlayer: 12
+  enemySpot: {fileID: 0}
 --- !u!4 &1148220122292656927 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3eaa5b8bb9e810449bc25276a25ae7c7, type: 3}

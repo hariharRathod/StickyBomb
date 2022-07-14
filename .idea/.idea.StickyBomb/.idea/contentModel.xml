@@ -548,6 +548,7 @@
           <e p="Hostage" t="Include">
             <e p="HostageBodyCollider.cs" t="Include" />
             <e p="HostageController.cs" t="Include" />
+            <e p="HostageRefBank.cs" t="Include" />
             <e p="HostageRunController.cs" t="Include" />
           </e>
           <e p="IncrementGate" t="Include">

@@ -28,6 +28,13 @@ public class EnemyRagdollController : MonoBehaviour
 	public void GoRagdoll(bool getThrownBack)
 	{
 		print("Enemy ragdoll");
+		if (_my.transform.TryGetComponent(out EnemyRunController enemyRunController))
+		{
+			enemyRunController.DisableAnimator();
+			GoRagdollWhileRunning(true);
+			return;
+		}
+		
 		_my.Animations.SetAnimatorStatus(false);
 
 		var direction = -transform.forward;

@@ -33,6 +33,8 @@ public class ArrowShootMechanic : MonoBehaviour
 	[SerializeField] private float arrowSpeedAfterDotween;
 	private Vector3 continousArrowTargetPos;
 
+	private bool stopContinousArrow;
+
 	public int ArrowsCount
 	{
 		get => _arrowsCount;
@@ -52,6 +54,7 @@ public class ArrowShootMechanic : MonoBehaviour
 		GameEvents.GameWin += OnGameWin;
 		GameEvents.CameraFollowArrowStart += OnCameraFollowArrowStart;
 		GameEvents.ContinousArrowShootEnable += OnContinousArrowEnable;
+		GameEvents.GameLose += OnGameLose;
 
 	}
 
@@ -62,10 +65,12 @@ public class ArrowShootMechanic : MonoBehaviour
 		GameEvents.GameWin -= OnGameWin;
 		GameEvents.CameraFollowArrowStart -= OnCameraFollowArrowStart;
 		GameEvents.ContinousArrowShootEnable -= OnContinousArrowEnable;
+		GameEvents.GameLose -= OnGameLose;
 	}
 
 	private void Start()
 	{
+		stopContinousArrow = false;
 		_my = GetComponent<PlayerRefBank>();
 		_player = GameObject.FindGameObjectWithTag("PlayerHolder").transform;
 		
@@ -245,6 +250,8 @@ public class ArrowShootMechanic : MonoBehaviour
 
 	public void ShootContinousArrows(Vector3 target)
 	{
+		if (stopContinousArrow) return;
+		
 		arrow.SetActive(false);
 		continousArrowTargetPos = target;
 		_my.PlayerAnimation.Anim.SetTrigger(PlayerAnimations.ContinousArrowShoot);
@@ -257,6 +264,7 @@ public class ArrowShootMechanic : MonoBehaviour
 		{
 			arrow.SetActive(true);
 		});*/
+		if (stopContinousArrow) return;
 		
 		LaunchContinousArrows();
 		Vibration.Vibrate(18);
@@ -265,6 +273,8 @@ public class ArrowShootMechanic : MonoBehaviour
 
 	private void LaunchContinousArrows()
 	{
+		if (stopContinousArrow) return;
+		
 		var arrow = Instantiate(arrowPrefab, this.arrow.transform.position, Quaternion.identity);
 		var rb = arrow.GetComponent<Rigidbody>();
 		var dirToTarget = continousArrowTargetPos - arrow.transform.position;
@@ -353,6 +363,11 @@ public class ArrowShootMechanic : MonoBehaviour
 	private void OnContinousArrowEnable()
 	{
 		HideHitMarker();
+	}
+	
+	private void OnGameLose()
+	{
+		stopContinousArrow = true;
 	}
 	
 }

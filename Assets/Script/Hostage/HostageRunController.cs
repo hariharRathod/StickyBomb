@@ -1,9 +1,11 @@
+using DG.Tweening;
 using UnityEngine;
 
 public class HostageRunController : MonoBehaviour
 {
 	private Animator _anim;
 	[SerializeField] private float fastMoveSpeedMultiplier = 1.2f, maxDistanceToPlayer;
+	[SerializeField] private Transform enemySpot,hostageParentAfterLose;
 	
 	private Transform _player, _transform;
 	private float _currentSpeedMultiplier = 1f, _myMaxDistance;
@@ -16,6 +18,10 @@ public class HostageRunController : MonoBehaviour
 	private static readonly int Win = Animator.StringToHash("win");
 	private static readonly int Run = Animator.StringToHash("run");
 	private static readonly int Lost = Animator.StringToHash("lost");
+	private static readonly int HostageTaken = Animator.StringToHash("hostagetaken");
+
+	public Transform EnemySpot => enemySpot;
+
 	private void Start()
 	{
 		_anim = GetComponent<Animator>();
@@ -70,6 +76,16 @@ public class HostageRunController : MonoBehaviour
 		_anim.SetBool(Lost,true);
 	}
 
+	public void HostageTakenAnim()
+	{
+		_anim.SetTrigger(HostageTaken);
+	}
+
+	public void PositionHostageTaken(Transform hostagetakenpoint)
+	{
+		_transform.parent = hostagetakenpoint;
+		_transform.localPosition =Vector3.zero;
+	}
 
 	private void OnTapToPlay()
 	{
@@ -94,6 +110,4 @@ public class HostageRunController : MonoBehaviour
 		
 	}
 	
-	
-
 }
