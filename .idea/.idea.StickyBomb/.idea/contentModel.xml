@@ -500,6 +500,8 @@
             <e p="HealthCanvas.cs" t="Include" />
             <e p="MainCanvasController.cs" t="Include" />
           </e>
+          <e p="ContinousArrowShootTutorial.cs" t="Include" />
+          <e p="ContinousArrowsParticlesIndication.cs" t="Include" />
           <e p="DeviateGate" t="Include">
             <e p="DeviateCenterRightController.cs" t="Include" />
             <e p="DeviateCenterRightLeftController.cs" t="Include" />
@@ -572,6 +574,7 @@
           </e>
           <e p="Props" t="Include">
             <e p="ExplosiveBarrelController.cs" t="Include" />
+            <e p="FloatingPropController.cs" t="Include" />
             <e p="PropExplosion.cs" t="Include" />
             <e p="PropsController.cs" t="Include" />
             <e p="ShieldController.cs" t="Include" />

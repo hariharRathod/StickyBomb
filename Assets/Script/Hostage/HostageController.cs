@@ -59,6 +59,11 @@ public class HostageController : MonoBehaviour,IStickable,IExplodDamageable
 		foreach (var rb in rigidbodies) rb.isKinematic = true;
 	}
 
+	public void DisableHostageHelpText()
+	{
+		helpGameObject.SetActive(false);
+	}
+
 	private void Victory()
 	{
 		_anim.SetBool(Win,true);

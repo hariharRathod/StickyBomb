@@ -468,6 +468,63 @@ PrefabInstance:
       objectReference: {fileID: 2464059313833797285}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33217629a7c4496419b82c002f5bf782, type: 3}
+--- !u!1001 &283840165
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4368991596813793505, guid: 2240406aef4b0b84c997adb6ce266428, type: 3}
+      propertyPath: m_Name
+      value: ContinousArrowParticleHolderAtStart
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368991596813793519, guid: 2240406aef4b0b84c997adb6ce266428, type: 3}
+      propertyPath: m_RootOrder
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368991596813793519, guid: 2240406aef4b0b84c997adb6ce266428, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368991596813793519, guid: 2240406aef4b0b84c997adb6ce266428, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368991596813793519, guid: 2240406aef4b0b84c997adb6ce266428, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 192
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368991596813793519, guid: 2240406aef4b0b84c997adb6ce266428, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368991596813793519, guid: 2240406aef4b0b84c997adb6ce266428, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368991596813793519, guid: 2240406aef4b0b84c997adb6ce266428, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368991596813793519, guid: 2240406aef4b0b84c997adb6ce266428, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368991596813793519, guid: 2240406aef4b0b84c997adb6ce266428, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368991596813793519, guid: 2240406aef4b0b84c997adb6ce266428, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4368991596813793519, guid: 2240406aef4b0b84c997adb6ce266428, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2240406aef4b0b84c997adb6ce266428, type: 3}
 --- !u!1001 &328280326
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -693,6 +750,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 405464172, guid: a4de9237d336ded419426b48ef8a0154, type: 3}
+      propertyPath: explosionRadius
+      value: 17
+      objectReference: {fileID: 0}
     - target: {fileID: 5843733075430819067, guid: a4de9237d336ded419426b48ef8a0154, type: 3}
       propertyPath: m_Name
       value: ExplosiveBarelWithBombSticked (2)
@@ -703,15 +764,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6508489716125474369, guid: a4de9237d336ded419426b48ef8a0154, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.3
+      value: 7.8
       objectReference: {fileID: 0}
     - target: {fileID: 6508489716125474369, guid: a4de9237d336ded419426b48ef8a0154, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.6
+      value: 5.1
       objectReference: {fileID: 0}
     - target: {fileID: 6508489716125474369, guid: a4de9237d336ded419426b48ef8a0154, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 69.1
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 6508489716125474369, guid: a4de9237d336ded419426b48ef8a0154, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4859,11 +4920,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6508489716125474369, guid: a4de9237d336ded419426b48ef8a0154, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.3
+      value: 4.95
       objectReference: {fileID: 0}
     - target: {fileID: 6508489716125474369, guid: a4de9237d336ded419426b48ef8a0154, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.6
+      value: 5.1
       objectReference: {fileID: 0}
     - target: {fileID: 6508489716125474369, guid: a4de9237d336ded419426b48ef8a0154, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6087,6 +6148,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 405464172, guid: a4de9237d336ded419426b48ef8a0154, type: 3}
+      propertyPath: explosionRadius
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 5843733075430819067, guid: a4de9237d336ded419426b48ef8a0154, type: 3}
       propertyPath: m_Name
       value: ExplosiveBarelWithBombSticked
@@ -6097,15 +6162,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6508489716125474369, guid: a4de9237d336ded419426b48ef8a0154, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.3
+      value: -8.2
       objectReference: {fileID: 0}
     - target: {fileID: 6508489716125474369, guid: a4de9237d336ded419426b48ef8a0154, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.6
+      value: 6.9
       objectReference: {fileID: 0}
     - target: {fileID: 6508489716125474369, guid: a4de9237d336ded419426b48ef8a0154, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 120.4
+      value: 98.8
       objectReference: {fileID: 0}
     - target: {fileID: 6508489716125474369, guid: a4de9237d336ded419426b48ef8a0154, type: 3}
       propertyPath: m_LocalRotation.w

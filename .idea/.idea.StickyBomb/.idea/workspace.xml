@@ -24,20 +24,16 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animators/EnemyRunChase.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animators/EnemyRunChase.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animators/HostageRun.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animators/HostageRun.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Epic Toon FX/Prefabs/Environment/DustDirtyPoofSoft.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Prefabs/Environment/DustDirtyPoofSoft.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/Enemy/EnemyRunning.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/Enemy/EnemyRunning.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Meshes/Enemy/Titan/source/Punching.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/Enemy/Titan/source/Punching.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Meshes/Enemy/ryuk/RuykBody.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/Enemy/ryuk/RuykBody.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy/MalePirateEnemyRunning Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/MalePirateEnemyRunning Variant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Hostage/GirlHostageRunChase Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Hostage/GirlHostageRunChase Variant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 21_2 Platform  enemy crowd and  Continous Arrow Shoot.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 21_2 Platform  enemy crowd and  Continous Arrow Shoot.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Canvas/HealthCanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Canvas/HealthCanvas.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Enemy/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Enemy/EnemyController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Enemy/EnemyRagdollController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Enemy/EnemyRagdollController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Enemy/EnemyRunController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Enemy/EnemyRunController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Titan Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/Titan Variant.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Props/ExplosiveBarelWithBombSticked Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Props/ExplosiveBarelWithBombSticked Variant.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapons/Arrow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapons/Arrow.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 20_2 Platform  enemy crowd and  Continous Arrow Shoot.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 20_2 Platform  enemy crowd and  Continous Arrow Shoot.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 23_Hostage chase enemy crowd continous Arrow with Barrel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 23_Hostage chase enemy crowd continous Arrow with Barrel.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Hostage/HostageController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Hostage/HostageController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Hostage/HostageRunController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Hostage/HostageRunController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/LevelFlowController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/LevelFlowController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/ArrowShootMechanic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/ArrowShootMechanic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
@@ -64,6 +60,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemy/EnemySideWalk/EnemySideWalkController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Statemachine/TapState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/BombNormalCollisionDetection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/ContinousArrowsParticlesIndication.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/IncrementGate.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/Level - 3_Crowd Enemy with multiplay.unity" root0="FORCE_HIGHLIGHTING" />
@@ -150,15 +147,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Hostage/HostageRefBank.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/DeviateGate/DeviateCenterRightController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Enemy/EnemyAnimations.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Props/FloatingPropController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Weapon/ArrowController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/ContinousArrowShootTutorial.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/RubberEffect.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Script/Enemy/EnemySideWalk/EnemySideWalkController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/IncrementGate/IncrementGateMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Weapon/BombArrowCollison.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemy/Gaint/EnemyGaintController.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Android/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/Assets/Script/GA_FB.cs" />
@@ -195,18 +191,21 @@
         <option value="$PROJECT_DIR$/Assets/Script/Hostage/HostageRunMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemy/EnemyBodyCollider.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/vehicle/VehicleMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Hostage/HostageController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Hostage/HostageBodyCollider.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Statemachine/ContinousShootState.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Statemachine/InputHandler.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/LevelFlowController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Hostage/HostageRefBank.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Hostage/HostageRunController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Player/ArrowShootMechanic.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemy/EnemyController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Canvas/HealthCanvas.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemy/EnemyRunController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Enemy/EnemyRagdollController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Hostage/HostageController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Hostage/HostageRunController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Props/FloatingPropController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/ContinousArrowsParticlesIndication.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/ContinousArrowShootTutorial.cs" />
       </list>
     </option>
   </component>
@@ -253,7 +252,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Enemy health UI Added,Win lose UI Added" />
     <MESSAGE value="Major Bug fix of enemy automatic collison with arrow and dying by itself and maincanvas preafab fix." />
     <MESSAGE value="Arrow last shoot slow motion done." />
     <MESSAGE value="Game code refactred,bomb stick and explode code refactred,Barrel explosion intial setup done." />
@@ -278,7 +276,8 @@
     <MESSAGE value="Continous arrow invoke basic setup in levelflowcontroller done." />
     <MESSAGE value="Continous Arrow Shoot Done with 1 level created." />
     <MESSAGE value="Running chase level done." />
-    <option name="LAST_COMMIT_MESSAGE" value="Running chase level done." />
+    <MESSAGE value="Running chase level addtional things added,3 new level with continous Arrow Added,24 levels done." />
+    <option name="LAST_COMMIT_MESSAGE" value="Running chase level addtional things added,3 new level with continous Arrow Added,24 levels done." />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="86" key="DiffContextDialog" timestamp="1657278091807">
@@ -357,10 +356,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="449" y="143" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1657278167598" />
-    <state x="452" y="172" key="Vcs.Push.Dialog.v2" timestamp="1657719194844">
+    <state x="452" y="172" key="Vcs.Push.Dialog.v2" timestamp="1657805977320">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="172" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1657719194844" />
+    <state x="452" y="172" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1657805977320" />
     <state x="544" y="41" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1657295882698">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -369,9 +368,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="530" y="190" width="859" height="660" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1655298265024" />
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1657793547352">
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1657869717972">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1657793547352" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1657869717972" />
   </component>
 </project>

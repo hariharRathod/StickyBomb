@@ -83,8 +83,11 @@ public class HostageRunController : MonoBehaviour
 
 	public void PositionHostageTaken(Transform hostagetakenpoint)
 	{
+		_hostageController.DisableHostageHelpText();
 		_transform.parent = hostagetakenpoint;
-		_transform.localPosition =Vector3.zero;
+		_anim.applyRootMotion = false;
+		_transform.DOLocalMove(Vector3.zero, 0.4f);
+		_transform.DOLocalRotate(Vector3.zero, 0.4f);
 	}
 
 	private void OnTapToPlay()
