@@ -366,6 +366,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -9070493210130169274, guid: 20c9f8ca42ca2a74f83d7e97167640a0, type: 3}
+      propertyPath: m_TagString
+      value: TargetEnemy
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 20c9f8ca42ca2a74f83d7e97167640a0, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -426,14 +430,58 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7657966619581158213, guid: 20c9f8ca42ca2a74f83d7e97167640a0, type: 3}
+      propertyPath: m_TagString
+      value: TargetEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: -6170625038081293824, guid: 20c9f8ca42ca2a74f83d7e97167640a0, type: 3}
+      propertyPath: m_TagString
+      value: TargetEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: -4332706925441422008, guid: 20c9f8ca42ca2a74f83d7e97167640a0, type: 3}
+      propertyPath: m_TagString
+      value: TargetEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: -3086436065929644917, guid: 20c9f8ca42ca2a74f83d7e97167640a0, type: 3}
+      propertyPath: m_TagString
+      value: TargetEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: -1781356600409242780, guid: 20c9f8ca42ca2a74f83d7e97167640a0, type: 3}
+      propertyPath: m_TagString
+      value: TargetEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: -290750445479886849, guid: 20c9f8ca42ca2a74f83d7e97167640a0, type: 3}
+      propertyPath: m_TagString
+      value: TargetEnemy
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 20c9f8ca42ca2a74f83d7e97167640a0, type: 3}
       propertyPath: m_Name
       value: Titan_T-Pose Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 20c9f8ca42ca2a74f83d7e97167640a0, type: 3}
+      propertyPath: m_TagString
+      value: TargetEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 1082271958561512970, guid: 20c9f8ca42ca2a74f83d7e97167640a0, type: 3}
+      propertyPath: m_TagString
+      value: TargetEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3135921509060577837, guid: 20c9f8ca42ca2a74f83d7e97167640a0, type: 3}
+      propertyPath: m_TagString
+      value: TargetEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3948933247560734027, guid: 20c9f8ca42ca2a74f83d7e97167640a0, type: 3}
+      propertyPath: m_TagString
+      value: TargetEnemy
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 20c9f8ca42ca2a74f83d7e97167640a0, type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 108f2ff9634b7b64c89254d94f084d4c, type: 2}
+    - target: {fileID: 8817898888258712963, guid: 20c9f8ca42ca2a74f83d7e97167640a0, type: 3}
+      propertyPath: m_TagString
+      value: TargetEnemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20c9f8ca42ca2a74f83d7e97167640a0, type: 3}
 --- !u!1 &74314914174965697 stripped

@@ -12,6 +12,8 @@ public class EnemyAnimations : MonoBehaviour
 	
 	private EnemyRefbank _my;
 
+	private bool coolDown;
+
 	private void OnEnable()
 	{
 		GameEvents.CameraFollowArrowStart += OnCameraFollowArrowStart;
@@ -46,6 +48,12 @@ public class EnemyAnimations : MonoBehaviour
 
 	public void GetHit()
 	{
+		if (coolDown) return;
+
+		coolDown = true;
+
+		DOVirtual.DelayedCall(1f, () => coolDown = false);
+		
 		_anim.SetTrigger(Hit);
 		
 		//DOVirtual.DelayedCall(0.15f, () => _anim.ResetTrigger(Hit));

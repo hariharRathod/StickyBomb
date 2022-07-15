@@ -173,11 +173,6 @@ public class InputHandler : MonoBehaviour
 	
 	private void OnReachNextArea()
 	{
-		if (LevelFlowController.only.ContinousArrowEnable)
-		{
-			AssignNewState(InputState.ContinousShootState); 
-			return;
-		}
 		
 		AssignNewState(InputState.Idle);
 
