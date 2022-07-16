@@ -508,6 +508,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1438040356, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
+      propertyPath: scaleMultiplier
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2079671477, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
       propertyPath: showTutorial
       value: 1

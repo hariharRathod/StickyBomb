@@ -818,7 +818,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 958e636385a24d94bad62c90e81835f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arrowPrefab: {fileID: 3916790263263047121, guid: 5257ae6e57d0f47499e8bfb8914d3e6f, type: 3}
+  arrowPrefab: {fileID: 3916790263263047121, guid: adb378992ef4df34fa3e9d066f96f93b, type: 3}
   bombPrefab: {fileID: 6934775489548998994, guid: 098949a6932860d468f2c0842d07dbc2, type: 3}
   centerSpawnPosArrow: {fileID: 5250647690497106718}
   rightSpawnPosArrow: {fileID: 5250647690242136856}

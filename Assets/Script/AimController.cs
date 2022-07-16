@@ -6,7 +6,7 @@ public class AimController : MonoBehaviour
 {
 	//the magic number percentage 0.5905f is the screen Y pos when you center the crosshair on anchorY as minY = 0.565, maxY = 0.615
 	//0.5899 for 0.55, 0.63
-	[Header("Aiming")] public float screenPercentageOnY = 0.5899f;
+	[Header("Aiming")] public float screenPercentageOnY = 0.5899f, aimLerp;
 	
 	[SerializeField] private float aimSpeedVertical, aimSpeedHorizontal, clampAngleVertical, clampAngleHorizontal;
 	[SerializeField] private Color findTargetColor, missingTargetColor;
@@ -14,7 +14,7 @@ public class AimController : MonoBehaviour
 	
 	private Transform _transform;
 	
-	private float _rotX, _rotY, _initRotAxisX, _initRotAxisY;
+	private float _rotX, _rotY, _desiredRotX, _desiredRotY, _initRotAxisX, _initRotAxisY;
 	private float _targetDistance, _targetInitYPos, _targetDesiredYPos;
 	private Quaternion _areaInitRotation;
 	private Canvas _canvas;
@@ -32,8 +32,6 @@ public class AimController : MonoBehaviour
 		GameEvents.GameLose -= OnGameLose;
 		GameEvents.GameWin -= OnGameWin;
 	}
-
-	
 
 	private void Start()
 	{
@@ -62,6 +60,16 @@ public class AimController : MonoBehaviour
  
 		_rotY = Mathf.Clamp(_rotY, _initRotAxisY - clampAngleHorizontal, _initRotAxisY + clampAngleHorizontal);
 		_rotX = Mathf.Clamp(_rotX, _initRotAxisX - clampAngleVertical, _initRotAxisX + clampAngleVertical);
+
+		/*_desiredRotY += inputDelta.x * aimSpeedHorizontal * Time.deltaTime;
+		_desiredRotX -= inputDelta.y * aimSpeedVertical * Time.deltaTime;
+ 
+		_desiredRotY = Mathf.Clamp(_rotY, _initRotAxisY - clampAngleHorizontal, _initRotAxisY + clampAngleHorizontal);
+		_desiredRotX = Mathf.Clamp(_rotX, _initRotAxisX - clampAngleVertical, _initRotAxisX + clampAngleVertical);
+
+		_rotX = Mathf.Lerp(_rotX, _desiredRotX, Time.deltaTime * aimLerp);
+		_rotY = Mathf.Lerp(_rotY, _desiredRotY, Time.deltaTime * aimLerp);
+		*/
 
 		var newRot = Quaternion.Euler(_rotX, _rotY, 0.0f);
 		_transform.rotation = newRot;

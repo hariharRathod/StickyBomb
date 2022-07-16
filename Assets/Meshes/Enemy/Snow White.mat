@@ -153,8 +153,8 @@ Material:
     - _FoamSmooth: 0.02
     - _FoamSpread: 2
     - _FoamStrength: 0.8
-    - _FresnelMax: 0.965
-    - _FresnelMin: 1
+    - _FresnelMax: 1.49
+    - _FresnelMin: 0.78
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
@@ -187,8 +187,8 @@ Material:
     - _RampSmooth: 0.2
     - _RampSmoothAdd: 0.75
     - _RampSmoothOtherLights: 0.5
-    - _RampSmoothing: 0.26
-    - _RampThreshold: 0.6
+    - _RampSmoothing: 1
+    - _RampThreshold: 0.536
     - _RampThresholdOtherLights: 0.5
     - _RampType: 0
     - _ReceiveShadows: 1
@@ -196,8 +196,8 @@ Material:
     - _ReflectionMapType: 0
     - _ReflectionSmoothness: 1
     - _RenderingMode: 0
-    - _RimMax: 0.84
-    - _RimMin: 0.7
+    - _RimMax: 0.83
+    - _RimMin: 0.42
     - _RimStrength: 0.5
     - _Shadow_HSV_H: 0
     - _Shadow_HSV_S: 0
@@ -253,7 +253,7 @@ Material:
     - __dummy__: 0
     - __outline_gui_dummy__: 0
     m_Colors:
-    - _BaseColor: {r: 1, g: 0, b: 0, a: 1}
+    - _BaseColor: {r: 1, g: 0.034042552, b: 0, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FoamColor: {r: 0.9, g: 0.9, b: 0.9, a: 1}
@@ -263,7 +263,7 @@ Material:
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _ReflectionColor: {r: 0.735849, g: 0.735849, b: 0.735849, a: 1}
     - _RimColor: {r: 0.8, g: 0.8, b: 0.8, a: 0.6}
-    - _SColor: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 1}
+    - _SColor: {r: 0.7075472, g: 0.7075472, b: 0.7075472, a: 1}
     - _SketchColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 0.75, g: 0.75, b: 0.75, a: 1}

@@ -1553,6 +1553,18 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6281830582480648837, guid: 19afa555eea846c40b19a6cad061b132, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281830582480648837, guid: 19afa555eea846c40b19a6cad061b132, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281830582480648837, guid: 19afa555eea846c40b19a6cad061b132, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6281830582480648837, guid: 19afa555eea846c40b19a6cad061b132, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.66
       objectReference: {fileID: 0}
@@ -1868,6 +1880,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1979802176, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
+      propertyPath: YcameraRotateAngle
+      value: 35
+      objectReference: {fileID: 0}
     - target: {fileID: 75472142830525307, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
       propertyPath: _follow
       value: 0

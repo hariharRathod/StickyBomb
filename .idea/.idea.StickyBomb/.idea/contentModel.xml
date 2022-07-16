@@ -623,6 +623,7 @@
             <e p="PropsController.cs" t="Include" />
             <e p="ShieldController.cs" t="Include" />
           </e>
+          <e p="RainBombController.cs" t="Include" />
           <e p="RubberEffect.cs" t="Include" />
           <e p="Shatterable.cs" t="Include" />
           <e p="ShatterableParent.cs" t="Include" />

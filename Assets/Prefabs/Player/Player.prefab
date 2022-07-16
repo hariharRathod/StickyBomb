@@ -1045,6 +1045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb859d2bea7e9ed4b9e1022ab6ab1c87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  YcameraRotateAngle: 25
 --- !u!1 &2079671471
 GameObject:
   m_ObjectHideFlags: 0
@@ -1449,8 +1450,8 @@ Transform:
   m_GameObject: {fileID: 4354699649110761150}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 886853809}
   - {fileID: 1288051644}
@@ -1691,6 +1692,7 @@ MonoBehaviour:
   hitMarker: {fileID: 1886236889}
   trajectoryResolution: 30
   multipleBombRadius: 4
+  scaleMultiplier: 1.5
   shootSpeedMin: 700
   shootSpeedMax: 750
   enableBombRubberEffect: 0

@@ -1,4 +1,5 @@
 using System;
+using UnityEngine;
 
 
 public class EnemyEvents
@@ -7,6 +8,7 @@ public class EnemyEvents
 	
 	public static event Action<EnemyGaintController> GaintEnemyDied;
 
+	
 	public static event Action GaintBombCollison;
 
 	public static void InvokeOnEnemyDied(EnemyController obj)
@@ -23,4 +25,6 @@ public class EnemyEvents
 	{
 		GaintBombCollison?.Invoke();
 	}
+
+	
 }

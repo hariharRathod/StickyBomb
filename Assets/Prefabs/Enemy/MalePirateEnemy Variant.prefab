@@ -376,15 +376,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e8478ca335e690a48a783250d5c54c3e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e8478ca335e690a48a783250d5c54c3e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.9
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e8478ca335e690a48a783250d5c54c3e, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.9
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e8478ca335e690a48a783250d5c54c3e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -577,7 +577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b13468c7a82ad4aaf4ae4d84308558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0.3
+  damage: 0.34
 --- !u!1 &1474783804475892687 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3086436065929644917, guid: e8478ca335e690a48a783250d5c54c3e, type: 3}
@@ -671,7 +671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b13468c7a82ad4aaf4ae4d84308558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0.3
+  damage: 0.34
 --- !u!137 &1752902049724606396 stripped
 SkinnedMeshRenderer:
   m_CorrespondingSourceObject: {fileID: 6417125815936643320, guid: e8478ca335e690a48a783250d5c54c3e, type: 3}
@@ -769,7 +769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b13468c7a82ad4aaf4ae4d84308558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0.3
+  damage: 0.34
 --- !u!1 &4227392191773124795 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -290750445479886849, guid: e8478ca335e690a48a783250d5c54c3e, type: 3}
@@ -863,7 +863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b13468c7a82ad4aaf4ae4d84308558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0.3
+  damage: 0.34
 --- !u!1 &4252174988729066183 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8817898888258712963, guid: e8478ca335e690a48a783250d5c54c3e, type: 3}
@@ -957,7 +957,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b13468c7a82ad4aaf4ae4d84308558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0.3
+  damage: 0.34
 --- !u!1 &4846604056432383234 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -9070493210130169274, guid: e8478ca335e690a48a783250d5c54c3e, type: 3}
@@ -1051,7 +1051,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b13468c7a82ad4aaf4ae4d84308558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0.3
+  damage: 0.34
 --- !u!4 &5104552770530881711 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e8478ca335e690a48a783250d5c54c3e, type: 3}
@@ -1221,7 +1221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b13468c7a82ad4aaf4ae4d84308558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0.3
+  damage: 0.34
 --- !u!1 &6117248530447285247 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7657966619581158213, guid: e8478ca335e690a48a783250d5c54c3e, type: 3}
@@ -1314,7 +1314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b13468c7a82ad4aaf4ae4d84308558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0.3
+  damage: 0.34
 --- !u!1 &7699111582098775401 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3135921509060577837, guid: e8478ca335e690a48a783250d5c54c3e, type: 3}
@@ -1408,7 +1408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b13468c7a82ad4aaf4ae4d84308558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0.3
+  damage: 0.34
 --- !u!1 &7710219697958901060 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6170625038081293824, guid: e8478ca335e690a48a783250d5c54c3e, type: 3}
@@ -1502,7 +1502,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b13468c7a82ad4aaf4ae4d84308558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0.3
+  damage: 0.34
 --- !u!1 &8615622566323782159 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3948933247560734027, guid: e8478ca335e690a48a783250d5c54c3e, type: 3}
@@ -1596,4 +1596,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2b13468c7a82ad4aaf4ae4d84308558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0.3
+  damage: 0.34

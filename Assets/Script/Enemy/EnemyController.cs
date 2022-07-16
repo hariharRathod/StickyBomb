@@ -34,15 +34,16 @@ public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 	{
 		GameEvents.TapToPlay += OnTapToPlay;
 		GameEvents.ReactNextArea += OnReachNextArea;
+		GameEvents.CameraFollowArrowStart += OnCameraFollowStart;
 	}
 
 	private void OnDisable()
 	{
 		GameEvents.TapToPlay -= OnTapToPlay;
 		GameEvents.ReactNextArea -= OnReachNextArea;
+		GameEvents.CameraFollowArrowStart -= OnCameraFollowStart;
 	}
-
-
+	
 	private void Start()
 	{
 		_bombsList=new List<GameObject>();
@@ -192,6 +193,13 @@ public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 		_health = 0f;
 		healthCanvas.SetHealth(1f);
 		healthCanvas.DisableCanvas();
+	}
+	
+	private void OnCameraFollowStart()
+	{
+		if (_my.isDead) return;
+		
+		ArrowFollowCamera.OnLastEnemyStanding(this.transform);
 	}
 
 

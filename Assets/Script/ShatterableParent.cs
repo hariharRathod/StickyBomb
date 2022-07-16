@@ -11,13 +11,16 @@ public class ShatterableParent : MonoBehaviour
 	private void OnEnable()
 	{
 		EnemyEvents.EnemyDied += OnEnemyDied;
+		EnemyEvents.GaintEnemyDied += OnGaintEnemyDied;
 	}
 
 	private void OnDisable()
 	{
 		EnemyEvents.EnemyDied -= OnEnemyDied;
+		EnemyEvents.GaintEnemyDied -= OnGaintEnemyDied;
 	}
 
+	
 	public void ShatterTheShatterables()
 	{
 		foreach (var shatterable in theShatterables)
@@ -27,6 +30,16 @@ public class ShatterableParent : MonoBehaviour
 	}
 
 	private void OnEnemyDied(EnemyController obj)
+	{
+		if (area != LevelFlowController.only.currentArea) return;
+		
+		foreach (var shatterable in theShatterables)
+		{
+			shatterable.MakeShatterable();
+		}
+	}
+	
+	private void OnGaintEnemyDied(EnemyGaintController obj)
 	{
 		if (area != LevelFlowController.only.currentArea) return;
 		
