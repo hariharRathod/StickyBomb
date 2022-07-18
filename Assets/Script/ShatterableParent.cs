@@ -8,6 +8,8 @@ public class ShatterableParent : MonoBehaviour
 	[SerializeField] private bool shouldPlayBrickAudioOnShatter;
 	[SerializeField] private int area;
 
+	private bool makeSoundOnce;
+
 	private void OnEnable()
 	{
 		EnemyEvents.EnemyDied += OnEnemyDied;
@@ -27,11 +29,19 @@ public class ShatterableParent : MonoBehaviour
 		{
 			shatterable.Shatter();
 		}
+		
+		if(makeSoundOnce) return;
+
+		makeSoundOnce = true;
+		AudioManager.instance.Play("BrickBreakHigh");
+		AudioManager.instance.Play("BrickFall" + Random.Range(1, 3));
 	}
 
 	private void OnEnemyDied(EnemyController obj)
 	{
 		if (area != LevelFlowController.only.currentArea) return;
+
+		makeSoundOnce = false;
 		
 		foreach (var shatterable in theShatterables)
 		{
@@ -42,6 +52,8 @@ public class ShatterableParent : MonoBehaviour
 	private void OnGaintEnemyDied(EnemyGaintController obj)
 	{
 		if (area != LevelFlowController.only.currentArea) return;
+		
+		makeSoundOnce = false;
 		
 		foreach (var shatterable in theShatterables)
 		{

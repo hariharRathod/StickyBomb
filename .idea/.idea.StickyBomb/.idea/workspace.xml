@@ -20,78 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c4fe96e-f45c-4672-b895-16116b91b9bc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.StickyBomb/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/circle.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/circle.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/circlestretchy.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/circlestretchy.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/cloud_2x2_hard_softshadow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/cloud_2x2_hard_softshadow.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/cloud_2x2_soft.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/cloud_2x2_soft.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/explosion_spritesheet_3x3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/explosion_spritesheet_3x3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/glow1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/glow1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/glow2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/glow2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/grab1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/grab1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/grab2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/grab2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/gradient_circle.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/gradient_circle.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/gradient_vertical_spiky.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/gradient_vertical_spiky.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/leaf_3x3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/leaf_3x3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/lightning2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/lightning2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/lightning_improved_3x3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/lightning_improved_3x3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/magic_line.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/magic_line.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/magic_orb2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/magic_orb2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/ring.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/ring.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/sparkle.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/sparkle.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/splat01_animated_3x3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/splat01_animated_3x3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/splat02_animated_3x3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/splat02_animated_3x3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/triangle.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/triangle.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/triangle_curve.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/triangle_curve.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/triangle_soft.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/triangle_soft.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/wave3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Epic Toon FX/Textures/wave3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/Arrows/Materials/ArrowBody.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/Arrows/Materials/ArrowBody.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/Arrows/Materials/ArrowHead.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/Arrows/Materials/ArrowHead.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/Arrows/Materials/ArrowTail.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/Arrows/Materials/ArrowTail.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/Enemy/NewChars/male-pirate/MalePirate.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/Enemy/NewChars/male-pirate/MalePirate.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/Enemy/Snow White.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/Enemy/Snow White.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/DeviateCenterRightLeftGate.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/DeviateCenterRightLeftGate.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy/GaintEnemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/GaintEnemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy/GunaEnemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/GunaEnemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy/GunaEnemyShielded Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/GunaEnemyShielded Variant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy/MalePirateEnemy Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/MalePirateEnemy Variant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy/RedPirateEnemy Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy/RedPirateEnemy Variant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapons/Arrow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapons/Arrow.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapons/BombNew.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Weapons/BombNew.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 0_ 1 Enemy.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 0_ 1 Enemy.unity.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 10_2 Platform 2 enemy sheild and 1 enemy sidewalk enemy hostage.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 10_2 Platform 2 enemy sheild and 1 enemy sidewalk enemy hostage.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 11_3 Enemy with walls.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 11_3 Enemy with walls.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 12_2 Enemy with deviate Right Left arrows.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 12_2 Enemy with deviate Right Left arrows.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 13_3 Enemy with movement deviate Center Right Left  arrows.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 13_3 Enemy with movement deviate Center Right Left  arrows.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 14_1 Enemy with deviate Circular  arrows Hostage.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 14_1 Enemy with deviate Circular  arrows Hostage.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 15_2 Platform crowd and 3 enemy Deviate gates.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 15_2 Platform crowd and 3 enemy Deviate gates.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 16_2 Platform  enemy crowd and  deviate gaint 2 enemy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 16_2 Platform  enemy crowd and  deviate gaint 2 enemy.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 17_2 Platform hostage hold deviate gate and crowd Enemy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 17_2 Platform hostage hold deviate gate and crowd Enemy.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 18_2 Enemy with deviate Center Right gat and hostage.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 18_2 Enemy with deviate Center Right gat and hostage.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 19_2 Platform  enemy crowd and  deviate gaint 2 enemy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 19_2 Platform  enemy crowd and  deviate gaint 2 enemy.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 19_2 Platform  enemy crowd and  deviate gaint 2 enemy/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 19_2 Platform  enemy crowd and  deviate gaint 2 enemy/NavMesh.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 1_2 Enemy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 1_2 Enemy.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 20_2 Platform  enemy crowd and  Continous Arrow Shoot.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 20_2 Platform  enemy crowd and  Continous Arrow Shoot.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 22_2 Platform crow deviate gate and gaint continous Arrow.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 22_2 Platform crow deviate gate and gaint continous Arrow.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 26_2 Platform Titan and Titan Crown with multiplayer gate.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 26_2 Platform Titan and Titan Crown with multiplayer gate.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 2_3 Enemy with Barrel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 2_3 Enemy with Barrel.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 3_Crowd Enemy with multiplay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 3_Crowd Enemy with multiplay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 4_2 Platform 1 enemy 2 sheild Enemy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 4_2 Platform 1 enemy 2 sheild Enemy.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 5_ 1 gaint.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 5_ 1 gaint.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 6_2 Platform 2 enemy 1 gaint.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 6_2 Platform 2 enemy 1 gaint.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 7_Enemy sidewalk hostage.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 7_Enemy sidewalk hostage.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 8_2 Platform crowdand gaint multiplay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 8_2 Platform crowdand gaint multiplay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level - 9_2 Platform with crowd and barrel and moving multiplay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level - 9_2 Platform with crowd and barrel and moving multiplay.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/AimController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/AimController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/ArrowFollowCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/ArrowFollowCamera.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Enemy/EnemyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Enemy/EnemyController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Events/EnemyEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Events/EnemyEvents.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Player/BombThrowerMechanic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Player/BombThrowerMechanic.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/ShatterableParent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/ShatterableParent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
@@ -261,8 +193,8 @@
         <option value="$PROJECT_DIR$/Assets/Script/Enemy/EnemyController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/ArrowFollowCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/RainBombController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/ShatterableParent.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/AimController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/ShatterableParent.cs" />
       </list>
     </option>
   </component>
@@ -309,8 +241,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Arrow last shoot slow motion done." />
-    <MESSAGE value="Game code refactred,bomb stick and explode code refactred,Barrel explosion intial setup done." />
     <MESSAGE value="Shoot animation change,arrow change." />
     <MESSAGE value="Barell done,sheild added only mesh" />
     <MESSAGE value="Enemy Shield done,multiple arrow setup done." />
@@ -334,7 +264,9 @@
     <MESSAGE value="Running chase level done." />
     <MESSAGE value="Running chase level addtional things added,3 new level with continous Arrow Added,24 levels done." />
     <MESSAGE value="Bomb jiggle effect added,new levels added.Titan levels added." />
-    <option name="LAST_COMMIT_MESSAGE" value="Bomb jiggle effect added,new levels added.Titan levels added." />
+    <MESSAGE value="Changes done and new features levels change with small corrections done." />
+    <MESSAGE value="remaaining files." />
+    <option name="LAST_COMMIT_MESSAGE" value="remaaining files." />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="86" key="DiffContextDialog" timestamp="1657278091807">
@@ -413,10 +345,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="449" y="143" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1657278167598" />
-    <state x="452" y="172" key="Vcs.Push.Dialog.v2" timestamp="1657891926098">
+    <state x="452" y="172" key="Vcs.Push.Dialog.v2" timestamp="1657982444942">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="172" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1657891926098" />
+    <state x="452" y="172" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1657982444942" />
     <state x="544" y="41" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1657295882698">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

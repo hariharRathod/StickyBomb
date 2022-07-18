@@ -146,3 +146,33 @@ MonoBehaviour:
     enableReverb: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
+  - name: BrickBreak
+    clip: {fileID: 8300000, guid: 3fdf7f7c2620888439158115c391a209, type: 3}
+    volume: 0.6
+    volumeVariance: 0.1
+    pitch: 1.5
+    pitchVariance: 0.2
+    loop: 0
+    enableReverb: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: BrickFall1
+    clip: {fileID: 8300000, guid: df079124e1103f1409dcca62280ddaf3, type: 3}
+    volume: 0.35
+    volumeVariance: 0.1
+    pitch: 1.5
+    pitchVariance: 0.2
+    loop: 0
+    enableReverb: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: BrickFall2
+    clip: {fileID: 8300000, guid: 9b9337b3b2a90654481db1300ec7fa8b, type: 3}
+    volume: 0.35
+    volumeVariance: 0.1
+    pitch: 1.5
+    pitchVariance: 0.2
+    loop: 0
+    enableReverb: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
