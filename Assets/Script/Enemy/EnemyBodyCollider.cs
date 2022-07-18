@@ -30,7 +30,14 @@ public class EnemyBodyCollider : MonoBehaviour
 			if (!other.collider.TryGetComponent(out ArrowController arrowController)) return;
 			
 			arrowController.OnArrowCollisonWithEnemy(this.transform);
-			_my.Controller.GetHit(damage);
+
+			if (_my.transform.TryGetComponent(out EnemyRunController enemyRunController))
+			{
+				enemyRunController.GetHit(damage,false);
+				return;
+			}
+			
+			_my.Controller.GetHit(damage,true);
 		}
 	}
 }

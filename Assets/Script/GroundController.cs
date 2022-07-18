@@ -13,6 +13,7 @@ public class GroundController : MonoBehaviour,IStickable,IExplodDamageable
 		var bombController = bomb.GetComponent<BombController>();
 		if(bombController==null) return false;
 		bombController.myParent = gameObject;
+		bombController.disableJiggleOnGround();
 		return true;
 	}
 

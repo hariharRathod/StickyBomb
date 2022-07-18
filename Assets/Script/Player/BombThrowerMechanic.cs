@@ -29,6 +29,7 @@ public class BombThrowerMechanic : MonoBehaviour
 
 	private List<Vector3> linePoints= new List<Vector3>();
 	[SerializeField] private float multipleBombRadius;
+	[SerializeField] private float scaleMultiplier = 1.25f;
 	[SerializeField] private int shootSpeedMin;
 	[SerializeField] private int shootSpeedMax;
 	[SerializeField] private bool enableBombRubberEffect;
@@ -117,12 +118,14 @@ public class BombThrowerMechanic : MonoBehaviour
 		rb.AddForce(initialVelocity, ForceMode.VelocityChange);
 		rb.AddTorque(Vector3.right * bananaTorque, ForceMode.VelocityChange);
 		InputHandler.PutInCoolDown();
+
 		return time;
 	}
-	
-	
+
 	public void HideTrajectory()
 	{
+		if (LevelFlowController.only.ContinousArrowEnable) return;
+		
 		hitMarker.position = transform.position - transform.forward * 5f;
 		_line.positionCount = 0;
 		

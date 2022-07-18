@@ -34,15 +34,16 @@ public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 	{
 		GameEvents.TapToPlay += OnTapToPlay;
 		GameEvents.ReactNextArea += OnReachNextArea;
+		GameEvents.CameraFollowArrowStart += OnCameraFollowStart;
 	}
 
 	private void OnDisable()
 	{
 		GameEvents.TapToPlay -= OnTapToPlay;
 		GameEvents.ReactNextArea -= OnReachNextArea;
+		GameEvents.CameraFollowArrowStart -= OnCameraFollowStart;
 	}
-
-
+	
 	private void Start()
 	{
 		_bombsList=new List<GameObject>();
@@ -65,8 +66,13 @@ public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 		_my.isDead = true;
 		if (!isEnemySideWalk)
 		{
-			_my.Movement.StopMovement();
-			_my.Movement.DisableAgent();
+			//vroooo kya hai ye soacho iska,tune isko wo enemy run controller ke liye sacrifice kardiya.
+			if (_my.Movement)
+			{
+				_my.Movement.StopMovement();
+				_my.Movement.DisableAgent();
+			}
+			
 		}
 		
 		ResetHealthAfterDie();
@@ -98,6 +104,8 @@ public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 		if (isEnemyHostageHold) return;
 
 		if (isEnemySideWalk) return;
+
+		if (_my.transform.TryGetComponent(out EnemyRunController enemyRunController)) return;
 		
 		DOVirtual.DelayedCall(Random.Range(0, 0.5f), () =>
 		{
@@ -121,7 +129,7 @@ public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 	}
 
 
-	public bool GetHit(float damage)
+	public bool GetHit(float damage,bool shouldHit)
 	{
 		if (_my.isDead) return false;
 		
@@ -142,7 +150,8 @@ public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 		
 		_health -= damage;
 		healthCanvas.SetHealth(_health);
-		_my.Animations.GetHit();
+		if(shouldHit)
+			_my.Animations.GetHit();
 		AudioManager.instance.Play("ArrowHit");
 		
 		if (_health > 0f)
@@ -184,6 +193,13 @@ public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 		_health = 0f;
 		healthCanvas.SetHealth(1f);
 		healthCanvas.DisableCanvas();
+	}
+	
+	private void OnCameraFollowStart()
+	{
+		if (_my.isDead) return;
+		
+		ArrowFollowCamera.OnLastEnemyStanding(this.transform);
 	}
 
 

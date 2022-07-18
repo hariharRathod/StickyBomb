@@ -21,7 +21,7 @@ public class HostageBodyCollider : MonoBehaviour
 
 		if (_controller.IsDead) return;
 		
-		_controller.HostageDie();
+		_controller.HostageDie(true);
 
 	}
 }

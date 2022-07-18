@@ -376,15 +376,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 528bc01bb633a434a8daae463b329f93, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.8000001
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 528bc01bb633a434a8daae463b329f93, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.8000001
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 528bc01bb633a434a8daae463b329f93, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.8000001
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 528bc01bb633a434a8daae463b329f93, type: 3}
       propertyPath: m_LocalPosition.x
@@ -731,6 +731,7 @@ MonoBehaviour:
   explodBehaviour: 0
   isEnemyShielded: 0
   isEnemySideWalk: 0
+  isEnemyHostageHold: 0
   ShouldEnemySideWalkOneShotRagdoll: 0
 --- !u!114 &4714022544095872858
 MonoBehaviour:
@@ -757,7 +758,7 @@ MonoBehaviour:
   - {fileID: 8629002588531171394}
   - {fileID: 4884993722411547868}
   regularForce: 15
-  throwBackForce: 35
+  throwBackForce: 45
   upForce: 15
   skin: {fileID: 6487922617319788836}
   shouldTurnToGrey: 1

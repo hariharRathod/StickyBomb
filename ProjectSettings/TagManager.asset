@@ -21,6 +21,7 @@ TagManager:
   - Hostage
   - DeviateGate
   - CircularViewCamera
+  - HostageRoot
   layers:
   - Default
   - TransparentFX

@@ -43,6 +43,13 @@ public class EnemyRagdollController : MonoBehaviour
 	public void GoRagdoll(bool getThrownBack)
 	{
 		print("Enemy ragdoll");
+		if (_my.transform.TryGetComponent(out EnemyRunController enemyRunController))
+		{
+			enemyRunController.DisableAnimator();
+			GoRagdollWhileRunning(true);
+			return;
+		}
+		
 		_my.Animations.SetAnimatorStatus(false);
 
 		var direction = -transform.forward;
@@ -57,7 +64,20 @@ public class EnemyRagdollController : MonoBehaviour
 			_material.DOColor(deadColor, 1f);
 				
 	}
-	
+
+	public void GoRagdollWhileRunning(bool getThrownBack)
+	{
+		var direction = -transform.forward;
+		foreach (var rb in rigidbodies)
+		{
+			rb.isKinematic = false;
+			rb.AddForce(direction * (getThrownBack || _my.throwBackOnLastHit ? throwBackForce : regularForce) + Vector3.up * upForce, ForceMode.Impulse);
+		}
+		
+		if(shouldTurnToGrey)
+			_material.DOColor(deadColor, 1f);
+	}
+
 	public void UnKinematicise()
 	{
 		foreach (var rb in rigidbodies) rb.isKinematic = false;

@@ -17,6 +17,7 @@ public class PlayerAnimations : MonoBehaviour
 	public static readonly int ArrowAim = Animator.StringToHash("ArrowAim");
 	public static readonly int ArrowShoot = Animator.StringToHash("ArrowShoot");
 	public static readonly int Aim = Animator.StringToHash("aim");
+	public static readonly int ContinousArrowShoot = Animator.StringToHash("ContinousArrowShoot");
 
 
 	private void OnEnable()

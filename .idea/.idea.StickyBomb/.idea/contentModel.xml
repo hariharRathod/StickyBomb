@@ -376,6 +376,50 @@
             </e>
           </e>
         </e>
+        <e p="FImpossible Creations" t="Include">
+          <e p="Editor" t="Include">
+            <e p="Plugins - Editor - Animating" t="Include">
+              <e p="Jiggling Editor" t="Include">
+                <e p="FJiggling_MultiEditor.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Plugins - Animating" t="Include">
+            <e p="Jiggling" t="Include">
+              <e p="Behaviours" t="Include">
+                <e p="Bases" t="Include">
+                  <e p="FJiggling_Base.cs" t="Include" />
+                </e>
+                <e p="FJiggling_Active.cs" t="Include" />
+                <e p="FJiggling_Grow.cs" t="Include" />
+                <e p="FJiggling_Multi.cs" t="Include" />
+                <e p="FJiggling_Rect.cs" t="Include" />
+                <e p="FJiggling_Simple.cs" t="Include" />
+                <e p="FJiggling_SimpleBones.cs" t="Include" />
+              </e>
+              <e p="ReadMe - Jiggling.txt" t="Include" />
+            </e>
+          </e>
+          <e p="Plugins - Shared" t="Include">
+            <e p="Math Helpers" t="Include">
+              <e p="Helpers" t="Include">
+                <e p="FColorMethods.cs" t="Include" />
+                <e p="FDebug.cs" t="Include" />
+              </e>
+              <e p="Math" t="Include">
+                <e p="FEasing.cs" t="Include" />
+                <e p="FTransformMethods.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Shared Tools" t="Include">
+            <e p="Editor Tools" t="Include">
+              <e p="Inspector And Scene Tools" t="Include">
+                <e p="FHierarchyIcons.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="GameAnalytics" t="Include">
           <e p="Editor" t="Include">
             <e p="Android" t="Include">
@@ -500,6 +544,8 @@
             <e p="HealthCanvas.cs" t="Include" />
             <e p="MainCanvasController.cs" t="Include" />
           </e>
+          <e p="ContinousArrowShootTutorial.cs" t="Include" />
+          <e p="ContinousArrowsParticlesIndication.cs" t="Include" />
           <e p="DeviateGate" t="Include">
             <e p="DeviateCenterRightController.cs" t="Include" />
             <e p="DeviateCenterRightLeftController.cs" t="Include" />
@@ -515,6 +561,7 @@
             <e p="EnemyMovement.cs" t="Include" />
             <e p="EnemyRagdollController.cs" t="Include" />
             <e p="EnemyRefbank.cs" t="Include" />
+            <e p="EnemyRunController.cs" t="Include" />
             <e p="EnemySheildController.cs" t="Include" />
             <e p="EnemySideWalk" t="Include">
               <e p="EnemySideWalkController.cs" t="Include" />
@@ -547,6 +594,8 @@
           <e p="Hostage" t="Include">
             <e p="HostageBodyCollider.cs" t="Include" />
             <e p="HostageController.cs" t="Include" />
+            <e p="HostageRefBank.cs" t="Include" />
+            <e p="HostageRunController.cs" t="Include" />
           </e>
           <e p="IncrementGate" t="Include">
             <e p="IncrementGateController.cs" t="Include" />
@@ -569,19 +618,26 @@
           </e>
           <e p="Props" t="Include">
             <e p="ExplosiveBarrelController.cs" t="Include" />
+            <e p="FloatingPropController.cs" t="Include" />
             <e p="PropExplosion.cs" t="Include" />
             <e p="PropsController.cs" t="Include" />
             <e p="ShieldController.cs" t="Include" />
           </e>
+          <e p="RainBombController.cs" t="Include" />
           <e p="RubberEffect.cs" t="Include" />
           <e p="Shatterable.cs" t="Include" />
           <e p="ShatterableParent.cs" t="Include" />
           <e p="Statemachine" t="Include">
             <e p="AimingState.cs" t="Include" />
+            <e p="ContinousShootState.cs" t="Include" />
             <e p="DragToAimState.cs" t="Include" />
             <e p="InputHandler.cs" t="Include" />
             <e p="InputStateBase.cs" t="Include" />
             <e p="TapState.cs" t="Include" />
+          </e>
+          <e p="vehicle" t="Include">
+            <e p="VehicleDistanceUiCanvasController.cs" t="Include" />
+            <e p="VehicleMovement.cs" t="Include" />
           </e>
           <e p="Vibration.cs" t="Include" />
           <e p="Weapon" t="Include">

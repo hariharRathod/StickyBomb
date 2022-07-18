@@ -954,7 +954,7 @@ MonoBehaviour:
   - {fileID: 8449153803908659267}
   - {fileID: 4705126176330638557}
   regularForce: 10
-  throwBackForce: 15
+  throwBackForce: 25
   upForce: 10
   skin: {fileID: 8708540559588040957}
   shouldTurnToGrey: 1
