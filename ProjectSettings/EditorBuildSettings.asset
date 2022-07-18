@@ -21,30 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Level - 3_Crowd Enemy with multiplay.unity
     guid: e589f3a80670120429e4664881f8ff41
   - enabled: 1
-    path: Assets/Scenes/Level - 4_2 Platform 1 enemy 2 sheild Enemy.unity
-    guid: e39f1be7f80209148bf13482ba3c0262
-  - enabled: 1
-    path: Assets/Scenes/Level - 5_ 1 gaint.unity
-    guid: 8c7cec0972217b949b4d3d4914c0bd08
-  - enabled: 1
-    path: Assets/Scenes/Level - 6_2 Platform 2 enemy 1 gaint.unity
-    guid: 394e15b85dfc31a4b8f618b6004f3bb7
-  - enabled: 1
-    path: Assets/Scenes/Level - 7_Enemy sidewalk hostage.unity
-    guid: d7f53eefa4ed4074698e3b41e9f1a661
-  - enabled: 1
-    path: Assets/Scenes/Level - 8_2 Platform crowdand gaint multiplay.unity
-    guid: c220264bff014f14784cbd8b960deb55
-  - enabled: 1
-    path: Assets/Scenes/Level - 9_2 Platform with crowd and barrel and moving multiplay.unity
-    guid: bddcecb800613e5468550a2f6e99cf6d
-  - enabled: 1
-    path: Assets/Scenes/Level - 10_2 Platform 2 enemy sheild and 1 enemy sidewalk
-      enemy hostage.unity
-    guid: 6339bfb1c53c0a24bad103356316b8ef
-  - enabled: 1
-    path: Assets/Scenes/Level - 11_3 Enemy with walls.unity
-    guid: a6530c2659ee9974981a0e83eee640b1
+    path: Assets/Scenes/Level - 26_2 Platform Titan and Titan Crown with multiplayer
+      gate.unity
+    guid: 35bae87e3d543be42813d8a7b1a75a5a
   - enabled: 1
     path: Assets/Scenes/Level - 12_2 Enemy with deviate Right Left arrows.unity
     guid: f189990c536008b4f826dbe2ba8f7c84
@@ -56,8 +35,39 @@ EditorBuildSettings:
     path: Assets/Scenes/Level - 14_1 Enemy with deviate Circular  arrows Hostage.unity
     guid: 4588ae8d0a8f1e24f823ff23894a29f6
   - enabled: 1
+    path: Assets/Scenes/Level - 5_ 1 gaint.unity
+    guid: 8c7cec0972217b949b4d3d4914c0bd08
+  - enabled: 1
+    path: Assets/Scenes/Level - 6_2 Platform 2 enemy 1 gaint.unity
+    guid: 394e15b85dfc31a4b8f618b6004f3bb7
+  - enabled: 1
+    path: Assets/Scenes/Level - 24_Titan Crowd Enemy with multiplay.unity
+    guid: 0395a44566210b0418a1837825440680
+  - enabled: 1
+    path: Assets/Scenes/Level - 7_Enemy sidewalk hostage.unity
+    guid: d7f53eefa4ed4074698e3b41e9f1a661
+  - enabled: 1
+    path: Assets/Scenes/Level - 8_2 Platform crowdand gaint multiplay.unity
+    guid: c220264bff014f14784cbd8b960deb55
+  - enabled: 1
+    path: Assets/Scenes/Level - 9_2 Platform with crowd and barrel and moving multiplay.unity
+    guid: bddcecb800613e5468550a2f6e99cf6d
+  - enabled: 1
+    path: Assets/Scenes/Level - 20_2 Platform  enemy crowd and  Continous Arrow Shoot.unity
+    guid: eea56154ab9642647b19c53734f0be92
+  - enabled: 1
+    path: Assets/Scenes/Level - 10_2 Platform 2 enemy sheild and 1 enemy sidewalk
+      enemy hostage.unity
+    guid: 6339bfb1c53c0a24bad103356316b8ef
+  - enabled: 1
+    path: Assets/Scenes/Level - 11_3 Enemy with walls.unity
+    guid: a6530c2659ee9974981a0e83eee640b1
+  - enabled: 1
     path: Assets/Scenes/Level - 15_2 Platform crowd and 3 enemy Deviate gates.unity
     guid: 534992104a6c4c04496c4f94d5dd7552
+  - enabled: 1
+    path: Assets/Scenes/Level - 21_Hostage chase enemy crowd continous Arrow.unity
+    guid: 1774d86bbfeb1f645aece65743e9e3d5
   - enabled: 1
     path: Assets/Scenes/Level - 16_2 Platform  enemy crowd and  deviate gaint 2 enemy.unity
     guid: 36d162580deb2f443a96bbd68383b08c
@@ -72,28 +82,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Level - 19_2 Platform  enemy crowd and  deviate gaint 2 enemy.unity
     guid: 21b9a517c92f671438e9d6bb9b368d47
   - enabled: 1
-    path: Assets/Scenes/Level - 20_2 Platform  enemy crowd and  Continous Arrow Shoot.unity
-    guid: eea56154ab9642647b19c53734f0be92
-  - enabled: 1
-    path: Assets/Scenes/Level - 21_Hostage chase enemy crowd continous Arrow.unity
-    guid: 1774d86bbfeb1f645aece65743e9e3d5
+    path: Assets/Scenes/Level - 23_Hostage chase enemy crowd continous Arrow with
+      Barrel.unity
+    guid: 5f54ac5784a864b4aa0d37b7199b31bf
   - enabled: 1
     path: Assets/Scenes/Level - 22_2 Platform crow deviate gate and gaint continous
       Arrow.unity
     guid: 2477a52aac2405742931f87975ec425c
   - enabled: 1
-    path: Assets/Scenes/Level - 23_Hostage chase enemy crowd continous Arrow with
-      Barrel.unity
-    guid: 5f54ac5784a864b4aa0d37b7199b31bf
-  - enabled: 1
-    path: Assets/Scenes/Level - 24_Titan Crowd Enemy with multiplay.unity
-    guid: 0395a44566210b0418a1837825440680
-  - enabled: 1
     path: Assets/Scenes/Level - 25_2 Platform  enemy crowd and  Continous Arrow Shoot
       with floating barrel.unity
     guid: d234115d039eeb8489641a9191f9d2de
   - enabled: 1
-    path: Assets/Scenes/Level - 26_2 Platform Titan and Titan Crown with multiplayer
-      gate.unity
-    guid: 35bae87e3d543be42813d8a7b1a75a5a
+    path: Assets/Scenes/Level - 4_2 Platform 1 enemy 2 sheild Enemy.unity
+    guid: e39f1be7f80209148bf13482ba3c0262
   m_configObjects: {}
