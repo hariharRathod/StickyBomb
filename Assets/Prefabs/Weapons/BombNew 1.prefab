@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4365232147428563254}
   - component: {fileID: 91561185624611132}
   - component: {fileID: 6413064455373466550}
-  - component: {fileID: 4725743129573051799}
   m_Layer: 6
   m_Name: Mesh_1
   m_TagString: Untagged
@@ -84,25 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &4725743129573051799
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 776235073229560351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8f60ebfcab62204c86dae2fa477bc02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Presets: 1
-  reloadAllValuesToDefault: 0
-  m_EffectIntensity: 1
-  m_Damping: 0.8
-  m_Mass: 2
-  m_Stiffness: 0.1
-  sleeping: 1
 --- !u!1 &1034622382798723655
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,7 +148,7 @@ Transform:
   m_GameObject: {fileID: 6934775489548998994}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 8, y: 8, z: 8}
+  m_LocalScale: {x: 45, y: 45, z: 45}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 364905093483626749}
@@ -381,7 +361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   JiggleTiltValue: 12
-  JiggleFrequency: 22
+  JiggleFrequency: 15
   JiggleDecelerate: 1.5
   AdditionalSpeedValue: 1
   ConstantJiggleValue: 0.5

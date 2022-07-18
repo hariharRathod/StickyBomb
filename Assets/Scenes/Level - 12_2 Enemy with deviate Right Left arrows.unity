@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 254884109359eae43bc4f12f5a6e8360, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 5634965771d587d498f67716d6e49553, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.24596122, g: 0.69247985, b: 0.9990936, a: 1}
+  m_IndirectSpecularColor: {r: 0.53204083, g: 0.6718611, b: 0.9273405, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: bombSpeed
       value: 800
       objectReference: {fileID: 0}
+    - target: {fileID: -6489511893465207931, guid: ffccea1fbb8367f4699b7cc1a6576dd2, type: 3}
+      propertyPath: bombPrefab
+      value: 
+      objectReference: {fileID: 6934775489548998994, guid: c7214fa92ca354e418b4d635c959dd33, type: 3}
     - target: {fileID: -6489511893465207931, guid: ffccea1fbb8367f4699b7cc1a6576dd2, type: 3}
       propertyPath: leftBombRotateAngle
       value: -21
@@ -241,15 +245,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2796396464019680699, guid: d52df420b986f054e9d0c20b712834fb, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.22
+      value: 0.24000001
       objectReference: {fileID: 0}
     - target: {fileID: 2796396464019680699, guid: d52df420b986f054e9d0c20b712834fb, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.22
+      value: 0.24000001
       objectReference: {fileID: 0}
     - target: {fileID: 2796396464019680699, guid: d52df420b986f054e9d0c20b712834fb, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.22
+      value: 0.24000001
       objectReference: {fileID: 0}
     - target: {fileID: 2796396464019680699, guid: d52df420b986f054e9d0c20b712834fb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -467,6 +471,18 @@ PrefabInstance:
       value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5104552770530881711, guid: 10c234b4bd3f69b4f9328211714fee4d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104552770530881711, guid: 10c234b4bd3f69b4f9328211714fee4d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104552770530881711, guid: 10c234b4bd3f69b4f9328211714fee4d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104552770530881711, guid: 10c234b4bd3f69b4f9328211714fee4d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.85
       objectReference: {fileID: 0}
@@ -538,6 +554,18 @@ PrefabInstance:
     - target: {fileID: 5104552770530881711, guid: 10c234b4bd3f69b4f9328211714fee4d, type: 3}
       propertyPath: m_RootOrder
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104552770530881711, guid: 10c234b4bd3f69b4f9328211714fee4d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104552770530881711, guid: 10c234b4bd3f69b4f9328211714fee4d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5104552770530881711, guid: 10c234b4bd3f69b4f9328211714fee4d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.15
       objectReference: {fileID: 0}
     - target: {fileID: 5104552770530881711, guid: 10c234b4bd3f69b4f9328211714fee4d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -678,6 +706,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1438040356, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
+      propertyPath: bombPrefab
+      value: 
+      objectReference: {fileID: 6934775489548998994, guid: c7214fa92ca354e418b4d635c959dd33, type: 3}
+    - target: {fileID: 1438040356, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
       propertyPath: enableBombRubberEffect
       value: 1
       objectReference: {fileID: 0}
@@ -695,6 +727,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4354699649110761144, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
       propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4354699649110761144, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4354699649110761144, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4354699649110761144, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
+      propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4354699649110761144, guid: 40db85ada848bc2448c08345212bb5b9, type: 3}
@@ -1006,11 +1050,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4278190353143947847, guid: 8e26ecfbef4324c4aa53b69bafd50de3, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 200
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 4278190353143947847, guid: 8e26ecfbef4324c4aa53b69bafd50de3, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 200
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 4278190354258886491, guid: 8e26ecfbef4324c4aa53b69bafd50de3, type: 3}
       propertyPath: m_Pivot.x

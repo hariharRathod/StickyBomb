@@ -124,7 +124,7 @@ public class BombThrowerMechanic : MonoBehaviour
 
 	public void HideTrajectory()
 	{
-		if (LevelFlowController.only.ContinousArrowEnable) return;
+		
 		
 		hitMarker.position = transform.position - transform.forward * 5f;
 		_line.positionCount = 0;

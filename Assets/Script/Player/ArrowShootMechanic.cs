@@ -164,14 +164,8 @@ public class ArrowShootMechanic : MonoBehaviour
 		InputHandler.PutInCoolDown();
 		_targetPos = hitPoint;
 		_targetTransform = hitTransform;
-		if (!LevelFlowController.only.ContinousArrowEnable)
-		{
-			_my.PlayerAnimation.Anim.SetBool(PlayerAnimations.ArrowShoot,true);
-			return;
-		}
-
-		_my.PlayerAnimation.Anim.SetTrigger(PlayerAnimations.ContinousArrowShoot);
-
+		_my.PlayerAnimation.Anim.SetBool(PlayerAnimations.ArrowShoot,true);
+		
 	}
 
 	public void DisableArrowShoot()
@@ -268,7 +262,7 @@ public class ArrowShootMechanic : MonoBehaviour
 		
 		LaunchContinousArrows();
 		Vibration.Vibrate(18);
-		WeaponEvents.InvokeOnContinousArrowShoot();
+		
 	}
 
 	private void LaunchContinousArrows()

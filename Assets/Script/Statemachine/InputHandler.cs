@@ -62,7 +62,6 @@ public class InputHandler : MonoBehaviour
 		aimer = _player.GetComponent<AimController>();
 		_aimingState=new AimingState(aimer);
 		_continousShootState = new ContinousShootState(_player.GetComponent<AimController>());
-		if (LevelFlowController.only.ContinousArrowEnable) return;
 		
 		_currentInputState = IdleState;
 		//OnTapToPlay();//yaha ye kya karra hai saleeeeeeee
@@ -83,28 +82,13 @@ public class InputHandler : MonoBehaviour
 		}
 		_currentInputState?.Execute();
 
-		if (!LevelFlowController.only.ContinousArrowEnable) return;
-
-		if (!InputExtensions.GetFingerUp()) return;
 		
-		
-		
-		if(_playerRefBank.WeaponSelect.currentWeapon == WeaponSelectManager.Weapon.Arrow)
-		{
-			aimer.SetReticleStatus(false);
-			aimer.ResetRotation();
-			print("Arrow activate");
-			DOVirtual.DelayedCall(0.2f,()=>_playerRefBank.ArrowShoot.ActivateArrow());
-		}
 
 	}
 
 	private InputStateBase HandleInput()
 	{
 		//if (InputExtensions.GetFingerUp()) return TapState;
-		if(LevelFlowController.only.ContinousArrowEnable)
-			if (InputExtensions.GetFingerHeld())
-				return _continousShootState;
 
 		if (InputExtensions.GetFingerHeld()) return _aimingState;
 		
@@ -134,15 +118,14 @@ public class InputHandler : MonoBehaviour
 	private void OnTapToPlay()
 	{
 		_hasTappedToPlay = true;
-		if(LevelFlowController.only.ContinousArrowEnable)
-			AssignNewState(InputState.ContinousShootState);
+		
 	}
 
 	private static void OnGameEnd() => AssignNewState(InputState.Disabled);
 
 	public static void PutInCoolDown()
 	{
-		if (LevelFlowController.only.ContinousArrowEnable) return;
+		
 		
 		AssignNewState(InputState.Disabled);
 		DOVirtual.DelayedCall(0.3f, TapCoolDown);

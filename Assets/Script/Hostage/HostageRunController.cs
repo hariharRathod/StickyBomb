@@ -51,7 +51,7 @@ public class HostageRunController : MonoBehaviour
 	{
 		if (!_hasTappedToPlay) return;
 		if (_hostageController.IsDead) return;
-		if (_hostageController.HasWon) return;
+		//if (_hostageController.HasWon) return;
 		if (_stopRunning) return;
 		
 		_transform.position += Vector3.forward * (VehicleMovement.MovementSpeed * _currentSpeedMultiplier * Time.deltaTime);
@@ -83,7 +83,7 @@ public class HostageRunController : MonoBehaviour
 
 	public void PositionHostageTaken(Transform hostagetakenpoint)
 	{
-		_hostageController.DisableHostageHelpText();
+		//_hostageController.DisableHostageHelpText();
 		_transform.parent = hostagetakenpoint;
 		_anim.applyRootMotion = false;
 		_transform.DOLocalMove(Vector3.zero, 0.4f);

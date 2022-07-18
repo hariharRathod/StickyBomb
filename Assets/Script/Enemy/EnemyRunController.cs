@@ -41,7 +41,7 @@ public class EnemyRunController : MonoBehaviour
 		_myMaxDistance = Random.Range(maxDistanceToPlayer - 4f, maxDistanceToPlayer);
 	}
 	
-	private void OnEnable()
+	/*private void OnEnable()
 	{
 		GameEvents.TapToPlay += OnTapToPlay;
 		GameEvents.GameLose += OnGameLose;
@@ -53,7 +53,7 @@ public class EnemyRunController : MonoBehaviour
 		GameEvents.TapToPlay -= OnTapToPlay;
 		GameEvents.GameLose -= OnGameLose;
 		GameEvents.GameWin -= OnGameWin;
-	}
+	}*/
 	private void Update()
 	{
 		if (!_hasTappedToPlay) return;
@@ -121,7 +121,7 @@ public class EnemyRunController : MonoBehaviour
 		_anim.SetTrigger(AttackGirl);
 	}
 
-	private void HitGirl()
+	/*private void HitGirl()
 	{
 		if (_hostageRefBank.Controller.IsDead){_anim.SetBool(BackToIdle,true); return;}
 		LevelFlowController.only.TryAssignMinDistance(Vector3.Distance(_transform.position,_hostageRefBank.transform.position), this);
@@ -160,7 +160,7 @@ public class EnemyRunController : MonoBehaviour
 
 		});
 		
-	}
+	}*/
 
 	public void DustOnRunningAnimation()
 	{
@@ -174,12 +174,12 @@ public class EnemyRunController : MonoBehaviour
 		_transform.rotation = Quaternion.Euler(0,180,0);
 	}
 	
-	private void OnGameLose()
+	/*private void OnGameLose()
 	{
 		_stopRunning = true;
 		if(_hostageRefBank)
 			HitGirl();
-	}
+	}*/
 	
 	private void OnGameWin()
 	{

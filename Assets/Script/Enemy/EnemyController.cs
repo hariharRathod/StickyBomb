@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices.WindowsRuntime;
 using DG.Tweening;
+using UnityEditor.VersionControl;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -20,7 +21,7 @@ public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 	[SerializeField] private IExplodDamageable.ExplodableBehaviour explodBehaviour;
 
 	[SerializeField] private bool isEnemyShielded,isEnemySideWalk,isEnemyHostageHold,ShouldEnemySideWalkOneShotRagdoll;
-	
+	[SerializeField]private bool shouldChangeplayer;
 	
 	
 	//socaho kya me sahi karra hu ye
@@ -106,6 +107,8 @@ public class EnemyController : MonoBehaviour,IStickable,IExplodDamageable
 		if (isEnemySideWalk) return;
 
 		if (_my.transform.TryGetComponent(out EnemyRunController enemyRunController)) return;
+
+		if (!shouldChangeplayer) return;
 		
 		DOVirtual.DelayedCall(Random.Range(0, 0.5f), () =>
 		{

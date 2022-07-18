@@ -22,7 +22,7 @@ public class CameraController : MonoBehaviour
 		WeaponEvents.ArrowRealeaseEvent += OnArrowRelase;
 		WeaponEvents.OnMultipleArrowCollison += OnMultipleArrowCollison;
 		WeaponEvents.OnBombExplosion += OnBombExplosion;
-		WeaponEvents.OnContinousArrowShoot += OnContinousArrowShoot;
+		
 	}
 
 	private void OnDisable()
@@ -30,7 +30,7 @@ public class CameraController : MonoBehaviour
 		WeaponEvents.ArrowRealeaseEvent -= OnArrowRelase;
 		WeaponEvents.OnMultipleArrowCollison -= OnMultipleArrowCollison;
 		WeaponEvents.OnBombExplosion -= OnBombExplosion;
-		WeaponEvents.OnContinousArrowShoot -= OnContinousArrowShoot;
+		
 	}
 
 	private void Awake()
