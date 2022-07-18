@@ -34,7 +34,7 @@ public class ArrowFollowCamera : MonoBehaviour
 		print("_arrowToFollow: " + _arrowToFollow.name);
 
 		
-		transform.localPosition =new Vector3(-2, 0, -1.3f);
+		transform.localPosition =new Vector3(-1, 0, -1.3f);
 		
 		transform.localEulerAngles = new Vector3(0,57f,0);
 		//
